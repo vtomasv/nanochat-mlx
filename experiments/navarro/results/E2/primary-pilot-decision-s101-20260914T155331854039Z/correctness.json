@@ -1,0 +1,9 @@
+{
+  "evidence": [
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E2/primary-pilot-native-s101/correctness.json",
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E2/primary-pilot-staged_raw-s101/correctness.json",
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E2/primary-pilot-staged_grammar-s101/correctness.json"
+  ],
+  "pass": true,
+  "trained_profile_directory": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E2"
+}

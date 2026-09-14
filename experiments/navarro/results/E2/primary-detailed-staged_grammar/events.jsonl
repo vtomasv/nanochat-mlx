@@ -1,0 +1,2 @@
+{"event": "load_and_conversion", "seconds": 16.758513915992808, "rss_peak_bytes": 1891598336, "mlx_active_peak_bytes": 637536344, "mlx_active_bytes": 503318616, "mlx_cache_bytes": 139464664}
+{"event": "explicit_barrier_phases", "forward_and_graph_construction_seconds": 0.217763083986938, "backward_materialization_seconds": 0.2967224989843089, "nested_decode_seconds": 0.09774562288657762, "nested_encode_seconds": 21.314677083923016, "update_including_state_codec_seconds": 21.785317959001986, "total_seconds": 22.319120291998843}

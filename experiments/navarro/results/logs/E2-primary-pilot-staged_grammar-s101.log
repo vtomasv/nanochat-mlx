@@ -1,0 +1,15 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+primary-pilot-staged_grammar-s101 step=10 loss=8.472142 seconds=11.791
+primary-pilot-staged_grammar-s101 step=20 loss=7.676764 seconds=14.376
+primary-pilot-staged_grammar-s101 step=30 loss=7.203236 seconds=16.224
+primary-pilot-staged_grammar-s101 step=40 loss=7.024811 seconds=17.629
+primary-pilot-staged_grammar-s101 step=50 loss=6.900401 seconds=18.584
+primary-pilot-staged_grammar-s101 step=60 loss=6.890347 seconds=19.169
+primary-pilot-staged_grammar-s101 step=70 loss=6.864097 seconds=19.850
+primary-pilot-staged_grammar-s101 step=80 loss=6.734480 seconds=20.560
+primary-pilot-staged_grammar-s101 step=90 loss=6.515070 seconds=21.116
+primary-pilot-staged_grammar-s101 step=100 loss=6.720568 seconds=21.643
+/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E2/primary-pilot-staged_grammar-s101

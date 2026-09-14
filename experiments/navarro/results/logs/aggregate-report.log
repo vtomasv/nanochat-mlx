@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/tomasvera/dev/nanochat-mlx/scripts/navarro_experiments.py", line 111, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/Users/tomasvera/dev/nanochat-mlx/scripts/navarro_experiments.py", line 40, in main
+    if json.loads(p.read_text())['status']!='not_measured':render_existing_report(p.parent)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomasvera/dev/nanochat-mlx/nanochat_mlx/experiments/reporting.py", line 56, in render_existing_report
+    if sha256(root/name)!=digest:raise ValueError(f'Artifact changed before report rendering: {root/name}')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Artifact changed before report rendering: experiments/navarro/results/E1/smoke-smoke-tape_bitmap-s101/correctness.json

@@ -1,0 +1,2 @@
+step,loss,seconds,tokens,mlx_active_peak_bytes,mlx_active_bytes,mlx_cache_bytes,rss_peak_bytes
+100,6.772829055786133,22.319120291998843,8192,5255418748,1518377180,1107631412,2069659648

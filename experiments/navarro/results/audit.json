@@ -1,0 +1,308 @@
+[
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-E1-trained-100",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-E1-trained-1000",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-E1-trained-500",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-detailed-native",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-detailed-tape_bitmap",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-detailed-tape_dense",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-detailed-tape_recompute",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pilot-decision-s101-20260914T155331700057Z",
+    "status": "NEGATIVE_SCREENING"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pilot-native-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pilot-tape_bitmap-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pilot-tape_dense-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pilot-tape_recompute-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pipeline-native-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pipeline-tape_bitmap-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pipeline-tape_dense-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/primary-pipeline-tape_recompute-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/smoke-smoke-native-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/smoke-smoke-tape_bitmap-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/smoke-smoke-tape_dense-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E1/smoke-smoke-tape_recompute-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-E2-screen-100",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-E2-screen-1000",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-E2-screen-500",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-detailed-staged_grammar",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-detailed-staged_raw",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pilot-decision-s101-20260914T155331854039Z",
+    "status": "NEGATIVE_SCREENING"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pilot-native-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pilot-staged_grammar-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pilot-staged_raw-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pipeline-native-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pipeline-staged_grammar-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/primary-pipeline-staged_raw-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/smoke-smoke-native-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/smoke-smoke-native-s101-failed-checkpoint-collision",
+    "status": "INCONCLUSIVE"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/smoke-smoke-staged_grammar-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E2/smoke-smoke-staged_raw-s101",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/external-E3-sft-d4",
+    "status": "FAILURE_CORRECTNESS"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/external-E3-sft-d4-reduction-diagnostic",
+    "status": "FAILURE_CORRECTNESS"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-E3-compressed_decode_dense",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-E3-correctness",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-E3-dense_native",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-E3-grammar_direct_cpu",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-E3-screen",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-E3-step0-diagnostic",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/E3/primary-pilot-decision-s101-20260914T155332003003Z",
+    "status": "NEGATIVE_SCREENING_NO_COMPRESSIBILITY"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/baseline/native-layout-check",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/baseline/primary-native-reference-s17",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/baseline/primary-pilot-repo_native-s101-20260914T142927525345Z",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/baseline/primary-pilot-repo_native-s101-20260914T143224590411Z",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/baseline/primary-pilot-repo_native-s101-20260914T143433956870Z",
+    "status": "measured"
+  },
+  {
+    "errors": [],
+    "pass": true,
+    "run": "experiments/navarro/results/baseline/smoke-native-initial",
+    "status": "measured"
+  }
+]

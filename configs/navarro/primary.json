@@ -1,0 +1,25 @@
+{
+  "protocol_version": "1.0",
+  "profile": "primary",
+  "depth": 8,
+  "sequence_len": 1024,
+  "device_batch_size": 4,
+  "total_batch_size": 8192,
+  "window_pattern": "SSSL",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "dtype": "float32",
+  "num_iterations": 1000,
+  "pilot_seed": 101,
+  "pilot_steps": 100,
+  "aspect_ratio": 64,
+  "head_dim": 128,
+  "rank_sample_bits": 256,
+  "rows_per_block": 128,
+  "data_dir": "~/.cache/nanochat",
+  "artifact_dir": "experiments/navarro/artifacts/primary",
+  "post_pilot_budget_hours": 24
+}

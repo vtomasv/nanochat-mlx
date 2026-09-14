@@ -1,0 +1,22 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.732051
+Muon params: 26, AdamW groups: {'embed': 1, 've': 2, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.732051
+Muon params: 26, AdamW groups: {'embed': 1, 've': 2, 'lm_head': 1, 'resid': 1, 'x0': 1}
+smoke-smoke-native-s101 step=10 loss=10.330185 seconds=0.031
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/tomasvera/dev/nanochat-mlx/scripts/navarro_experiments.py", line 93, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/Users/tomasvera/dev/nanochat-mlx/scripts/navarro_experiments.py", line 91, in main
+    train_run(c,a.arm or 'native',a.stage,a.seed if a.seed is not None else (17 if a.stage=='reference' else 101),a.steps or (1000 if a.stage=='reference' else 100),a.checkpoint,a.experiment or 'baseline',a.run_id)
+  File "/Users/tomasvera/dev/nanochat-mlx/nanochat_mlx/experiments/runner.py", line 119, in train_run
+    tick=time.perf_counter(); save_checkpoint(dest,model,opt,step+1,seed,c)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomasvera/dev/nanochat-mlx/nanochat_mlx/experiments/replay.py", line 77, in save_checkpoint
+    root=Path(root); root.mkdir(parents=True,exist_ok=False)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tomasvera/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/smoke/checkpoints/smoke-smoke-native-s101/step-0010'

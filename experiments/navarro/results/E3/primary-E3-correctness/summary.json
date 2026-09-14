@@ -1,0 +1,57 @@
+{
+  "algorithm_fidelity": true,
+  "baseline": null,
+  "confidence_intervals": null,
+  "controls": [],
+  "correctness_pass": true,
+  "decision": "INCONCLUSIVE",
+  "experiment": "E3",
+  "failure_reason": null,
+  "hardware": {
+    "architecture": "applegpu_g15s",
+    "device_name": "Apple M3 Max",
+    "max_buffer_length": 86586540032,
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "resource_limit": 499000
+  },
+  "intervention": {
+    "mean_nll_delta": 5.960464477539063e-08,
+    "microbenchmark": {
+      "dense_cpu_diagnostic": {
+        "mean_seconds": 1.967515127034858e-05,
+        "p95_seconds": 2.0237160788383336e-05
+      },
+      "dense_native": {
+        "mean_seconds": 0.0005906685983063653,
+        "p95_seconds": 0.0008637958555482328
+      },
+      "grammar_direct_cpu": {
+        "mean_seconds": 0.0012249312057974748,
+        "p95_seconds": 0.0012747770626447164
+      }
+    },
+    "mlx_active_bytes": 639645784,
+    "mlx_active_peak_bytes": 1121205524,
+    "mlx_cache_bytes": 521965464,
+    "rss_peak_bytes": 1396391936
+  },
+  "limitations": [
+    "Separate correctness/microbenchmark process; not end-to-end timing.",
+    "Local CPU FP64 oracle and full-model FP32 logits on eight identical reserved prefixes."
+  ],
+  "paired_ratios": null,
+  "profile": "primary",
+  "protocol_version": "1.0",
+  "quality_noninferiority": null,
+  "raw_files": [
+    "steps.csv",
+    "tensors.csv",
+    "events.jsonl",
+    "correctness.json",
+    "environment.json",
+    "manifest.json"
+  ],
+  "repo_sha": "b54b9fc139f455a9a5e60dc9a688ca9dbdb22944",
+  "status": "measured"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "experiments/navarro/results/E1/smoke-smoke-tape_bitmap-s101/correctness.json",
+    "indexed_sha256": "9ad9fc480f987a80c4c620a2036b81b40a7ac81f569b06a4b1e381d70a92e023",
+    "observed_sha256": "c0f0f3c2a602f002a88521ce6ff5ea122950c6ff14035af7b04b0fbc2f976a62"
+  },
+  {
+    "file": "experiments/navarro/results/E1/smoke-smoke-tape_recompute-s101/correctness.json",
+    "indexed_sha256": "9ad9fc480f987a80c4c620a2036b81b40a7ac81f569b06a4b1e381d70a92e023",
+    "observed_sha256": "c0f0f3c2a602f002a88521ce6ff5ea122950c6ff14035af7b04b0fbc2f976a62"
+  },
+  {
+    "file": "experiments/navarro/results/E1/smoke-smoke-tape_dense-s101/correctness.json",
+    "indexed_sha256": "9ad9fc480f987a80c4c620a2036b81b40a7ac81f569b06a4b1e381d70a92e023",
+    "observed_sha256": "c0f0f3c2a602f002a88521ce6ff5ea122950c6ff14035af7b04b0fbc2f976a62"
+  },
+  {
+    "file": "experiments/navarro/results/E1/smoke-smoke-native-s101/correctness.json",
+    "indexed_sha256": "9ad9fc480f987a80c4c620a2036b81b40a7ac81f569b06a4b1e381d70a92e023",
+    "observed_sha256": "c0f0f3c2a602f002a88521ce6ff5ea122950c6ff14035af7b04b0fbc2f976a62"
+  }
+]

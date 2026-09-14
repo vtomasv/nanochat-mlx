@@ -1,0 +1,10 @@
+{
+  "evidence": [
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E1/primary-pilot-native-s101/correctness.json",
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E1/primary-pilot-tape_dense-s101/correctness.json",
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E1/primary-pilot-tape_recompute-s101/correctness.json",
+    "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E1/primary-pilot-tape_bitmap-s101/correctness.json"
+  ],
+  "pass": true,
+  "trained_profile_directory": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E1"
+}

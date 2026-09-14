@@ -1,0 +1,54 @@
+{
+  "algorithm_fidelity": true,
+  "baseline": null,
+  "confidence_intervals": null,
+  "controls": [],
+  "correctness_pass": null,
+  "decision": "INCONCLUSIVE",
+  "experiment": "E3",
+  "failure_reason": null,
+  "hardware": {
+    "architecture": "applegpu_g15s",
+    "device_name": "Apple M3 Max",
+    "max_buffer_length": 86586540032,
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "resource_limit": 499000
+  },
+  "intervention": {
+    "conversion_seconds": 0.08634804200846702,
+    "decode_tokens": 1024,
+    "mean_decode_seconds": 0.0068913821090461624,
+    "mean_request_seconds": 0.9024739828382735,
+    "mean_ttft_seconds": 0.02037707288036472,
+    "mlx_active_bytes": 519506004,
+    "mlx_active_peak_bytes": 843637372,
+    "mlx_cache_bytes": 486645148,
+    "p50_decode_seconds": 0.006927791517227888,
+    "p95_decode_seconds": 0.008609391940990462,
+    "process_tree_rss_peak_bytes": 675954688,
+    "prompt_count": 8,
+    "rss_peak_bytes": 681590784,
+    "tokens_per_second": 145.10877269268272,
+    "weights_resident_bytes": 506602389
+  },
+  "limitations": [
+    "Forced central c_fc, CPU transfers included.",
+    "Teacher-forced timing; separate free greedy generations with natural EOS are in events.jsonl.",
+    "One pilot process; no process-paired CI."
+  ],
+  "paired_ratios": null,
+  "profile": "primary",
+  "protocol_version": "1.0",
+  "quality_noninferiority": null,
+  "raw_files": [
+    "steps.csv",
+    "tensors.csv",
+    "events.jsonl",
+    "correctness.json",
+    "environment.json",
+    "manifest.json"
+  ],
+  "repo_sha": "b54b9fc139f455a9a5e60dc9a688ca9dbdb22944",
+  "status": "measured"
+}

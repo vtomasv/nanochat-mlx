@@ -1,0 +1,6 @@
+{
+  "cases": 65,
+  "junit": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/correctness-junit.xml",
+  "pass": true,
+  "sha256": "bccabdc6cc93c65aced4853b0d925ecd7054c1af43c79f41ae7259bf135201cb"
+}

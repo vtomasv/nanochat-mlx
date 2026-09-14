@@ -1,0 +1,15 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+primary-pilot-native-s101 step=10 loss=8.472142 seconds=0.609
+primary-pilot-native-s101 step=20 loss=7.676764 seconds=0.599
+primary-pilot-native-s101 step=30 loss=7.203238 seconds=0.611
+primary-pilot-native-s101 step=40 loss=7.024817 seconds=0.612
+primary-pilot-native-s101 step=50 loss=6.900399 seconds=0.607
+primary-pilot-native-s101 step=60 loss=6.890355 seconds=0.635
+primary-pilot-native-s101 step=70 loss=6.864108 seconds=0.656
+primary-pilot-native-s101 step=80 loss=6.734487 seconds=0.622
+primary-pilot-native-s101 step=90 loss=6.515064 seconds=0.640
+primary-pilot-native-s101 step=100 loss=6.720567 seconds=0.626
+/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/results/E1/primary-pilot-native-s101

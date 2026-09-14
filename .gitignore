@@ -10,3 +10,8 @@ build/
 *.pt
 *.npy
 .env
+
+# Experimental corpora, checkpoints and downloaded publications
+experiments/navarro/artifacts/
+experiments/navarro/sources/
+*.dylib

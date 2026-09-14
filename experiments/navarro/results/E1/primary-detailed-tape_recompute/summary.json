@@ -1,0 +1,54 @@
+{
+  "algorithm_fidelity": null,
+  "baseline": null,
+  "confidence_intervals": null,
+  "controls": [],
+  "correctness_pass": null,
+  "decision": "INCONCLUSIVE",
+  "experiment": "E1",
+  "failure_reason": null,
+  "hardware": {
+    "architecture": "applegpu_g15s",
+    "device_name": "Apple M3 Max",
+    "max_buffer_length": 86586540032,
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "resource_limit": 499000
+  },
+  "intervention": {
+    "mlx_active_bytes": 2424349020,
+    "mlx_active_peak_bytes": 5301758288,
+    "mlx_cache_bytes": 1075851744,
+    "phases": {
+      "additional_attention_forwards": 16,
+      "additional_fc_forwards": 16,
+      "backward_including_unpack_seconds": 0.5790432080102619,
+      "forward_including_pack_seconds": 0.13616720799473114,
+      "nested_pack_seconds": 0.0,
+      "nested_unpack_seconds": 0.0,
+      "total_seconds": 0.843017167004291,
+      "update_including_state_codec_seconds": 0.11598412500461563
+    },
+    "process_tree_rss_peak_bytes": 1528430592,
+    "rss_peak_bytes": 1526611968
+  },
+  "limitations": [
+    "Detailed cold profile with explicit barriers; excluded from principal timing ratios.",
+    "Nested pack/unpack/decode/encode times overlap their parent phase and must not be added again.",
+    "Additional attention/FC forward counts are summed across both microbatches."
+  ],
+  "paired_ratios": null,
+  "profile": "primary",
+  "protocol_version": "1.0",
+  "quality_noninferiority": null,
+  "raw_files": [
+    "steps.csv",
+    "tensors.csv",
+    "events.jsonl",
+    "correctness.json",
+    "environment.json",
+    "manifest.json"
+  ],
+  "repo_sha": "b54b9fc139f455a9a5e60dc9a688ca9dbdb22944",
+  "status": "measured"
+}

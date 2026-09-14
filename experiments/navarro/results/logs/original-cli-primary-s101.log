@@ -1,0 +1,26 @@
+MLX memory limit set to 80.0GB
+Vocab size: 32,768
+Model config: depth=8, n_embd=512, n_head=4, window=SSSL
+Parameter counts:
+  wte                     : 16,777,216
+  value_embeds            : 67,108,864
+  lm_head                 : 16,777,216
+  transformer_matrices    : 25,166,336
+  scalars                 : 16
+  total                   : 125,829,648
+Batch LR scale: 0.1250
+Training: 1000 steps, batch=8192, grad_accum=2
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Using Muon + AdamW multi-optimizer
+
+Starting training...
+step 00000/01000 (0.0%) | loss: 10.3966 | dt: 1066ms | tok/s: 7,683 | mem: 2396MB
+step 00001/01000 (0.1%) | loss: 10.3774 | dt: 641ms | tok/s: 12,770 | mem: 2376MB
+step 00002/01000 (0.2%) | loss: 10.3139 | dt: 593ms | tok/s: 13,815 | mem: 2408MB
+step 00003/01000 (0.3%) | loss: 10.1925 | dt: 592ms | tok/s: 13,848 | mem: 2408MB
+step 00004/01000 (0.4%) | loss: 10.0496 | dt: 589ms | tok/s: 13,900 | mem: 2408MB
+step 00020/01000 (2.0%) | loss: 8.1813 | dt: 592ms | tok/s: 13,842 | mem: 2408MB
+step 00040/01000 (4.0%) | loss: 7.2943 | dt: 603ms | tok/s: 13,580 | mem: 2392MB
+step 00060/01000 (6.0%) | loss: 6.9760 | dt: 601ms | tok/s: 13,624 | mem: 2408MB
+step 00080/01000 (8.0%) | loss: 6.7598 | dt: 613ms | tok/s: 13,368 | mem: 2408MB

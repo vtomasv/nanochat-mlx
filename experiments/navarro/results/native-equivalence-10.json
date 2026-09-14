@@ -1,0 +1,1191 @@
+{
+  "harness": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/primary/checkpoints/primary-pilot-native-s101/step-0010",
+  "original": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/primary/repo-native-s101-10/mlx_checkpoints/d8",
+  "pass": false,
+  "per_tensor": {
+    "initial": {
+      "blocks.0.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.0.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.0.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.0.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.0.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.0.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.attn.ve_gate.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.1.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.2.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.2.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.2.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.2.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.2.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.2.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.attn.ve_gate.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.3.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.4.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.4.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.4.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.4.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.4.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.4.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.attn.ve_gate.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.5.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.6.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.6.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.6.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.6.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.6.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.6.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.attn.c_k.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.attn.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.attn.c_q.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.attn.c_v.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.attn.ve_gate.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.mlp.c_fc.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "blocks.7.mlp.c_proj.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "lm_head.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "resid_lambdas": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "value_embeds.1.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "value_embeds.3.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "value_embeds.5.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "value_embeds.7.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "wte.weight": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "x0_lambdas": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      }
+    },
+    "optimizer": {
+      "adam.lm_head.weight.m": {
+        "bit_exact": false,
+        "max_abs": 2.9802322387695312e-08,
+        "pass": true,
+        "relative_l2": 2.3854830581138876e-07
+      },
+      "adam.lm_head.weight.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.lm_head.weight.v": {
+        "bit_exact": false,
+        "max_abs": 8.149072527885437e-10,
+        "pass": true,
+        "relative_l2": 3.079797251480089e-07
+      },
+      "adam.resid_lambdas.m": {
+        "bit_exact": false,
+        "max_abs": 1.280568540096283e-09,
+        "pass": true,
+        "relative_l2": 5.463212151561118e-07
+      },
+      "adam.resid_lambdas.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.resid_lambdas.v": {
+        "bit_exact": false,
+        "max_abs": 2.9103830456733704e-11,
+        "pass": true,
+        "relative_l2": 1.5770920478269958e-07
+      },
+      "adam.value_embeds.1.weight.m": {
+        "bit_exact": false,
+        "max_abs": 3.609557097661309e-12,
+        "pass": true,
+        "relative_l2": 4.861172425360421e-06
+      },
+      "adam.value_embeds.1.weight.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.value_embeds.1.weight.v": {
+        "bit_exact": false,
+        "max_abs": 1.951563910473908e-17,
+        "pass": true,
+        "relative_l2": 3.019539088995514e-06
+      },
+      "adam.value_embeds.3.weight.m": {
+        "bit_exact": false,
+        "max_abs": 4.618527782440651e-12,
+        "pass": true,
+        "relative_l2": 4.204099046055669e-06
+      },
+      "adam.value_embeds.3.weight.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.value_embeds.3.weight.v": {
+        "bit_exact": false,
+        "max_abs": 2.3635607360183997e-17,
+        "pass": true,
+        "relative_l2": 4.6338963969413076e-06
+      },
+      "adam.value_embeds.5.weight.m": {
+        "bit_exact": false,
+        "max_abs": 4.746425474877469e-12,
+        "pass": true,
+        "relative_l2": 4.202776045658762e-06
+      },
+      "adam.value_embeds.5.weight.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.value_embeds.5.weight.v": {
+        "bit_exact": false,
+        "max_abs": 3.2526065174565133e-18,
+        "pass": true,
+        "relative_l2": 3.7215420478428986e-06
+      },
+      "adam.value_embeds.7.weight.m": {
+        "bit_exact": false,
+        "max_abs": 3.0127011996228248e-12,
+        "pass": true,
+        "relative_l2": 4.004350949685378e-06
+      },
+      "adam.value_embeds.7.weight.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.value_embeds.7.weight.v": {
+        "bit_exact": false,
+        "max_abs": 4.2825985813177425e-18,
+        "pass": true,
+        "relative_l2": 3.094548615914924e-06
+      },
+      "adam.wte.weight.m": {
+        "bit_exact": false,
+        "max_abs": 1.5205614545266144e-11,
+        "pass": true,
+        "relative_l2": 2.3156065126437482e-06
+      },
+      "adam.wte.weight.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.wte.weight.v": {
+        "bit_exact": false,
+        "max_abs": 2.42861286636753e-16,
+        "pass": true,
+        "relative_l2": 1.2021734377352538e-06
+      },
+      "adam.x0_lambdas.m": {
+        "bit_exact": false,
+        "max_abs": 3.4924596548080444e-10,
+        "pass": true,
+        "relative_l2": 9.679207560019928e-08
+      },
+      "adam.x0_lambdas.t": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "adam.x0_lambdas.v": {
+        "bit_exact": false,
+        "max_abs": 2.9103830456733704e-11,
+        "pass": true,
+        "relative_l2": 1.372575878527203e-07
+      },
+      "muon.blocks.0.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 3.115019353572279e-11,
+        "pass": true,
+        "relative_l2": 2.9145814507887506e-06
+      },
+      "muon.blocks.0.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 7.785274647176266e-10,
+        "pass": true,
+        "relative_l2": 2.807662192181447e-06
+      },
+      "muon.blocks.0.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 3.5925040720030665e-11,
+        "pass": true,
+        "relative_l2": 2.794197455817513e-06
+      },
+      "muon.blocks.0.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 2.7830537874251604e-10,
+        "pass": true,
+        "relative_l2": 4.292067119591344e-06
+      },
+      "muon.blocks.0.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 5.347828846424818e-10,
+        "pass": true,
+        "relative_l2": 3.2933398786812494e-06
+      },
+      "muon.blocks.0.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.4988472685217857e-09,
+        "pass": true,
+        "relative_l2": 1.5392153684806512e-06
+      },
+      "muon.blocks.1.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 7.275957614183426e-11,
+        "pass": true,
+        "relative_l2": 2.6839308482889402e-06
+      },
+      "muon.blocks.1.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.9354047253727913e-09,
+        "pass": true,
+        "relative_l2": 2.8131250022884245e-06
+      },
+      "muon.blocks.1.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 4.3996806198265404e-11,
+        "pass": true,
+        "relative_l2": 2.4447658414577653e-06
+      },
+      "muon.blocks.1.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 4.31100488640368e-10,
+        "pass": true,
+        "relative_l2": 5.325869674313519e-06
+      },
+      "muon.blocks.1.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 8.731149137020111e-11,
+        "pass": true,
+        "relative_l2": 1.130327817673463e-06
+      },
+      "muon.blocks.1.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 1.5279510989785194e-09,
+        "pass": true,
+        "relative_l2": 4.259635205692799e-06
+      },
+      "muon.blocks.1.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 2.7939677238464355e-09,
+        "pass": true,
+        "relative_l2": 1.5788288393645741e-06
+      },
+      "muon.blocks.2.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 6.59383658785373e-11,
+        "pass": true,
+        "relative_l2": 3.622430729524244e-06
+      },
+      "muon.blocks.2.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.280568540096283e-09,
+        "pass": true,
+        "relative_l2": 2.1379575068411955e-06
+      },
+      "muon.blocks.2.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 5.070432962384075e-11,
+        "pass": true,
+        "relative_l2": 3.645797845055029e-06
+      },
+      "muon.blocks.2.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 4.3655745685100555e-10,
+        "pass": true,
+        "relative_l2": 4.61642970252853e-06
+      },
+      "muon.blocks.2.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.1973391994833946e-09,
+        "pass": true,
+        "relative_l2": 5.245362955845459e-06
+      },
+      "muon.blocks.2.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 3.827153705060482e-09,
+        "pass": true,
+        "relative_l2": 1.5709856833480369e-06
+      },
+      "muon.blocks.3.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 6.366462912410498e-11,
+        "pass": true,
+        "relative_l2": 2.3665043895900256e-06
+      },
+      "muon.blocks.3.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.5279510989785194e-09,
+        "pass": true,
+        "relative_l2": 1.8969649835240529e-06
+      },
+      "muon.blocks.3.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 4.3655745685100555e-11,
+        "pass": true,
+        "relative_l2": 2.3419501267973772e-06
+      },
+      "muon.blocks.3.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 2.9467628337442875e-10,
+        "pass": true,
+        "relative_l2": 3.6233582316000387e-06
+      },
+      "muon.blocks.3.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 6.730260793119669e-11,
+        "pass": true,
+        "relative_l2": 2.1507039877311603e-06
+      },
+      "muon.blocks.3.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.270098775625229e-09,
+        "pass": true,
+        "relative_l2": 5.723849737182189e-06
+      },
+      "muon.blocks.3.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 5.660695023834705e-09,
+        "pass": true,
+        "relative_l2": 1.634748278981793e-06
+      },
+      "muon.blocks.4.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 4.774847184307873e-11,
+        "pass": true,
+        "relative_l2": 2.3892196569655393e-06
+      },
+      "muon.blocks.4.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 2.0736479200422764e-09,
+        "pass": true,
+        "relative_l2": 1.7806162031819124e-06
+      },
+      "muon.blocks.4.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 3.9108272176235914e-11,
+        "pass": true,
+        "relative_l2": 2.233762360989282e-06
+      },
+      "muon.blocks.4.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 2.6921043172478676e-10,
+        "pass": true,
+        "relative_l2": 3.5307038023838024e-06
+      },
+      "muon.blocks.4.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.735760062932968e-09,
+        "pass": true,
+        "relative_l2": 5.875221860357833e-06
+      },
+      "muon.blocks.4.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 7.2177499532699585e-09,
+        "pass": true,
+        "relative_l2": 1.7218107881797954e-06
+      },
+      "muon.blocks.5.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 2.9103830456733704e-11,
+        "pass": true,
+        "relative_l2": 2.4603069749523696e-06
+      },
+      "muon.blocks.5.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.775333657860756e-09,
+        "pass": true,
+        "relative_l2": 1.7503379901786502e-06
+      },
+      "muon.blocks.5.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 1.77351466845721e-11,
+        "pass": true,
+        "relative_l2": 2.423093045258706e-06
+      },
+      "muon.blocks.5.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 3.8562575355172157e-10,
+        "pass": true,
+        "relative_l2": 3.3133544078294822e-06
+      },
+      "muon.blocks.5.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 8.36735125631094e-11,
+        "pass": true,
+        "relative_l2": 2.180305284826791e-06
+      },
+      "muon.blocks.5.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 3.3905962482094765e-09,
+        "pass": true,
+        "relative_l2": 5.9510103920312384e-06
+      },
+      "muon.blocks.5.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 7.07223080098629e-09,
+        "pass": true,
+        "relative_l2": 1.8642951561950108e-06
+      },
+      "muon.blocks.6.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 1.3869794202037156e-11,
+        "pass": true,
+        "relative_l2": 1.5546526602093545e-06
+      },
+      "muon.blocks.6.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.4988472685217857e-09,
+        "pass": true,
+        "relative_l2": 1.6693556767555811e-06
+      },
+      "muon.blocks.6.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 8.412825991399586e-12,
+        "pass": true,
+        "relative_l2": 1.7325262097121648e-06
+      },
+      "muon.blocks.6.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 2.419255906715989e-10,
+        "pass": true,
+        "relative_l2": 3.130884343048331e-06
+      },
+      "muon.blocks.6.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 3.3905962482094765e-09,
+        "pass": true,
+        "relative_l2": 6.053943780223498e-06
+      },
+      "muon.blocks.6.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 7.741618901491165e-09,
+        "pass": true,
+        "relative_l2": 1.7646181927163306e-06
+      },
+      "muon.blocks.7.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 2.1600499167107046e-11,
+        "pass": true,
+        "relative_l2": 2.185788294728669e-06
+      },
+      "muon.blocks.7.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.7316779121756554e-09,
+        "pass": true,
+        "relative_l2": 1.6980858669405025e-06
+      },
+      "muon.blocks.7.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 1.6257217794191092e-11,
+        "pass": true,
+        "relative_l2": 2.5386615850272844e-06
+      },
+      "muon.blocks.7.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 3.2014213502407074e-10,
+        "pass": true,
+        "relative_l2": 3.3425516088836834e-06
+      },
+      "muon.blocks.7.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 4.001776687800884e-11,
+        "pass": true,
+        "relative_l2": 1.645377980215961e-06
+      },
+      "muon.blocks.7.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.444721758365631e-09,
+        "pass": true,
+        "relative_l2": 5.501022435253547e-06
+      },
+      "muon.blocks.7.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 6.1409082263708115e-09,
+        "pass": true,
+        "relative_l2": 1.8459515616653231e-06
+      }
+    },
+    "parameters": {
+      "blocks.0.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 2.644956111907959e-07,
+        "pass": true,
+        "relative_l2": 1.1816694207984455e-06
+      },
+      "blocks.0.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 7.934868335723877e-07,
+        "pass": true,
+        "relative_l2": 6.749885849242369e-06
+      },
+      "blocks.0.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 2.60770320892334e-07,
+        "pass": true,
+        "relative_l2": 1.131831704538455e-06
+      },
+      "blocks.0.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 9.275972843170166e-07,
+        "pass": true,
+        "relative_l2": 2.028127548708399e-06
+      },
+      "blocks.0.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.7567148208618164e-07,
+        "pass": true,
+        "relative_l2": 8.465161170472483e-07
+      },
+      "blocks.0.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 5.662441253662109e-07,
+        "pass": true,
+        "relative_l2": 4.396725791018257e-06
+      },
+      "blocks.1.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 8.568167686462402e-07,
+        "pass": true,
+        "relative_l2": 1.5867953490382202e-06
+      },
+      "blocks.1.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.084059476852417e-06,
+        "pass": true,
+        "relative_l2": 1.067057081998686e-05
+      },
+      "blocks.1.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 8.828938007354736e-07,
+        "pass": true,
+        "relative_l2": 1.5022190405352344e-06
+      },
+      "blocks.1.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 8.009374141693115e-07,
+        "pass": true,
+        "relative_l2": 1.9210173065215616e-06
+      },
+      "blocks.1.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 6.612390279769897e-08,
+        "pass": true,
+        "relative_l2": 2.4744040142537447e-06
+      },
+      "blocks.1.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 1.2491364032030106e-06,
+        "pass": true,
+        "relative_l2": 1.709409423993908e-06
+      },
+      "blocks.1.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 8.754432201385498e-07,
+        "pass": true,
+        "relative_l2": 4.803148420955528e-06
+      },
+      "blocks.2.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 1.173466444015503e-06,
+        "pass": true,
+        "relative_l2": 1.7189643619576647e-06
+      },
+      "blocks.2.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.1232332326471806e-06,
+        "pass": true,
+        "relative_l2": 1.0771979332075556e-05
+      },
+      "blocks.2.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 9.220093488693237e-07,
+        "pass": true,
+        "relative_l2": 1.6331570233439383e-06
+      },
+      "blocks.2.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 7.655471563339233e-07,
+        "pass": true,
+        "relative_l2": 1.7001964140504984e-06
+      },
+      "blocks.2.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.0228326320648193e-06,
+        "pass": true,
+        "relative_l2": 2.207544685356015e-06
+      },
+      "blocks.2.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.1557713150978088e-06,
+        "pass": true,
+        "relative_l2": 4.854188055543311e-06
+      },
+      "blocks.3.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 9.126961231231689e-07,
+        "pass": true,
+        "relative_l2": 1.4971125142299672e-06
+      },
+      "blocks.3.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 9.443610906600952e-07,
+        "pass": true,
+        "relative_l2": 1.1446682456995157e-05
+      },
+      "blocks.3.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 9.082723408937454e-07,
+        "pass": true,
+        "relative_l2": 1.5054854095249291e-06
+      },
+      "blocks.3.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 7.711350917816162e-07,
+        "pass": true,
+        "relative_l2": 1.5285328039139597e-06
+      },
+      "blocks.3.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 8.707866072654724e-08,
+        "pass": true,
+        "relative_l2": 1.806612293316335e-06
+      },
+      "blocks.3.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.391636371612549e-06,
+        "pass": true,
+        "relative_l2": 2.480056899925772e-06
+      },
+      "blocks.3.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.2330710887908936e-06,
+        "pass": true,
+        "relative_l2": 4.802762666938473e-06
+      },
+      "blocks.4.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 1.0356307029724121e-06,
+        "pass": true,
+        "relative_l2": 1.489874588834253e-06
+      },
+      "blocks.4.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 9.641516953706741e-07,
+        "pass": true,
+        "relative_l2": 1.1249337109665012e-05
+      },
+      "blocks.4.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 8.940696716308594e-07,
+        "pass": true,
+        "relative_l2": 1.4627590130932457e-06
+      },
+      "blocks.4.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 8.344650268554688e-07,
+        "pass": true,
+        "relative_l2": 1.4169506397632204e-06
+      },
+      "blocks.4.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.6561319828033447e-06,
+        "pass": true,
+        "relative_l2": 2.5469321685628203e-06
+      },
+      "blocks.4.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.2945383787155151e-06,
+        "pass": true,
+        "relative_l2": 4.777121904611666e-06
+      },
+      "blocks.5.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 9.629875421524048e-07,
+        "pass": true,
+        "relative_l2": 1.6682696248807274e-06
+      },
+      "blocks.5.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 6.584450602531433e-07,
+        "pass": true,
+        "relative_l2": 1.124389083247722e-05
+      },
+      "blocks.5.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 1.1343508958816528e-06,
+        "pass": true,
+        "relative_l2": 1.6625546676700977e-06
+      },
+      "blocks.5.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 6.51925802230835e-07,
+        "pass": true,
+        "relative_l2": 1.3495736787030509e-06
+      },
+      "blocks.5.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 1.5739351511001587e-07,
+        "pass": true,
+        "relative_l2": 3.667259194537183e-06
+      },
+      "blocks.5.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 3.0137598514556885e-06,
+        "pass": true,
+        "relative_l2": 2.5883344404457895e-06
+      },
+      "blocks.5.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.2693926692008972e-06,
+        "pass": true,
+        "relative_l2": 4.978610455734494e-06
+      },
+      "blocks.6.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 1.7546117305755615e-06,
+        "pass": true,
+        "relative_l2": 1.6057334625291861e-06
+      },
+      "blocks.6.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 7.417984306812286e-07,
+        "pass": true,
+        "relative_l2": 1.0668992709959671e-05
+      },
+      "blocks.6.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 1.1492520570755005e-06,
+        "pass": true,
+        "relative_l2": 1.594428930043759e-06
+      },
+      "blocks.6.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 5.941838026046753e-07,
+        "pass": true,
+        "relative_l2": 1.309634203565406e-06
+      },
+      "blocks.6.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.7976930141448975e-06,
+        "pass": true,
+        "relative_l2": 2.631014520123265e-06
+      },
+      "blocks.6.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.4677643775939941e-06,
+        "pass": true,
+        "relative_l2": 4.8300705876748395e-06
+      },
+      "blocks.7.attn.c_k.weight": {
+        "bit_exact": false,
+        "max_abs": 1.2759119272232056e-06,
+        "pass": true,
+        "relative_l2": 1.5696325352210154e-06
+      },
+      "blocks.7.attn.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 6.502377800643444e-07,
+        "pass": true,
+        "relative_l2": 1.0872971734782808e-05
+      },
+      "blocks.7.attn.c_q.weight": {
+        "bit_exact": false,
+        "max_abs": 1.12876296043396e-06,
+        "pass": true,
+        "relative_l2": 1.620951873446675e-06
+      },
+      "blocks.7.attn.c_v.weight": {
+        "bit_exact": false,
+        "max_abs": 6.92903995513916e-07,
+        "pass": true,
+        "relative_l2": 1.2614181901193518e-06
+      },
+      "blocks.7.attn.ve_gate.weight": {
+        "bit_exact": false,
+        "max_abs": 1.862645149230957e-07,
+        "pass": true,
+        "relative_l2": 4.083369547717479e-06
+      },
+      "blocks.7.mlp.c_fc.weight": {
+        "bit_exact": false,
+        "max_abs": 2.95368954539299e-06,
+        "pass": true,
+        "relative_l2": 2.5940944320492118e-06
+      },
+      "blocks.7.mlp.c_proj.weight": {
+        "bit_exact": false,
+        "max_abs": 1.341104507446289e-06,
+        "pass": true,
+        "relative_l2": 4.772069002582351e-06
+      },
+      "lm_head.weight": {
+        "bit_exact": false,
+        "max_abs": 1.816079020500183e-07,
+        "pass": true,
+        "relative_l2": 2.534134497833234e-07
+      },
+      "resid_lambdas": {
+        "bit_exact": true,
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      "value_embeds.1.weight": {
+        "bit_exact": false,
+        "max_abs": 7.402151823043823e-05,
+        "pass": false,
+        "relative_l2": 2.914308603149704e-06
+      },
+      "value_embeds.3.weight": {
+        "bit_exact": false,
+        "max_abs": 5.3699593991041183e-05,
+        "pass": false,
+        "relative_l2": 2.6142054092493253e-06
+      },
+      "value_embeds.5.weight": {
+        "bit_exact": false,
+        "max_abs": 3.957841545343399e-05,
+        "pass": false,
+        "relative_l2": 2.2462853633117225e-06
+      },
+      "value_embeds.7.weight": {
+        "bit_exact": false,
+        "max_abs": 4.0046870708465576e-05,
+        "pass": false,
+        "relative_l2": 2.359645098593762e-06
+      },
+      "wte.weight": {
+        "bit_exact": false,
+        "max_abs": 0.0006794333457946777,
+        "pass": false,
+        "relative_l2": 7.488767704729774e-07
+      },
+      "x0_lambdas": {
+        "bit_exact": false,
+        "max_abs": 1.4901161193847656e-08,
+        "pass": true,
+        "relative_l2": 6.533265821191255e-08
+      }
+    }
+  },
+  "seed": 101,
+  "step": 10
+}

@@ -1,0 +1,44 @@
+{
+  "algorithm_fidelity": null,
+  "baseline": null,
+  "confidence_intervals": null,
+  "controls": [],
+  "correctness_pass": null,
+  "decision": "INCONCLUSIVE",
+  "experiment": "baseline",
+  "failure_reason": null,
+  "hardware": {
+    "architecture": "applegpu_g15s",
+    "device_name": "Apple M3 Max",
+    "max_buffer_length": 86586540032,
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "resource_limit": 499000
+  },
+  "intervention": {
+    "mlx_active_bytes": 16,
+    "mlx_active_peak_bytes": 6161390580,
+    "mlx_cache_bytes": 1075853884,
+    "rss_peak_bytes": 1614888960,
+    "steps": 10,
+    "wall_seconds": 7.774005542014493
+  },
+  "limitations": [
+    "Original CLI engineering prefix; schedule remains 1000.",
+    "Stop occurs after optimizer checkpoint save; meta file is replaced by experimental event metadata."
+  ],
+  "paired_ratios": null,
+  "profile": "primary",
+  "protocol_version": "1.0",
+  "quality_noninferiority": null,
+  "raw_files": [
+    "steps.csv",
+    "tensors.csv",
+    "events.jsonl",
+    "correctness.json",
+    "environment.json",
+    "manifest.json"
+  ],
+  "repo_sha": "b54b9fc139f455a9a5e60dc9a688ca9dbdb22944",
+  "status": "measured"
+}

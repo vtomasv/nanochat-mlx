@@ -1,0 +1,16 @@
+E3 checkpoint=1000 blocks.7.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.4.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.5.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.6.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.2.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.7.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.3.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.1.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.1.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.0.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.5.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.0.mlp.c_fc.weight: 1.0005 RAW blocks=16/16
+E3 checkpoint=1000 blocks.6.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.4.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.2.mlp.c_proj.weight: 1.0002 RAW blocks=4/4
+E3 checkpoint=1000 blocks.3.mlp.c_fc.weight: 1.0005 RAW blocks=16/16

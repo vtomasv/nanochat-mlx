@@ -1,0 +1,10 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+E3 grammar_direct_cpu prompt 1/8 prefill=0.666s decode=0.688s
+E3 grammar_direct_cpu prompt 2/8 prefill=0.655s decode=0.620s
+E3 grammar_direct_cpu prompt 3/8 prefill=0.663s decode=0.660s
+E3 grammar_direct_cpu prompt 4/8 prefill=0.655s decode=0.521s
+E3 grammar_direct_cpu prompt 5/8 prefill=0.666s decode=0.586s
+E3 grammar_direct_cpu prompt 6/8 prefill=0.658s decode=0.571s
+E3 grammar_direct_cpu prompt 7/8 prefill=0.655s decode=0.694s
+E3 grammar_direct_cpu prompt 8/8 prefill=0.655s decode=0.656s

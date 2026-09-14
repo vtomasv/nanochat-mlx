@@ -1,0 +1,4 @@
+# Preserve scientific artifacts byte for byte so recorded hashes remain valid.
+experiments/navarro/results/** -text
+# Python's CSV writer uses CRLF record terminators.
+experiments/navarro/results/**/*.csv whitespace=cr-at-eol

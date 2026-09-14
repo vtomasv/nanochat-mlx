@@ -1,0 +1,44 @@
+{
+  "algorithm_fidelity": true,
+  "baseline": null,
+  "confidence_intervals": null,
+  "controls": [],
+  "correctness_pass": false,
+  "decision": "INCONCLUSIVE",
+  "experiment": "E3",
+  "failure_reason": null,
+  "hardware": {
+    "architecture": "applegpu_g15s",
+    "device_name": "Apple M3 Max",
+    "max_buffer_length": 86586540032,
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "resource_limit": 499000
+  },
+  "intervention": {
+    "eligible_tensors": 8,
+    "parameters": 36700296,
+    "resident_ratio": 1.0010356903076172,
+    "selected_tensors": 0,
+    "step": 257033
+  },
+  "limitations": [
+    "External depth4 SFT checkpoint, not the preregistered depth8 reference.",
+    "Existing tokenizer has compatible vocabulary size; checkpoint does not record tokenizer hash or full training provenance.",
+    "Representation and teacher-forced model correctness only; no external latency SUCCESS claimed."
+  ],
+  "paired_ratios": null,
+  "profile": "primary",
+  "protocol_version": "1.0",
+  "quality_noninferiority": null,
+  "raw_files": [
+    "steps.csv",
+    "tensors.csv",
+    "events.jsonl",
+    "correctness.json",
+    "environment.json",
+    "manifest.json"
+  ],
+  "repo_sha": "b54b9fc139f455a9a5e60dc9a688ca9dbdb22944",
+  "status": "measured"
+}

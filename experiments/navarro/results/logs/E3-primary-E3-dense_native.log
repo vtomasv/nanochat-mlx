@@ -1,0 +1,10 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+E3 dense_native prompt 1/8 prefill=0.022s decode=0.243s
+E3 dense_native prompt 2/8 prefill=0.008s decode=0.238s
+E3 dense_native prompt 3/8 prefill=0.009s decode=0.237s
+E3 dense_native prompt 4/8 prefill=0.008s decode=0.237s
+E3 dense_native prompt 5/8 prefill=0.008s decode=0.349s
+E3 dense_native prompt 6/8 prefill=0.019s decode=0.258s
+E3 dense_native prompt 7/8 prefill=0.008s decode=0.251s
+E3 dense_native prompt 8/8 prefill=0.011s decode=0.247s

@@ -1,0 +1,47 @@
+{
+  "algorithm_fidelity": true,
+  "baseline": null,
+  "confidence_intervals": null,
+  "controls": [],
+  "correctness_pass": true,
+  "decision": "INCONCLUSIVE",
+  "experiment": "E2",
+  "failure_reason": null,
+  "hardware": {
+    "architecture": "applegpu_g15s",
+    "device_name": "Apple M3 Max",
+    "max_buffer_length": 86586540032,
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "resource_limit": 499000
+  },
+  "intervention": {
+    "eligible_resident_ratio": 1.000418676270379,
+    "eligible_tensors": 60,
+    "encode_seconds": 18.4942875020497,
+    "mlx_active_bytes": 905969664,
+    "mlx_active_peak_bytes": 905969664,
+    "mlx_cache_bytes": 516,
+    "process_tree_rss_peak_bytes": 1349287936,
+    "rss_peak_bytes": 1347256320,
+    "selected_tensors": 0
+  },
+  "limitations": [
+    "Representation screening only; complete-model pilot required for a negative verdict.",
+    "Independent compiled frequency-scan RePair, not author linear-time compressor."
+  ],
+  "paired_ratios": null,
+  "profile": "primary",
+  "protocol_version": "1.0",
+  "quality_noninferiority": null,
+  "raw_files": [
+    "steps.csv",
+    "tensors.csv",
+    "events.jsonl",
+    "correctness.json",
+    "environment.json",
+    "manifest.json"
+  ],
+  "repo_sha": "b54b9fc139f455a9a5e60dc9a688ca9dbdb22944",
+  "status": "measured"
+}
