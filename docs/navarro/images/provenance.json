@@ -1,0 +1,39 @@
+{
+  "generator": "docs/navarro/generate_readme_figures.py",
+  "source_sha256": {
+    "experiments/navarro/results/E1/primary-pilot-native-s101/summary.json": "c662c72480978e35f606f3d2100e92045c3debb716b1b14797922e521dbb5903",
+    "experiments/navarro/results/E1/primary-pilot-tape_dense-s101/summary.json": "155dfde3ab627a6ec6f0f9dc3a16224bd5c0fa86cfd90ead023e4ca4791f27c3",
+    "experiments/navarro/results/E1/primary-pilot-tape_recompute-s101/summary.json": "047c849badbac2b12d1caba9b16040507c8d83db479b07d3d4bff830ad4a3c74",
+    "experiments/navarro/results/E1/primary-pilot-tape_bitmap-s101/summary.json": "aee4a9120b6ecc70186517c2eb6bb0001e7c85e8ea0f22768e28ca199e1da8fc",
+    "experiments/navarro/results/E2/primary-pilot-native-s101/summary.json": "5180a36408c3a98dc07afe8c2d4b6dc4235752ed9b93650b9a4222654c9ac226",
+    "experiments/navarro/results/E2/primary-pilot-staged_raw-s101/summary.json": "7bb677adf6bd03283745e07451c301ae1d2dc9c2b64851c8666f2d6329354360",
+    "experiments/navarro/results/E2/primary-pilot-staged_grammar-s101/summary.json": "8dd54a64057d908289b108b05c6966418461651758a2e70d7032ce9c178633e4",
+    "experiments/navarro/results/E3/primary-E3-dense_native/summary.json": "4bc42062c7abbc413cafef521cc91cf17dec2b9fd0c154a274cc26a35fc6390f",
+    "experiments/navarro/results/E3/primary-E3-compressed_decode_dense/summary.json": "dd0e7ccaac5963c01d06f5aa462dd37dab35c543737e7ddfea92a17ae7e39988",
+    "experiments/navarro/results/E3/primary-E3-grammar_direct_cpu/summary.json": "cd56d87293195e2a2a3c53cc1fcdb4ce17834e067f132f266a5d92d902576a62",
+    "experiments/navarro/results/E1/primary-E1-trained-100/summary.json": "9b8edcd6e1f17c2ed2382cecbe4e50cf075760e0a288a7cf7d2e7ac930455b4e",
+    "experiments/navarro/results/E1/primary-E1-trained-500/summary.json": "49729471d7754778ca872dfee2a5c1760d4e8580ae12e9d1b396f566603284de",
+    "experiments/navarro/results/E1/primary-E1-trained-1000/summary.json": "cf25cd315738b902f96a230aecf6cde7239f18a3da934cd15e5c09de86575f72",
+    "experiments/navarro/results/E2/primary-E2-screen-100/summary.json": "7500e809700577a17b4bd9bfe2d7da8469359e0448302dee727a09384c010d65",
+    "experiments/navarro/results/E2/primary-E2-screen-500/summary.json": "4bc47d20e2005645cea51b31e8a876b886977b7b2f8faf096d304abaf96fa8a7",
+    "experiments/navarro/results/E2/primary-E2-screen-1000/summary.json": "391e83eb330c940992060122efae3bee2f93546860cda00fe5d9066cd718eef8"
+  },
+  "overview_ratios": {
+    "time": [
+      3.226931417273926,
+      27.709254357230133,
+      2.4255062872879396
+    ],
+    "mlx_peak": [
+      0.8604807976831998,
+      0.8529598429022692,
+      0.8183208592677369
+    ],
+    "rss_peak": [
+      1.468061941757835,
+      1.4360059234186588,
+      1.0592894674927458
+    ]
+  },
+  "note": "Figures derived from saved measurements only; no new benchmark or confidence interval."
+}
