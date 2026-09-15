@@ -2,3 +2,6 @@
 experiments/navarro/results/** -text
 # Python's CSV writer uses CRLF record terminators.
 experiments/navarro/results/**/*.csv whitespace=cr-at-eol
+# Follow-up evidence includes verbatim compiler/compressor output.
+experiments/navarro/verification/** -text
+experiments/navarro/verification/**/*.log whitespace=-blank-at-eol

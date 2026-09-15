@@ -1,0 +1,9 @@
+==== Command line:
+ /Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0 /Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-1000.f32.vc 256
+IRePair succeeded
+   Original ints: 65664
+   Number of rules: 0
+   Final sequence length: 65664
+   Estimated output size (bytes): 205201
+   Compression ratio: 100.00%
+==== Done

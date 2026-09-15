@@ -1,0 +1,1395 @@
+{
+  "baseline_commit": "7787ae2dddc32c2cc36f6c33b0afa5427c072dd5",
+  "cases": [
+    {
+      "baseline_over_hybrid_median": 2.42597045080908,
+      "case": "muon.blocks.4.mlp.c_fc.weight-100",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 509,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.002079958008835092,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262750,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "6262fa4e15a49ada7ec389653274fd40724eb9cd2724d086515e53447f949115",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.005028167011914775,
+          0.005003665981348604,
+          0.004882541979895905,
+          0.005029166990425438,
+          0.004876834020251408
+        ],
+        "hybrid": [
+          0.002064375003101304,
+          0.0020625420147553086,
+          0.002020458021434024,
+          0.0020318749884609133,
+          0.0020813330193050206
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.959414135520549,
+      "case": "muon.blocks.4.mlp.c_fc.weight-100",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262060,
+        "encode_seconds": 0.005240875005256385,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467324,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467770,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65515
+      },
+      "input_sha256": "6262fa4e15a49ada7ec389653274fd40724eb9cd2724d086515e53447f949115",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.00513933299225755,
+          0.004944750020513311,
+          0.004965208005160093,
+          0.0053780000016558915,
+          0.004954875010298565
+        ],
+        "hybrid": [
+          0.005075791996205226,
+          0.005068375001428649,
+          0.005175250000320375,
+          0.0054666249779984355,
+          0.005243541992967948
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.5464285362910988,
+      "case": "muon.blocks.4.mlp.c_proj.weight-100",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.008362541993847117,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 1048640,
+        "raw_blocks": 1,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1049086,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "1728a55f5746e79d794bdf869bf44312937349866114b4c895acf3f26497ae4f",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.023265916999662295,
+          0.021545666008023545,
+          0.022180291009135544,
+          0.021593250014120713,
+          0.021664166008122265
+        ],
+        "hybrid": [
+          0.008642332977615297,
+          0.00850766699295491,
+          0.008391832991037518,
+          0.008525958022801206,
+          0.008366791997104883
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9472435695497595,
+      "case": "muon.blocks.4.mlp.c_proj.weight-100",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 1047264,
+        "encode_seconds": 0.023598166997544467,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 1998064,
+        "raw_blocks": 0,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998510,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261816
+      },
+      "input_sha256": "1728a55f5746e79d794bdf869bf44312937349866114b4c895acf3f26497ae4f",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.022933166997972876,
+          0.022356999979820102,
+          0.022493665979709476,
+          0.021419875003630295,
+          0.02197929099202156
+        ],
+        "hybrid": [
+          0.024449040996842086,
+          0.02487645801738836,
+          0.022060500021325424,
+          0.02289024999481626,
+          0.023602166009368375
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.419709922417567,
+      "case": "muon.blocks.4.mlp.c_fc.weight-500",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.0020307920058257878,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "aa4a92a777a7a5a7a76615d354bd3134212cd924b4d214112b4ea5ce4d71a60a",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004976958007318899,
+          0.005047666985774413,
+          0.0048972920048981905,
+          0.004879999993136153,
+          0.004890207987045869
+        ],
+        "hybrid": [
+          0.0020303750061430037,
+          0.0020239169825799763,
+          0.002006458002142608,
+          0.0020229590008966625,
+          0.002031792013440281
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9582523955804761,
+      "case": "muon.blocks.4.mlp.c_fc.weight-500",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262072,
+        "encode_seconds": 0.005209708993788809,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467336,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467782,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65518
+      },
+      "input_sha256": "aa4a92a777a7a5a7a76615d354bd3134212cd924b4d214112b4ea5ce4d71a60a",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.0050312079838477075,
+          0.004900792002445087,
+          0.004953791998559609,
+          0.005007667001336813,
+          0.005029332998674363
+        ],
+        "hybrid": [
+          0.005260333011392504,
+          0.005297416995745152,
+          0.005139249988133088,
+          0.005225833010626957,
+          0.005212000018218532
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.5723322106821236,
+      "case": "muon.blocks.4.mlp.c_proj.weight-500",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.008498791983583942,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 1048640,
+        "raw_blocks": 1,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1049086,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "667116ebc6b0beb2ba017f0d9f2ce9433d86a9c60ef84f0b2a69bb6e4aaf9f3d",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.022178499988513067,
+          0.022464292007498443,
+          0.021721833007177338,
+          0.021576166996965185,
+          0.021863000001758337
+        ],
+        "hybrid": [
+          0.008440999983577058,
+          0.008499290997860953,
+          0.00842429097974673,
+          0.008669583010487258,
+          0.008502540993504226
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9376971378855992,
+      "case": "muon.blocks.4.mlp.c_proj.weight-500",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 1047360,
+        "encode_seconds": 0.02213091601151973,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 1998160,
+        "raw_blocks": 0,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998606,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261840
+      },
+      "input_sha256": "667116ebc6b0beb2ba017f0d9f2ce9433d86a9c60ef84f0b2a69bb6e4aaf9f3d",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.022034749999875203,
+          0.02243612500024028,
+          0.022258666984271258,
+          0.020933624997269362,
+          0.02138087499770336
+        ],
+        "hybrid": [
+          0.02349879199755378,
+          0.024441833986202255,
+          0.023849167017033324,
+          0.02257870798348449,
+          0.022135083010653034
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.458525270997786,
+      "case": "muon.blocks.4.mlp.c_fc.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.0019415830029174685,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "bca1f7f435873da00a84ab275692890ed48dcfc9ee8e48d0cfc5d7832f7231b6",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004874416976235807,
+          0.004945583001244813,
+          0.004858250002143905,
+          0.004845291987294331,
+          0.0048191670211963356
+        ],
+        "hybrid": [
+          0.0020132079953327775,
+          0.0019750840147025883,
+          0.0020084590069018304,
+          0.0019760830036830157,
+          0.0019424589991103858
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9195808754202077,
+      "case": "muon.blocks.4.mlp.c_fc.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262076,
+        "encode_seconds": 0.005305708997184411,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467340,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467786,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65519
+      },
+      "input_sha256": "bca1f7f435873da00a84ab275692890ed48dcfc9ee8e48d0cfc5d7832f7231b6",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.0048802920209709555,
+          0.004824667004868388,
+          0.004856417013797909,
+          0.005051041982369497,
+          0.004995333001716062
+        ],
+        "hybrid": [
+          0.005198375001782551,
+          0.005348790989955887,
+          0.005166999995708466,
+          0.005443708010716364,
+          0.005307082989020273
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.456484142907937,
+      "case": "muon.blocks.4.mlp.c_proj.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.008271291007986292,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 1048640,
+        "raw_blocks": 1,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1049086,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "0e483ff5ffc51392aeed11ebb64645062d4fdbb04771eb89017597b72f80d68b",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.020370707992697135,
+          0.019921041995985433,
+          0.02011445799143985,
+          0.020567208994179964,
+          0.02032454198342748
+        ],
+        "hybrid": [
+          0.00832950000767596,
+          0.008620874985354021,
+          0.008248958009062335,
+          0.008107916975859553,
+          0.00827383398427628
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9287625503469351,
+      "case": "muon.blocks.4.mlp.c_proj.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 1047540,
+        "encode_seconds": 0.02230270899599418,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 1998340,
+        "raw_blocks": 0,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998786,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261885
+      },
+      "input_sha256": "0e483ff5ffc51392aeed11ebb64645062d4fdbb04771eb89017597b72f80d68b",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.02046999998856336,
+          0.020145082991803065,
+          0.020316584006650373,
+          0.020336416986538097,
+          0.020681249996414408
+        ],
+        "hybrid": [
+          0.021628167014569044,
+          0.021896249993005767,
+          0.022418542008381337,
+          0.021814583014929667,
+          0.022306291008135304
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.4349900940199465,
+      "case": "adam.lm_head.weight.v-0",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.001959167013410479,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "d0276afe116c43fa3b5e2662be028d9536af6d0c6372ab65e3a726186e74dafd",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004937624995363876,
+          0.0049113749992102385,
+          0.004904708010144532,
+          0.004945666994899511,
+          0.00483845901908353
+        ],
+        "hybrid": [
+          0.0020233749819453806,
+          0.002030583011219278,
+          0.0020169999916106462,
+          0.0019728330080397427,
+          0.0019602909742388874
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9284990600072005,
+      "case": "adam.lm_head.weight.v-0",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262080,
+        "encode_seconds": 0.005140166002092883,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467344,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467790,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65520
+      },
+      "input_sha256": "d0276afe116c43fa3b5e2662be028d9536af6d0c6372ab65e3a726186e74dafd",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004901917011011392,
+          0.004881917004240677,
+          0.004887541988864541,
+          0.0048639999877195805,
+          0.004945666994899511
+        ],
+        "hybrid": [
+          0.0055259999935515225,
+          0.005283375008730218,
+          0.005193791992496699,
+          0.0052639170025940984,
+          0.005141333007486537
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.397262268600916,
+      "case": "adam.lm_head.weight.v-16384",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.0019924579828511924,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "d5038128d2ca220b6a7528c538a48275e45c863450b7c9dac696172ee139e0e6",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004835666972212493,
+          0.004914124991046265,
+          0.004763542005093768,
+          0.004781541007105261,
+          0.004774750006617978
+        ],
+        "hybrid": [
+          0.0020385000098031014,
+          0.0019921669736504555,
+          0.0019945840176660568,
+          0.002007083996431902,
+          0.001993290992686525
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9664128262088588,
+      "case": "adam.lm_head.weight.v-16384",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262008,
+        "encode_seconds": 0.0050366659997962415,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467272,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467718,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65502
+      },
+      "input_sha256": "d5038128d2ca220b6a7528c538a48275e45c863450b7c9dac696172ee139e0e6",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004998165997676551,
+          0.004868666990660131,
+          0.0047727499913889915,
+          0.004993041977286339,
+          0.004856415995163843
+        ],
+        "hybrid": [
+          0.0051520830020308495,
+          0.005126583011588082,
+          0.0050192079797852784,
+          0.005013542016968131,
+          0.005037874972913414
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.445302712263392,
+      "case": "adam.lm_head.weight.v-32640",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.001968791999388486,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "b1e3f58f8551675c6dc357ec3740ee83ef13c040e2b9b5eb0380abf99abb56a1",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004926749999867752,
+          0.0049048750079236925,
+          0.004843125003390014,
+          0.00475841699517332,
+          0.004793583007995039
+        ],
+        "hybrid": [
+          0.002017082995735109,
+          0.0020003340032417327,
+          0.0019805830088444054,
+          0.0019732080108951777,
+          0.001969583972822875
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9562182760535741,
+      "case": "adam.lm_head.weight.v-32640",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262084,
+        "encode_seconds": 0.005104875017423183,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467348,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467794,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65521
+      },
+      "input_sha256": "b1e3f58f8551675c6dc357ec3740ee83ef13c040e2b9b5eb0380abf99abb56a1",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004839500004891306,
+          0.00483766698744148,
+          0.0049157500034198165,
+          0.004808750003576279,
+          0.004828667006222531
+        ],
+        "hybrid": [
+          0.005054832989117131,
+          0.00505916599649936,
+          0.005046625010436401,
+          0.005061000003479421,
+          0.005105999996885657
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 1.7147061992568988,
+      "case": "adam.wte.weight.m-0",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.0019763749733101577,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "995e46012ea89873bfab7194d3a938ae3492a88ee184d92062933d41a16b67b1",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.0034577920159790665,
+          0.00342566697509028,
+          0.0033378340012859553,
+          0.0033374159829691052,
+          0.0033968329953495413
+        ],
+        "hybrid": [
+          0.002018250001128763,
+          0.002009457995882258,
+          0.0019810000085271895,
+          0.0019754590175580233,
+          0.001977167004952207
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9842317233503866,
+      "case": "adam.wte.weight.m-0",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 194512,
+        "encode_seconds": 0.0036888330068904907,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 346976,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 347422,
+        "rules": 0,
+        "symbols": 48768,
+        "values": 48628
+      },
+      "input_sha256": "995e46012ea89873bfab7194d3a938ae3492a88ee184d92062933d41a16b67b1",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.0034751250059343874,
+          0.0034459999878890812,
+          0.003372999985003844,
+          0.0033896249951794744,
+          0.0035712090029846877
+        ],
+        "hybrid": [
+          0.0035012080043088645,
+          0.0034934169962070882,
+          0.0035065420088358223,
+          0.003478875005384907,
+          0.0036907919857185334
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.513859206696179,
+      "case": "adam.wte.weight.m-16384",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.0020977079984731972,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "7cd0e1763e00e1bafb5cc2960f5c07cb15dd969a2d99b373f742387d957bbb11",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.005237417004536837,
+          0.005366291006794199,
+          0.005211749987211078,
+          0.0054134170059114695,
+          0.005125416006194428
+        ],
+        "hybrid": [
+          0.002079375000903383,
+          0.002083416999084875,
+          0.002084291016217321,
+          0.0020795000018551946,
+          0.0021001249842811376
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9123748185408121,
+      "case": "adam.wte.weight.m-16384",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 252164,
+        "encode_seconds": 0.005819999991217628,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 449700,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 450146,
+        "rules": 0,
+        "symbols": 63191,
+        "values": 63041
+      },
+      "input_sha256": "7cd0e1763e00e1bafb5cc2960f5c07cb15dd969a2d99b373f742387d957bbb11",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.005444292008178309,
+          0.005326874990714714,
+          0.005591167020611465,
+          0.005221208994043991,
+          0.0055021670123096555
+        ],
+        "hybrid": [
+          0.00572741701034829,
+          0.006053124991012737,
+          0.005967166012851521,
+          0.006259916990529746,
+          0.005823790997965261
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.278945939340902,
+      "case": "adam.wte.weight.m-32640",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.00208808301249519,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "9606e7b692b984fa5b0fe370becf3d1849fe12f7f6c9297caed0a090dea7f1f7",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004765749996295199,
+          0.004678042023442686,
+          0.00483150000218302,
+          0.004661499988287687,
+          0.005025374994147569
+        ],
+        "hybrid": [
+          0.0020987500029150397,
+          0.002150417014490813,
+          0.0020636660046875477,
+          0.0020504999847617,
+          0.0020912080071866512
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.8994688675438512,
+      "case": "adam.wte.weight.m-32640",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 231384,
+        "encode_seconds": 0.005314542009728029,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 412640,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 413086,
+        "rules": 0,
+        "symbols": 57979,
+        "values": 57846
+      },
+      "input_sha256": "9606e7b692b984fa5b0fe370becf3d1849fe12f7f6c9297caed0a090dea7f1f7",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.005002209014492109,
+          0.004852792015299201,
+          0.005151166988071054,
+          0.004977249976946041,
+          0.005035417008912191
+        ],
+        "hybrid": [
+          0.005672791012329981,
+          0.005673290987033397,
+          0.005501083011040464,
+          0.005561291996855289,
+          0.005317083006957546
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.4586270764003952,
+      "case": "blocks.4.mlp.c_fc.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.002062040992313996,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "d2bc1403f0e79bc6af92f2ef5e22f0dc0a45ba68d0d65a5d20c47e52c68c2e8d",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.005448417010484263,
+          0.005234792013652623,
+          0.005137750005815178,
+          0.0051390419830568135,
+          0.005054749984992668
+        ],
+        "hybrid": [
+          0.0021204999939072877,
+          0.002132708003045991,
+          0.00206862497725524,
+          0.002090207999572158,
+          0.0020640419970732182
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9068321921784477,
+      "case": "blocks.4.mlp.c_fc.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262032,
+        "encode_seconds": 0.005590916989604011,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467296,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467742,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65508
+      },
+      "input_sha256": "d2bc1403f0e79bc6af92f2ef5e22f0dc0a45ba68d0d65a5d20c47e52c68c2e8d",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.005425624985946342,
+          0.005189208983210847,
+          0.005392582999775186,
+          0.005230832990491763,
+          0.005345209006918594
+        ],
+        "hybrid": [
+          0.005697084008716047,
+          0.005946458986727521,
+          0.005894375004572794,
+          0.0059697499964386225,
+          0.00559379201149568
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.923104880168989,
+      "case": "blocks.4.mlp.c_proj.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.008875415980583057,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 1048640,
+        "raw_blocks": 1,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1049086,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "cbdac97e49401eb11b150c5b3e640cb187098608b3a85b2c6b2162b0eeeeb727",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.027314708015182987,
+          0.026136667001992464,
+          0.02856037497986108,
+          0.028332582995062694,
+          0.026686833007261157
+        ],
+        "hybrid": [
+          0.009344416001113132,
+          0.010029458004282787,
+          0.00909083298756741,
+          0.01005870898370631,
+          0.008879790984792635
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9414278466323165,
+      "case": "blocks.4.mlp.c_proj.weight-1000",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 1047088,
+        "encode_seconds": 0.02329129201825708,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 1997888,
+        "raw_blocks": 0,
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998334,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261772
+      },
+      "input_sha256": "cbdac97e49401eb11b150c5b3e640cb187098608b3a85b2c6b2162b0eeeeb727",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.02392083400627598,
+          0.021796625020215288,
+          0.02216458399198018,
+          0.02180349998525344,
+          0.022031333995983005
+        ],
+        "hybrid": [
+          0.02820079098455608,
+          0.025223500007996336,
+          0.02340204198844731,
+          0.023080832994310185,
+          0.0232950420177076
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 1.639840835425734,
+      "case": "synthetic-repeated",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 12,
+        "encode_seconds": 0.022734416997991502,
+        "header_bytes": 64,
+        "height": 12,
+        "mode": "GRAMMAR",
+        "payload_bytes": 1532,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 1978,
+        "rules": 399,
+        "symbols": 256,
+        "values": 3
+      },
+      "input_sha256": "b403d943643e5e9cfe2a94d55fdbb23bca23c07b177b79827fde00d65463ee95",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.03780970801017247,
+          0.037532417016336694,
+          0.03728704201057553,
+          0.03699187500751577,
+          0.03716595901641995
+        ],
+        "hybrid": [
+          0.02270029200008139,
+          0.022963249997701496,
+          0.02272958299727179,
+          0.02282779201050289,
+          0.022738208004739136
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 1.6345734255131736,
+      "case": "synthetic-repeated",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 12,
+        "encode_seconds": 0.02259633399080485,
+        "header_bytes": 64,
+        "height": 12,
+        "mode": "GRAMMAR",
+        "payload_bytes": 1532,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 1978,
+        "rules": 399,
+        "symbols": 256,
+        "values": 3
+      },
+      "input_sha256": "b403d943643e5e9cfe2a94d55fdbb23bca23c07b177b79827fde00d65463ee95",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.0370175419957377,
+          0.03703754098387435,
+          0.03713008400518447,
+          0.03715466699213721,
+          0.03731237500323914
+        ],
+        "hybrid": [
+          0.022715458006132394,
+          0.023000999994110316,
+          0.022698500019032508,
+          0.022896666981978342,
+          0.022599083022214472
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    },
+    {
+      "baseline_over_hybrid_median": 2.4112484508183987,
+      "case": "synthetic-random",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 0,
+        "encode_seconds": 0.0019742499862331897,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "RAW",
+        "payload_bytes": 262208,
+        "raw_blocks": 1,
+        "raw_bytes": 262144,
+        "resident_bytes": 262654,
+        "rules": 0,
+        "symbols": 0,
+        "values": 0
+      },
+      "input_sha256": "ba6a95f4e1dd677dd031a511cdef046706e1d5b1ced150822c23ee1d913c22d8",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.004846916999667883,
+          0.004792125022504479,
+          0.004783250013133511,
+          0.0048647919902578,
+          0.0047980829840525985
+        ],
+        "hybrid": [
+          0.0020187500049360096,
+          0.0019898749887943268,
+          0.001975249993847683,
+          0.0019985419930890203,
+          0.001975249993847683
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "adaptive"
+    },
+    {
+      "baseline_over_hybrid_median": 0.9771528622548299,
+      "case": "synthetic-random",
+      "hybrid_accounting": {
+        "blocks": 1,
+        "container_overhead_bytes": 413,
+        "dictionary_bytes": 262020,
+        "encode_seconds": 0.004998666001483798,
+        "header_bytes": 64,
+        "height": 0,
+        "mode": "GRAMMAR",
+        "payload_bytes": 467284,
+        "raw_blocks": 0,
+        "raw_bytes": 262144,
+        "resident_bytes": 467730,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65505
+      },
+      "input_sha256": "ba6a95f4e1dd677dd031a511cdef046706e1d5b1ced150822c23ee1d913c22d8",
+      "payload_and_products_identical": true,
+      "seconds": {
+        "baseline": [
+          0.00485733401728794,
+          0.004891374992439523,
+          0.004844250011956319,
+          0.004886375012574717,
+          0.004947958019329235
+        ],
+        "hybrid": [
+          0.004935750010190532,
+          0.005047666985774413,
+          0.004918916005408391,
+          0.00511450000340119,
+          0.005000624980311841
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "variant": "re_iv"
+    }
+  ],
+  "command": [
+    "/Users/tomasvera/dev/nanochat-mlx/.venv/bin/python3",
+    "-m",
+    "scripts.navarro_hybrid_benchmark",
+    "codec"
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "hybrid_source_sha256": "3216acc40ce44a8150163176a05ff9a112bef93ee92586b7d234f9f172cdd605",
+  "numpy": "2.5.3",
+  "platform": "macOS-26.7-arm64-arm-64bit",
+  "repo_head": "7787ae2dddc32c2cc36f6c33b0afa5427c072dd5",
+  "scope": "14 trained 128-row blocks + 2 synthetic fixtures; five paired in-memory repetitions after warmup; no confidence interval",
+  "script_sha256": "fb014b84841e3bcbc2d134fe5d5abfa3579e1b261bb868a78e2a2ba05aa10484",
+  "source_snapshot_sha256": "662e3cd52a9c67676b8f085798c36116a47ab00a9fd4181e0dc8ade65531ee59"
+}

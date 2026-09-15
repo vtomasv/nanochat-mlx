@@ -8,6 +8,7 @@
 #include <unordered_map>
 #include <vector>
 #include <limits>
+#include <queue>
 using U=uint32_t; using Q=uint64_t; using Bytes=std::vector<uint8_t>;
 struct Header { U magic,version,rows,cols,nv,nr,nc,base,width,raw,height,reserved[5]; };
 static_assert(sizeof(Header)==64);
@@ -46,9 +47,101 @@ static Bytes raw(const U*p,U rows,U cols){
     Header h{};h.magic=MAGIC;h.version=1;h.rows=rows;h.cols=cols;h.raw=1;h.width=32;
     Bytes b(64+size_t(rows)*cols*4);memcpy(b.data(),&h,64);memcpy(b.data()+64,p,b.size()-64);return b;
 }
+// Independent incremental RePair: live linked positions, occurrence lists and
+// a lazy frequency heap. Preserve the v1 pair tie-break and left-to-right order.
+// No author source is incorporated; the wire format and FP32 evaluator stay v1.
+static void repair(std::vector<U>&seq,U base,std::vector<U>&rules,U&maxheight){
+    struct Pair { size_t count=0; std::vector<size_t> positions; };
+    struct Candidate {
+        size_t count; Q key;
+        bool operator<(const Candidate&other)const{
+            return count!=other.count?count<other.count:key>other.key;
+        }
+    };
+    const size_t end=seq.size();
+    // Retain the inexpensive v1 frequency pass for inputs with no repeated
+    // pair. Only allocate linked positions and occurrence state when useful.
+    std::unordered_map<Q,U> initial;
+    bool repeated=false;
+    for(size_t i=1;i<end;++i)if(seq[i-1]&&seq[i]){
+        if(++initial[(Q(seq[i-1])<<32)|seq[i]]==2)repeated=true;
+    }
+    if(!repeated)return;
+    std::vector<size_t> prev(end),next(end);
+    std::unordered_map<Q,Pair> pairs;
+    std::priority_queue<Candidate> heap;
+    std::vector<U> heights;
+    auto key=[&](size_t i){return (Q(seq[i])<<32)|seq[next[i]];};
+    auto edge=[&](size_t i){return i<end&&next[i]<end&&seq[i]&&seq[next[i]];};
+    for(size_t i=0;i<end;++i){prev[i]=i?i-1:end;next[i]=i+1;}
+    for(const auto&kv:initial){
+        pairs[kv.first].count=kv.second;
+        if(kv.second>1)heap.push({kv.second,kv.first});
+    }
+    initial.clear();initial.rehash(0);
+    // Existing pairs can only lose occurrences; every new pair contains the
+    // newly assigned rule ID. Initial singleton occurrence lists are unnecessary.
+    for(size_t i=0;i<end;++i)if(edge(i)){
+        auto&p=pairs.at(key(i));if(p.count>1)p.positions.push_back(i);
+    }
+    auto remove=[&](size_t i){
+        if(!edge(i))return;
+        Q k=key(i);auto it=pairs.find(k);
+        if(it==pairs.end()||!it->second.count)throw std::runtime_error("pair accounting");
+        if(--it->second.count==0)pairs.erase(it);
+        else if(it->second.count>1)heap.push({it->second.count,k});
+    };
+    auto add=[&](size_t i){
+        if(!edge(i))return;
+        Q k=key(i);auto&p=pairs[k];++p.count;p.positions.push_back(i);
+        if(p.count>1)heap.push({p.count,k});
+    };
+    while(!heap.empty()){
+        auto best=heap.top();heap.pop();auto it=pairs.find(best.key);
+        if(it==pairs.end()||it->second.count!=best.count)continue;
+        if(Q(base)+rules.size()/2>=std::numeric_limits<U>::max())throw std::overflow_error("rule ID");
+        U a=U(best.key>>32),b=U(best.key),id=base+U(rules.size()/2);
+        rules.push_back(a);rules.push_back(b);
+        U ht=1+std::max(a<base?0:heights[a-base],b<base?0:heights[b-base]);
+        heights.push_back(ht);maxheight=std::max(maxheight,ht);
+        auto positions=std::move(it->second.positions);
+        std::sort(positions.begin(),positions.end());
+        for(size_t i:positions){
+            if(!edge(i)||key(i)!=best.key)continue;
+            size_t j=next[i],left=prev[i],right=next[j];
+            remove(left);remove(i);remove(j);
+            seq[i]=id;seq[j]=0;next[i]=right;next[j]=end;
+            if(right<end)prev[right]=i;
+            add(left);add(i);
+        }
+    }
+    size_t out=0;
+    for(size_t i=0;i<end;i=next[i])seq[out++]=seq[i];
+    seq.resize(out);
+}
 static Bytes encode(const U*p,U rows,U cols,int mode){
     if(mode==0)return raw(p,rows,cols);
-    std::unordered_map<U,U> dict; std::vector<U> vals,seq,rules,heights;
+    size_t cutoff=std::numeric_limits<size_t>::max();
+    if(mode==-1){
+        const size_t cells=size_t(rows)*cols;
+        // With d distinct values in at most N cells, at least max(0,2d-N)
+        // values occur once. Their terminals cannot belong to any repeated
+        // pair/rule, so each must remain in C. This lower bound also includes
+        // the dictionary and header, but omits all other symbols and rules.
+        auto impossible=[&](size_t d){
+            Q terminal_base=1+Q(d)*cols;
+            if(terminal_base>=std::numeric_limits<U>::max())return true;
+            size_t singles=d>cells/2?2*d-cells:0;
+            return 64+d*4+packed_size(singles,width(U(terminal_base)))>.95*(cells*4);
+        };
+        // The bound is monotone in d. Compute its cutoff once per block;
+        // construction then needs only a cheap distinct-count comparison.
+        size_t lo=0,hi=cells;
+        while(lo<hi){size_t mid=lo+(hi-lo)/2;if(impossible(mid))hi=mid;else lo=mid+1;}
+        cutoff=lo;
+        if(cutoff==0)return raw(p,rows,cols);
+    }
+    std::unordered_map<U,U> dict; std::vector<U> vals,seq,rules;
     for(U i=0;i<rows;++i){
         for(U j=0;j<cols;++j){
             U bits=p[size_t(i)*cols+j];
@@ -56,6 +149,7 @@ static Bytes encode(const U*p,U rows,U cols,int mode){
             // Preserve -0 and every nonfinite pattern with explicit RAW fallback.
             if(bits==0x80000000U||(bits&0x7f800000U)==0x7f800000U)return raw(p,rows,cols);
             auto entry=dict.emplace(bits,U(vals.size()));if(entry.second) vals.push_back(bits);
+            if(vals.size()>=cutoff)return raw(p,rows,cols);
             Q symbol=1+Q(entry.first->second)*cols+j;
             if(symbol>=std::numeric_limits<U>::max())return raw(p,rows,cols);
             seq.push_back(U(symbol));
@@ -65,22 +159,7 @@ static Bytes encode(const U*p,U rows,U cols,int mode){
     Q base64=1+Q(vals.size())*cols;
     if(base64>=std::numeric_limits<U>::max())return raw(p,rows,cols);
     U base=U(base64), maxheight=0;
-    // Exact most-frequent adjacent-pair substitution; deterministic tie by symbol pair.
-    // This frequency-scan implementation is compiled, but not the linear-time author implementation.
-    while(true){
-        std::unordered_map<Q,U> freq;
-        for(size_t i=1;i<seq.size();++i)if(seq[i-1]&&seq[i])++freq[(Q(seq[i-1])<<32)|seq[i]];
-        Q best=0;U count=1;
-        for(auto &kv:freq)if(kv.second>count||(kv.second==count&&count>1&&kv.first<best)){best=kv.first;count=kv.second;}
-        if(count<2)break;
-        U a=U(best>>32),b=U(best), id=base+U(rules.size()/2);
-        if(Q(base)+rules.size()/2>=std::numeric_limits<U>::max())return raw(p,rows,cols);
-        rules.push_back(a);rules.push_back(b);
-        U ht=1+std::max(a<base?0:heights[a-base],b<base?0:heights[b-base]);heights.push_back(ht);maxheight=std::max(maxheight,ht);
-        size_t out=0;
-        for(size_t i=0;i<seq.size();++i){if(i+1<seq.size()&&seq[i]==a&&seq[i+1]==b){seq[out++]=id;++i;}else seq[out++]=seq[i];}
-        seq.resize(out);
-    }
+    try{repair(seq,base,rules,maxheight);}catch(const std::overflow_error&){return raw(p,rows,cols);}
     U maxid=base+(rules.empty()?0:U(rules.size()/2)-1),w=width(maxid);
     auto build=[&](U bits){
         Header h{};h.magic=MAGIC;h.version=1;h.rows=rows;h.cols=cols;h.nv=U(vals.size());h.nr=U(rules.size()/2);h.nc=U(seq.size());h.base=base;h.width=bits;h.height=maxheight;
@@ -94,7 +173,7 @@ static Bytes encode(const U*p,U rows,U cols,int mode){
         size_t fixed=64+vals.size()*4+packed_size(rules.size(),32)+packed_size(seq.size(),32);
         size_t packed=64+vals.size()*4+packed_size(rules.size(),w)+packed_size(seq.size(),w);
         // Exact physical sizes decide representation before writing unused streams.
-        // Dictionary and RePair construction were still performed and are timed.
+        // Blocks not rejected by the dictionary bound reach this final decision.
         if(std::min(fixed,packed)>.95*(size_t(rows)*cols*4))return raw(p,rows,cols);
         return build(fixed<=packed?32:w);
     }

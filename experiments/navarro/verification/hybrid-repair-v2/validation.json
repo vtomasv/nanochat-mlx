@@ -1,0 +1,21 @@
+{
+  "original_campaign_artifact_sets_verified": 51,
+  "junit": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "1",
+    "tests": "119",
+    "time": "9.846",
+    "timestamp": "2026-09-14T22:35:01.321325-03:00",
+    "hostname": "MacBook-Pro-de-Tomas.local"
+  },
+  "native_source_sha256": "dbb3607498817fe8e718cd394631ac8854e29b4120faada6faefcd9c35f4f53b",
+  "test_file_sha256": "38eeddde2811ebbbc4ab41a07d370db26c1edc33f5d2fb889e1624674cbf6d51",
+  "codec_identical_cases": 32,
+  "inference_identical_prompts": 8,
+  "training_parameter_comparison": "Some embedding entries fail strict elementwise tolerance, including native/native repeat; see comparison.json and training-reproducibility.json. No threshold changed.",
+  "training_optimizer_comparison": "All 76 state tensors/counters pass tolerance against each control; long trajectories are not bit-identical.",
+  "local_markdown_links": "pass",
+  "source_snapshot_and_checkpoint_checksums": "pass"
+}

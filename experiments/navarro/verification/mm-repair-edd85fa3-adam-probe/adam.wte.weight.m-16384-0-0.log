@@ -1,0 +1,6 @@
+Block size: 128
+Elapsed time: 0 secs
+Number of stored values: 63063   Stored ratio: 0.9623
+63041 distinct values in .[if]val file (nonzeros in crsv format) 
+Largest codeword: 32276992   Bits x codeword: 25
+==== Done

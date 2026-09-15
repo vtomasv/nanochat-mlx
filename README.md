@@ -6,7 +6,7 @@ Este proyecto parte del port a MLX de [nanochat, de Andrej Karpathy](https://git
 
 La primera campaña implementó y midió tres adaptaciones de trabajos con Gonzalo Navarro como coautor. **Ninguna alcanzó una mejora global bajo los criterios del protocolo.** E1 logró comprimir activaciones y reducir el pico de memoria de MLX, pero aumentó el tiempo y el RSS. E2 y E3 no encontraron suficiente repetición en los tensores entrenados. Estos resultados delimitan lo que funciona en esta configuración y dejan una base medible para futuras investigaciones.
 
-**Lectura rápida:** [resultados](#resultados) · [metodología](#metodologia) · [E1: activaciones](#e1) · [E2: optimizador](#e2) · [E3: inferencia](#e3) · [alcance y límites](#alcance) · [reproducción](#reproduccion) · [uso del chatbot](#uso)
+**Lectura rápida:** [resultados](#resultados) · [mejora híbrida posterior](#hibrido) · [metodología](#metodologia) · [E1: activaciones](#e1) · [E2: optimizador](#e2) · [E3: inferencia](#e3) · [alcance y límites](#alcance) · [reproducción](#reproduccion) · [uso del chatbot](#uso)
 
 <a id="resultados"></a>
 ## Resultados de la campaña
@@ -26,6 +26,29 @@ Mediciones del **14 de septiembre de 2026**, en **Apple M3 Max, 128 GiB de memor
 **Verificación:** 97 tests aprobados y uno omitido por una dependencia opcional de conversión Hugging Face; ningún test Navarro omitido. Se verificaron los hashes de **51 registros de corridas y diagnósticos**. El checkpoint SFT externo presenta un fallo de tolerancia adicional, explicado en [E3](#e3-externo).
 
 La evidencia está disponible en el [informe completo antes/después](experiments/navarro/results/informe_final.md), el [índice de corridas](experiments/navarro/results/report.md), el [JUnit](experiments/navarro/results/correctness-junit.xml) y la [auditoría](experiments/navarro/results/audit.json).
+
+<a id="hibrido"></a>
+## Mejora posterior: mezcla de métodos RePair
+
+Tras revisar [MM RePair](https://gitlab.com/manzai/mm-repair), combinamos nuestro formato compacto con un constructor incremental propio y un descarte temprano exacto. **La mezcla redujo el tiempo de entrenamiento frente a nuestro codec anterior de 21,32 a 9,71 s/paso: 2,20× de velocidad, o 54,44 % menos tiempo.** Todavía no supera a MLX nativo.
+
+La idea es evitar trabajo que no puede producir ahorro. Si el diccionario y los terminales únicos inevitables ya exceden el 95 % del bloque denso, se guarda RAW inmediatamente. Si hay pares repetidos, se actualizan solo sus vecindades, conservando exactamente las mismas reglas, formatos y aritmética FP32. El [informe didáctico](docs/navarro/hybrid-repair.md) explica la cota matemática, la implementación y las pruebas.
+
+![Resultados de la mezcla: entrenamiento anterior 21,32 s, híbrido 9,71 s, RAW 1,44 s y nativo 0,61 s; decode anterior 4,58 ms, híbrido 4,30 ms y nativo 2,03 ms.](docs/navarro/images/hybrid-repair.png)
+
+Estas son mediciones nuevas: **diez actualizaciones desde el checkpoint 100, semilla 17**, con los mismos lotes, calentamiento descartado y un proceso por brazo. No se mezclan con los pilotos anteriores de 100 pasos y semilla 101.
+
+| Comprobación | Resultado |
+|---|---|
+| Codec: 14 bloques entrenados y 2 sintéticos, dos modos cada uno | **32 formatos idénticos byte por byte** frente al codec anterior; reconstrucción y productos exactos |
+| Compresión adaptativa de los 14 bloques entrenados | **1,71×–2,82×** más rápida; siguen eligiendo RAW |
+| Estados tras diez actualizaciones | Los 76 tensores/counters del optimizador cumplen la tolerancia frente a los controles |
+| Inferencia: 8 prompts de 512 tokens, 128 tokens de decode por prompt | Logits anterior/híbrido **idénticos bit a bit**; tolerancia frente a MLX nativo aprobada |
+| Suite completa final | **118 pruebas aprobadas, una omitida** por una dependencia opcional; ningún test Navarro omitido |
+
+**Alcance:** el híbrido aún tarda 15,84× más que el nativo en esta ventana y no añade compresión ni ahorro de memoria. La pequeña diferencia de decode frente al codec anterior no demuestra una aceleración del operador. Algunos embeddings finales no cumplen la comparación estricta entre procesos; repetir el nativo también reproduce esa variación. No se ampliaron tolerancias ni se declara determinismo de trayectoria o equivalencia confirmatoria de calidad. Los errores por tensor, las NLL, las mediciones de memoria y los límites están en el [informe completo de la mezcla](docs/navarro/hybrid-repair.md).
+
+**Evidencia:** [comparación final](experiments/navarro/verification/hybrid-repair-v2/comparison.json) · [codec](experiments/navarro/verification/hybrid-repair-v2/codec.json) · [inferencia](experiments/navarro/verification/hybrid-repair-v2/inference.json) · [repetición nativa](experiments/navarro/verification/hybrid-repair-v2/training-reproducibility.json) · [JUnit](experiments/navarro/verification/hybrid-repair-v2/correctness-junit.xml). La mezcla está integrada en el codec experimental; los resultados y veredictos originales de E1/E2/E3 conservan sus fuentes archivadas.
 
 <a id="metodologia"></a>
 ## Cómo se llevó adelante el estudio

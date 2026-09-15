@@ -1,0 +1,574 @@
+{
+  "upstream_commit": "edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f",
+  "repo_sha": "7787ae2dddc32c2cc36f6c33b0afa5427c072dd5",
+  "scope": "Explicit 128-row slices recorded per case; 3 sequential construction repetitions; no training/inference benchmark.",
+  "timing_caveat": "Author path includes two CLI process launches and intermediate file IO; our path is an in-memory library call. Diagnostic ratios are not integrated speedups.",
+  "upstream_sources_sha256": {
+    "bin2csrv.cpp": "b315119fe171c237ab3e7732868807874d31864b9b130c903dfd0c5c97693913",
+    "LICENSE.md": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bin2csv.cpp": "cf629d7d365643bbf8b7fd9e3284cb9c0dc4294282ab4bcb91d59e2839dec245",
+    "rematrix.hpp": "6b932ae1052d0d9e21abffd60552a90e31885d86dd274cf58b5d79b790606ccd",
+    "Readme.md": "a95c4cb93865903b1cdd96ae1ebdc998cd8639ee61b7fee826399ac5be77954c",
+    "rematrix.h": "72addb61ec3a080ca8872f2039d6abc2619e9747d7190deee88e9b8622533570",
+    "csvmat2csrv.cpp": "8ecd900f3fa280db0dd0955c887b383f54db953b6db498fab2063d8f87701953",
+    "csrmatrix.h": "2a85a779fb0720d70f3ab38b6cd984890a145c687f95e84d1688b8c408f78cf3",
+    "remm.c": "585bceaf25133163cb432cc8ec1886373cc6865f87faa80513bd3aafa008c5cb",
+    "vector.h": "ca77727551800ac18289e4822ddaba7dc7d46773fed885f338fdda757bffc43d",
+    "ans/vbyte.hpp": "bfc4ba4477c81fcd5d883c5d6232eacecc1178d44cd014b6332c3088bdf12e36",
+    "ans/bits.hpp": "a3b4d3dc4f9bda05c783694befff73475bbf73bf06aaf9f60644b1dbcea2238b",
+    "ans/ans_byte.hpp": "32b905e61c82071914b7a10e991995f2a8a3c284da0a0013f73baad39b79ec99",
+    "ans/cutil.hpp": "6405b2d13edbd32d66b3a28947e03ef1c5f4f251cb73060d7cef974eb259b595",
+    "ans/ansfold.cpp": "68bf4a5e74ef1534434ba15977e997a09b027b3270af78df17113cb7b552fc61",
+    "ans/ans_util.hpp": "0db3b1526cd41077ccef727a43b1828056edc28a84c1fde64e95753906a30ec6",
+    "ans/decode.hpp": "ac447fa1f54c950b4b368baadc403d813a7f0c3b8fe186f8690ac2e7e64dd58d",
+    "ans/stats.hpp": "7d291c9d25d1a4cad21b6bab492be0846f107e4dba87e7a54102dca2846ca219",
+    "ans/constants.hpp": "aa09288fcfc0ecc2f63fcec28e5506cffd83947513813d2d74f99ae9a18e43a3",
+    "ans/decode.cpp": "63783a271e4f1f6eb8a8cba5aa541bf2d46268db601b5c89ceb99f9399e46e0f",
+    "ans/encode.cpp": "39852d5911268acdbbd663852344812a884edcfabd3ced87624408f08809a400",
+    "ans/methods.hpp": "71424f4e1e4e4da328eca6381429fa3c4ac54817430d8b8bb98c5ea7b916b635",
+    "ans/util.hpp": "cdecbb116caed1bc3b24e613482dd157955b9270e735785059ab8dd4d97cb437",
+    "ans/ans_reorder_fold.hpp": "bb480a234120f0943911584f1a08df1ec067a790a78b45b8bec2ae1359ccf7f7",
+    "ans/ans_fold.hpp": "f1146bad130b3a7b8e00eb742a72cc9990016d1ff8b4eca370526d4d005e20d3",
+    "ans/interp.hpp": "a2837891bef5958bbaec7fed0c66926051e9c1f34e1ad1cc9234e04b2adfa6bc",
+    "brepair/heap.c": "9892c7483b616510e59158758510f342be39849d5ddbedd8337a11e06aaf01a3",
+    "brepair/irepair0.c": "85d7e186d3471bca0b3923323fe3300f09762eae820c78c0b0bf719061cd293e",
+    "brepair/array.c": "1f21264d2fde152e7971c709832d18adfc9574b185b0b0f189286447d2c2f609",
+    "brepair/basics.c": "795677f0300c4e6616ab8b637aa80c9067d6da39edf82d7113cdce06b776aca8",
+    "brepair/records.c": "667e742ec965c2f0f71bbdd76581352e8945758a546c24fd7357889895131b69",
+    "brepair/irepair.c": "750f8d3babf82139c1ee45eb83404366d849ecb10e5e4ece33715faa0addb100",
+    "brepair/hash.c": "27ebd33ff9f8e74f21c35ca9227e2abccc553d4a7eec27e234f922928f04bd70",
+    "brepair/readme.md": "a622da97e3c15e11cd33ae2dda12ccd693a7e56d88f3c89727e710efbbc86b15",
+    "brepair/toint.c": "a930d2d7c0f200b06a9f94b7b6fb7281b113b807b85e9794d903e3586349e716",
+    "brepair/idespair.c": "493ee26951c585422a18a60dc10222a62e520b26aee1f1353d0406e96ed5332a",
+    "brepair/array.h": "9abdeafb2a192064b61d2fdcb9b05af6a10ac5f9baf792bdd9bca7c86f02d8d6",
+    "brepair/repair.c": "8bc7e6c84764e70034fba5c9b8cd3ef4816bca182b82be9defaaa37c1f85fbad",
+    "brepair/heap.h": "06d6d853e4ba628d3cbf8cc3d6728052ef2b39750e543d78a55340a39ef8c9e4",
+    "brepair/despair.c": "6a732d4ec4afd40431dbd1dcbaad00fe0a33a1e87f29aca4a2f488fe412dbaaa",
+    "brepair/basics.h": "eaa33d986adab1629a6bf44cfcbb36a2bcf37d484bddb0e60c3ad14c506ff3ce",
+    "brepair/hash.h": "870c7ef28f9fe39c8ee74c420adb90220159ff5fa53a326db92d0bb614c643fe",
+    "brepair/records.h": "4ba0fc1fd3433d9c01bbd298c8e37d74e8600599ee6d2970cbd599fd9c711097",
+    "tools/malloc_count0.c": "bec0cb71d9848d8ad7cdae97bc20cd9f26de32b846f348787034c581e7b6c00b",
+    "tools/xerrors.h": "552f8badb9ea9de8371a027c9e7af8f701f0d3f3a2e18b19f4e3447ff2c35231",
+    "tools/malloc_count.h": "53a5b585b8fc9bbee965f59933c5c8ef6d2db39ca1142616d22e1a43893350d6",
+    "tools/malloc_count.c": "fe4b8f23bc0866c060ac9a9d49c320a896ebacf56c80e7858acb8c78baadec2c",
+    "reordering/tsp_generator_pruned_local.cpp": "6b20ed5b7c5b889ab1c5fd6b7fe44b64a85cc0d1701c59fd1fb9c584d8759d62",
+    "reordering/tsp_generator_pruned_local_mt.cpp": "a3c79a207843a843de6179d30388356af072f20d0eb64d6a0496743dbbe25206",
+    "reordering/Readme.md": "2890cd62a1751a8f02cf23a6a711749faeda9f261520b4961e852aa121bd7c5e",
+    "reordering/tsp_generator.cpp": "71e9973ef7fe28e8328d7db354d854ace1a1ebe8d774a700816bf38011731041",
+    "reordering/vc_reorder.cpp": "3c2a29376dfc61c1a05c0d7c995585b5c8378a013a976d1d3515201f7f172d1a",
+    "reordering/mwm.cpp": "8ff3e18cb36ca20792a6826354e084242198f28111ee3ee718c9a8a18bcb55ea",
+    "reordering/tsp_generator_pruned_global.cpp": "50c340511ac2045e7c4d9666607ac9a892f8c2cd18f3f61558b96d17ad49151d",
+    "pagerank/repagerank.c": "e395033439b96afdc52bc0a393f8bce1d263f58e5637063cbad9befc645c20ed",
+    "pagerank/Readme.md": "10a315adccc306b00f106267968f1fd96303428767b7adbf498414148ae532b3",
+    "pagerank/repagerank_old.c": "37473b5379d46061796ce1816a5f0be13a65945de43103679bd70137f62f09be",
+    "others/remult.c": "c3f81f4e32e573f553fcf0df7de0400ffd89e6f462385c0271a1dcc7b93160ea",
+    "others/recg.c": "21241fb79d550b441505cb769c6658ef48f71c40cfd641edd6c2cbf1d45efa48",
+    "others/int32code.c": "6869e6d919071169a7c4a538af50f29d8f6e5a5218ddbc570248da11ef6b997a",
+    "sdsl/decode.cpp": "92a94336e90d8dfc0c37f6acc49cc35f0a5830ed6e4153a8ca07bdf89c458a74",
+    "sdsl/encode.cpp": "eee37c27dd368c1b3cf357c34e6e5a66f241b5210d6f9f548b72b636018527d5",
+    "mmgzip/Readme.md": "fb247919fca652c583c28948d62af35277b1acbaa0d43df35a80761d2338e34b",
+    "mmgzip/test_unco.cpp": "e50e6920809a6b19defe8db08bf4d9950f383f9091c5dbb28fbb6e908182dc53",
+    "mmgzip/test_gzip.cpp": "0e592857cebebbaa13cd554cf5566bdbf6cd465d4805708b070cca522ec8370f",
+    "reordering/best/Readme.md": "acc49022b3cbf39c3188aab885145f26c7776bae3fac51bce66191aa75c20e0b",
+    "reordering/solfiles/Readme.md": "5cb602e7f46fa28c09396a06deff7829d0a4812456fe687fd0da21e89e1e3fe2"
+  },
+  "executables_sha256": {
+    "bin2csrvf": "42a2ec0149ca35d9afd4d705faeba866b30116a916d3f0a20679bfdcab19c955",
+    "brepair/irepair0": "8ee1371bbf7cf0efdd5d9ffd09cf40a972c473a9e9b40e1803448603e15ca2c0"
+  },
+  "cases": [
+    {
+      "case": "adam.lm_head.weight.v-0",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "adam.lm_head.weight.v",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "d0276afe116c43fa3b5e2662be028d9536af6d0c6372ab65e3a726186e74dafd",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524740,
+      "author_re32_payload_ratio": 2.0017242431640625,
+      "author_stats": {
+        "values": 65520,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33546241
+      },
+      "author_construction_seconds": [
+        0.030962459015427157,
+        0.031438249978236854,
+        0.03162725002039224
+      ],
+      "own_construction_seconds": [
+        0.006915750011103228,
+        0.005461500026285648,
+        0.006479709001723677
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525406,
+        "payload_bytes": 524800,
+        "container_overhead_bytes": 573,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65520,
+        "height": 0,
+        "dictionary_bytes": 262080,
+        "header_bytes": 64,
+        "encode_seconds": 0.006459875003201887,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467950,
+        "payload_bytes": 467344,
+        "container_overhead_bytes": 573,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65520,
+        "height": 0,
+        "dictionary_bytes": 262080,
+        "header_bytes": 64,
+        "encode_seconds": 0.005494041019119322,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.781005859375,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.lm_head.weight.v-0.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.lm_head.weight.v-0.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "adam.lm_head.weight.v-16384",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "adam.lm_head.weight.v",
+        "row_slice": [
+          16384,
+          16512
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "d5038128d2ca220b6a7528c538a48275e45c863450b7c9dac696172ee139e0e6",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524668,
+      "author_re32_payload_ratio": 2.0014495849609375,
+      "author_stats": {
+        "values": 65502,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33537025
+      },
+      "author_construction_seconds": [
+        0.03152358400984667,
+        0.031194584007607773,
+        0.03128820800338872
+      ],
+      "own_construction_seconds": [
+        0.006091999995987862,
+        0.005242791987257078,
+        0.00596445900737308
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525302,
+        "payload_bytes": 524728,
+        "container_overhead_bytes": 541,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65502,
+        "height": 0,
+        "dictionary_bytes": 262008,
+        "header_bytes": 64,
+        "encode_seconds": 0.005943916010437533,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467846,
+        "payload_bytes": 467272,
+        "container_overhead_bytes": 541,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65502,
+        "height": 0,
+        "dictionary_bytes": 262008,
+        "header_bytes": 64,
+        "encode_seconds": 0.005258040997432545,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.780731201171875,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.lm_head.weight.v-16384.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.lm_head.weight.v-16384.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "adam.lm_head.weight.v-32640",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "adam.lm_head.weight.v",
+        "row_slice": [
+          32640,
+          32768
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "b1e3f58f8551675c6dc357ec3740ee83ef13c040e2b9b5eb0380abf99abb56a1",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524744,
+      "author_re32_payload_ratio": 2.001739501953125,
+      "author_stats": {
+        "values": 65521,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33546753
+      },
+      "author_construction_seconds": [
+        0.031180749996565282,
+        0.029218209005193785,
+        0.03039950001402758
+      ],
+      "own_construction_seconds": [
+        0.00547750000259839,
+        0.005038000002969056,
+        0.005910417006816715
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525346,
+        "payload_bytes": 524804,
+        "container_overhead_bytes": 509,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65521,
+        "height": 0,
+        "dictionary_bytes": 262084,
+        "header_bytes": 64,
+        "encode_seconds": 0.005890917003853247,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467890,
+        "payload_bytes": 467348,
+        "container_overhead_bytes": 509,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65521,
+        "height": 0,
+        "dictionary_bytes": 262084,
+        "header_bytes": 64,
+        "encode_seconds": 0.005067082995083183,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.7810211181640625,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.lm_head.weight.v-32640.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.lm_head.weight.v-32640.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "adam.wte.weight.m-0",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "adam.wte.weight.m",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "995e46012ea89873bfab7194d3a938ae3492a88ee184d92062933d41a16b67b1",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 389588,
+      "author_re32_payload_ratio": 1.4861602783203125,
+      "author_stats": {
+        "values": 48628,
+        "rules": 0,
+        "symbols": 48768,
+        "alpha": 24897537
+      },
+      "author_construction_seconds": [
+        0.020124000002397224,
+        0.021014083991758525,
+        0.020508999994490296
+      ],
+      "own_construction_seconds": [
+        0.003912584012141451,
+        0.003439457999775186,
+        0.0038311249809339643
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 390158,
+        "payload_bytes": 389648,
+        "container_overhead_bytes": 477,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 48768,
+        "values": 48628,
+        "height": 0,
+        "dictionary_bytes": 194512,
+        "header_bytes": 64,
+        "encode_seconds": 0.0038155840011313558,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 347486,
+        "payload_bytes": 346976,
+        "container_overhead_bytes": 477,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 48768,
+        "values": 48628,
+        "height": 0,
+        "dictionary_bytes": 194512,
+        "header_bytes": 64,
+        "encode_seconds": 0.0035419169871602207,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.32183837890625,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-0.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-0.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "adam.wte.weight.m-16384",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "adam.wte.weight.m",
+        "row_slice": [
+          16384,
+          16512
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "7cd0e1763e00e1bafb5cc2960f5c07cb15dd969a2d99b373f742387d957bbb11",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 504932,
+      "author_re32_payload_ratio": 1.9261627197265625,
+      "author_stats": {
+        "values": 63041,
+        "rules": 0,
+        "symbols": 63191,
+        "alpha": 32276993
+      },
+      "author_construction_seconds": [
+        0.030393624998396263,
+        0.031052416015882045,
+        0.02988541600643657
+      ],
+      "own_construction_seconds": [
+        0.005526875000214204,
+        0.005090166989248246,
+        0.005428000004030764
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 505474,
+        "payload_bytes": 504996,
+        "container_overhead_bytes": 445,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 63191,
+        "values": 63041,
+        "height": 0,
+        "dictionary_bytes": 252164,
+        "header_bytes": 64,
+        "encode_seconds": 0.005411541002104059,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 450178,
+        "payload_bytes": 449700,
+        "container_overhead_bytes": 445,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 63191,
+        "values": 63041,
+        "height": 0,
+        "dictionary_bytes": 252164,
+        "header_bytes": 64,
+        "encode_seconds": 0.004909416980808601,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.7136993408203125,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-16384.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-16384.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "adam.wte.weight.m-32640",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "adam.wte.weight.m",
+        "row_slice": [
+          32640,
+          32768
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "9606e7b692b984fa5b0fe370becf3d1849fe12f7f6c9297caed0a090dea7f1f7",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 463304,
+      "author_re32_payload_ratio": 1.767364501953125,
+      "author_stats": {
+        "values": 57846,
+        "rules": 0,
+        "symbols": 57979,
+        "alpha": 29617153
+      },
+      "author_construction_seconds": [
+        0.020617667003534734,
+        0.030031709000468254,
+        0.020292875007726252
+      ],
+      "own_construction_seconds": [
+        0.00513508400763385,
+        0.00464945801650174,
+        0.005084540985990316
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 463814,
+        "payload_bytes": 463368,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 57979,
+        "values": 57846,
+        "height": 0,
+        "dictionary_bytes": 231384,
+        "header_bytes": 64,
+        "encode_seconds": 0.005065291014034301,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 413086,
+        "payload_bytes": 412640,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 57979,
+        "values": 57846,
+        "height": 0,
+        "dictionary_bytes": 231384,
+        "header_bytes": 64,
+        "encode_seconds": 0.004479416995309293,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.5722999572753906,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-32640.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-32640.f32.vc",
+          "256"
+        ]
+      ]
+    }
+  ],
+  "probe_script_sha256": "cfe293ee30d6fe9b6cfa8cc039e878f28c7c35881bda88dbfdb7aa9d1e9d5bb1"
+}

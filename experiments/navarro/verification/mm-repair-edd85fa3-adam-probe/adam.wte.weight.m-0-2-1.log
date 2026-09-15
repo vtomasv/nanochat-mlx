@@ -1,0 +1,9 @@
+==== Command line:
+ /Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0 /Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-adam-probe/adam.wte.weight.m-0.f32.vc 256
+IRePair succeeded
+   Original ints: 48768
+   Number of rules: 0
+   Final sequence length: 48768
+   Estimated output size (bytes): 152401
+   Compression ratio: 100.00%
+==== Done

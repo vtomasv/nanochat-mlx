@@ -1,0 +1,891 @@
+{
+  "upstream_commit": "edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f",
+  "repo_sha": "7787ae2dddc32c2cc36f6c33b0afa5427c072dd5",
+  "scope": "First 128 rows of preselected central MLP tensors; 3 sequential construction repetitions; no training/inference benchmark.",
+  "timing_caveat": "Author path includes two CLI process launches and intermediate file IO; our path is an in-memory library call. Diagnostic ratios are not integrated speedups.",
+  "upstream_sources_sha256": {
+    "bin2csrv.cpp": "b315119fe171c237ab3e7732868807874d31864b9b130c903dfd0c5c97693913",
+    "LICENSE.md": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bin2csv.cpp": "cf629d7d365643bbf8b7fd9e3284cb9c0dc4294282ab4bcb91d59e2839dec245",
+    "rematrix.hpp": "6b932ae1052d0d9e21abffd60552a90e31885d86dd274cf58b5d79b790606ccd",
+    "Readme.md": "a95c4cb93865903b1cdd96ae1ebdc998cd8639ee61b7fee826399ac5be77954c",
+    "rematrix.h": "72addb61ec3a080ca8872f2039d6abc2619e9747d7190deee88e9b8622533570",
+    "csvmat2csrv.cpp": "8ecd900f3fa280db0dd0955c887b383f54db953b6db498fab2063d8f87701953",
+    "csrmatrix.h": "2a85a779fb0720d70f3ab38b6cd984890a145c687f95e84d1688b8c408f78cf3",
+    "remm.c": "585bceaf25133163cb432cc8ec1886373cc6865f87faa80513bd3aafa008c5cb",
+    "vector.h": "ca77727551800ac18289e4822ddaba7dc7d46773fed885f338fdda757bffc43d",
+    "ans/vbyte.hpp": "bfc4ba4477c81fcd5d883c5d6232eacecc1178d44cd014b6332c3088bdf12e36",
+    "ans/bits.hpp": "a3b4d3dc4f9bda05c783694befff73475bbf73bf06aaf9f60644b1dbcea2238b",
+    "ans/ans_byte.hpp": "32b905e61c82071914b7a10e991995f2a8a3c284da0a0013f73baad39b79ec99",
+    "ans/cutil.hpp": "6405b2d13edbd32d66b3a28947e03ef1c5f4f251cb73060d7cef974eb259b595",
+    "ans/ansfold.cpp": "68bf4a5e74ef1534434ba15977e997a09b027b3270af78df17113cb7b552fc61",
+    "ans/ans_util.hpp": "0db3b1526cd41077ccef727a43b1828056edc28a84c1fde64e95753906a30ec6",
+    "ans/decode.hpp": "ac447fa1f54c950b4b368baadc403d813a7f0c3b8fe186f8690ac2e7e64dd58d",
+    "ans/stats.hpp": "7d291c9d25d1a4cad21b6bab492be0846f107e4dba87e7a54102dca2846ca219",
+    "ans/constants.hpp": "aa09288fcfc0ecc2f63fcec28e5506cffd83947513813d2d74f99ae9a18e43a3",
+    "ans/decode.cpp": "63783a271e4f1f6eb8a8cba5aa541bf2d46268db601b5c89ceb99f9399e46e0f",
+    "ans/encode.cpp": "39852d5911268acdbbd663852344812a884edcfabd3ced87624408f08809a400",
+    "ans/methods.hpp": "71424f4e1e4e4da328eca6381429fa3c4ac54817430d8b8bb98c5ea7b916b635",
+    "ans/util.hpp": "cdecbb116caed1bc3b24e613482dd157955b9270e735785059ab8dd4d97cb437",
+    "ans/ans_reorder_fold.hpp": "bb480a234120f0943911584f1a08df1ec067a790a78b45b8bec2ae1359ccf7f7",
+    "ans/ans_fold.hpp": "f1146bad130b3a7b8e00eb742a72cc9990016d1ff8b4eca370526d4d005e20d3",
+    "ans/interp.hpp": "a2837891bef5958bbaec7fed0c66926051e9c1f34e1ad1cc9234e04b2adfa6bc",
+    "brepair/heap.c": "9892c7483b616510e59158758510f342be39849d5ddbedd8337a11e06aaf01a3",
+    "brepair/irepair0.c": "85d7e186d3471bca0b3923323fe3300f09762eae820c78c0b0bf719061cd293e",
+    "brepair/array.c": "1f21264d2fde152e7971c709832d18adfc9574b185b0b0f189286447d2c2f609",
+    "brepair/basics.c": "795677f0300c4e6616ab8b637aa80c9067d6da39edf82d7113cdce06b776aca8",
+    "brepair/records.c": "667e742ec965c2f0f71bbdd76581352e8945758a546c24fd7357889895131b69",
+    "brepair/irepair.c": "750f8d3babf82139c1ee45eb83404366d849ecb10e5e4ece33715faa0addb100",
+    "brepair/hash.c": "27ebd33ff9f8e74f21c35ca9227e2abccc553d4a7eec27e234f922928f04bd70",
+    "brepair/readme.md": "a622da97e3c15e11cd33ae2dda12ccd693a7e56d88f3c89727e710efbbc86b15",
+    "brepair/toint.c": "a930d2d7c0f200b06a9f94b7b6fb7281b113b807b85e9794d903e3586349e716",
+    "brepair/idespair.c": "493ee26951c585422a18a60dc10222a62e520b26aee1f1353d0406e96ed5332a",
+    "brepair/array.h": "9abdeafb2a192064b61d2fdcb9b05af6a10ac5f9baf792bdd9bca7c86f02d8d6",
+    "brepair/repair.c": "8bc7e6c84764e70034fba5c9b8cd3ef4816bca182b82be9defaaa37c1f85fbad",
+    "brepair/heap.h": "06d6d853e4ba628d3cbf8cc3d6728052ef2b39750e543d78a55340a39ef8c9e4",
+    "brepair/despair.c": "6a732d4ec4afd40431dbd1dcbaad00fe0a33a1e87f29aca4a2f488fe412dbaaa",
+    "brepair/basics.h": "eaa33d986adab1629a6bf44cfcbb36a2bcf37d484bddb0e60c3ad14c506ff3ce",
+    "brepair/hash.h": "870c7ef28f9fe39c8ee74c420adb90220159ff5fa53a326db92d0bb614c643fe",
+    "brepair/records.h": "4ba0fc1fd3433d9c01bbd298c8e37d74e8600599ee6d2970cbd599fd9c711097",
+    "tools/malloc_count0.c": "bec0cb71d9848d8ad7cdae97bc20cd9f26de32b846f348787034c581e7b6c00b",
+    "tools/xerrors.h": "552f8badb9ea9de8371a027c9e7af8f701f0d3f3a2e18b19f4e3447ff2c35231",
+    "tools/malloc_count.h": "53a5b585b8fc9bbee965f59933c5c8ef6d2db39ca1142616d22e1a43893350d6",
+    "tools/malloc_count.c": "fe4b8f23bc0866c060ac9a9d49c320a896ebacf56c80e7858acb8c78baadec2c",
+    "reordering/tsp_generator_pruned_local.cpp": "6b20ed5b7c5b889ab1c5fd6b7fe44b64a85cc0d1701c59fd1fb9c584d8759d62",
+    "reordering/tsp_generator_pruned_local_mt.cpp": "a3c79a207843a843de6179d30388356af072f20d0eb64d6a0496743dbbe25206",
+    "reordering/Readme.md": "2890cd62a1751a8f02cf23a6a711749faeda9f261520b4961e852aa121bd7c5e",
+    "reordering/tsp_generator.cpp": "71e9973ef7fe28e8328d7db354d854ace1a1ebe8d774a700816bf38011731041",
+    "reordering/vc_reorder.cpp": "3c2a29376dfc61c1a05c0d7c995585b5c8378a013a976d1d3515201f7f172d1a",
+    "reordering/mwm.cpp": "8ff3e18cb36ca20792a6826354e084242198f28111ee3ee718c9a8a18bcb55ea",
+    "reordering/tsp_generator_pruned_global.cpp": "50c340511ac2045e7c4d9666607ac9a892f8c2cd18f3f61558b96d17ad49151d",
+    "pagerank/repagerank.c": "e395033439b96afdc52bc0a393f8bce1d263f58e5637063cbad9befc645c20ed",
+    "pagerank/Readme.md": "10a315adccc306b00f106267968f1fd96303428767b7adbf498414148ae532b3",
+    "pagerank/repagerank_old.c": "37473b5379d46061796ce1816a5f0be13a65945de43103679bd70137f62f09be",
+    "others/remult.c": "c3f81f4e32e573f553fcf0df7de0400ffd89e6f462385c0271a1dcc7b93160ea",
+    "others/recg.c": "21241fb79d550b441505cb769c6658ef48f71c40cfd641edd6c2cbf1d45efa48",
+    "others/int32code.c": "6869e6d919071169a7c4a538af50f29d8f6e5a5218ddbc570248da11ef6b997a",
+    "sdsl/decode.cpp": "92a94336e90d8dfc0c37f6acc49cc35f0a5830ed6e4153a8ca07bdf89c458a74",
+    "sdsl/encode.cpp": "eee37c27dd368c1b3cf357c34e6e5a66f241b5210d6f9f548b72b636018527d5",
+    "mmgzip/Readme.md": "fb247919fca652c583c28948d62af35277b1acbaa0d43df35a80761d2338e34b",
+    "mmgzip/test_unco.cpp": "e50e6920809a6b19defe8db08bf4d9950f383f9091c5dbb28fbb6e908182dc53",
+    "mmgzip/test_gzip.cpp": "0e592857cebebbaa13cd554cf5566bdbf6cd465d4805708b070cca522ec8370f",
+    "reordering/best/Readme.md": "acc49022b3cbf39c3188aab885145f26c7776bae3fac51bce66191aa75c20e0b",
+    "reordering/solfiles/Readme.md": "5cb602e7f46fa28c09396a06deff7829d0a4812456fe687fd0da21e89e1e3fe2"
+  },
+  "executables_sha256": {
+    "bin2csrvf": "42a2ec0149ca35d9afd4d705faeba866b30116a916d3f0a20679bfdcab19c955",
+    "brepair/irepair0": "8ee1371bbf7cf0efdd5d9ffd09cf40a972c473a9e9b40e1803448603e15ca2c0"
+  },
+  "cases": [
+    {
+      "case": "muon-c_fc-100",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-0100/optimizer.safetensors",
+        "tensor": "muon.blocks.4.mlp.c_fc.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "6262fa4e15a49ada7ec389653274fd40724eb9cd2724d086515e53447f949115",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524720,
+      "author_re32_payload_ratio": 2.00164794921875,
+      "author_stats": {
+        "values": 65515,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33543681
+      },
+      "author_construction_seconds": [
+        0.733038915990619,
+        0.031196791998809204,
+        0.03127662499900907
+      ],
+      "own_construction_seconds": [
+        0.010608000011416152,
+        0.005043707991717383,
+        0.0060997089894954115
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525386,
+        "payload_bytes": 524780,
+        "container_overhead_bytes": 573,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65515,
+        "height": 0,
+        "dictionary_bytes": 262060,
+        "header_bytes": 64,
+        "encode_seconds": 0.006052209006156772,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467930,
+        "payload_bytes": 467324,
+        "container_overhead_bytes": 573,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65515,
+        "height": 0,
+        "dictionary_bytes": 262060,
+        "header_bytes": 64,
+        "encode_seconds": 0.005806375003885478,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.7809295654296875,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-100.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-100.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "muon-c_proj-100",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-0100/optimizer.safetensors",
+        "tensor": "muon.blocks.4.mlp.c_proj.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "input_sha256": "1728a55f5746e79d794bdf869bf44312937349866114b4c895acf3f26497ae4f",
+      "dense_bytes": 1048576,
+      "author_re32_payload_bytes": 2096356,
+      "author_re32_payload_ratio": 1.9992408752441406,
+      "author_stats": {
+        "values": 261816,
+        "rules": 0,
+        "symbols": 262272,
+        "alpha": 536199169
+      },
+      "author_construction_seconds": [
+        0.11977683400618844,
+        0.10804095800267532,
+        0.11983441599295475
+      ],
+      "own_construction_seconds": [
+        0.035073709004791453,
+        0.026884749997407198,
+        0.031206707993987948
+      ],
+      "own_re32": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 2096990,
+        "payload_bytes": 2096416,
+        "container_overhead_bytes": 541,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261816,
+        "height": 0,
+        "dictionary_bytes": 1047264,
+        "header_bytes": 64,
+        "encode_seconds": 0.031183540995698422,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998638,
+        "payload_bytes": 1998064,
+        "container_overhead_bytes": 541,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261816,
+        "height": 0,
+        "dictionary_bytes": 1047264,
+        "header_bytes": 64,
+        "encode_seconds": 0.03179187499335967,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.9049959182739258,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_proj-100.f32",
+          "128",
+          "2048"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_proj-100.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "muon-c_fc-500",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-0500/optimizer.safetensors",
+        "tensor": "muon.blocks.4.mlp.c_fc.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "aa4a92a777a7a5a7a76615d354bd3134212cd924b4d214112b4ea5ce4d71a60a",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524732,
+      "author_re32_payload_ratio": 2.0016937255859375,
+      "author_stats": {
+        "values": 65518,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33545217
+      },
+      "author_construction_seconds": [
+        0.033267624996369705,
+        0.03268087501055561,
+        0.03306062499177642
+      ],
+      "own_construction_seconds": [
+        0.006540958012919873,
+        0.005631582986097783,
+        0.006001375004416332
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525334,
+        "payload_bytes": 524792,
+        "container_overhead_bytes": 509,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65518,
+        "height": 0,
+        "dictionary_bytes": 262072,
+        "header_bytes": 64,
+        "encode_seconds": 0.0059545419935602695,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467878,
+        "payload_bytes": 467336,
+        "container_overhead_bytes": 509,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65518,
+        "height": 0,
+        "dictionary_bytes": 262072,
+        "header_bytes": 64,
+        "encode_seconds": 0.00553695802227594,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.780975341796875,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-500.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-500.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "muon-c_proj-500",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-0500/optimizer.safetensors",
+        "tensor": "muon.blocks.4.mlp.c_proj.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "input_sha256": "667116ebc6b0beb2ba017f0d9f2ce9433d86a9c60ef84f0b2a69bb6e4aaf9f3d",
+      "dense_bytes": 1048576,
+      "author_re32_payload_bytes": 2096452,
+      "author_re32_payload_ratio": 1.9993324279785156,
+      "author_stats": {
+        "values": 261840,
+        "rules": 0,
+        "symbols": 262272,
+        "alpha": 536248321
+      },
+      "author_construction_seconds": [
+        0.11745758299366571,
+        0.11926750000566244,
+        0.11707204100093804
+      ],
+      "own_construction_seconds": [
+        0.036329416994703934,
+        0.03225608399952762,
+        0.039688541990472004
+      ],
+      "own_re32": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 2097022,
+        "payload_bytes": 2096512,
+        "container_overhead_bytes": 477,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261840,
+        "height": 0,
+        "dictionary_bytes": 1047360,
+        "header_bytes": 64,
+        "encode_seconds": 0.03963750001275912,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998670,
+        "payload_bytes": 1998160,
+        "container_overhead_bytes": 477,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261840,
+        "height": 0,
+        "dictionary_bytes": 1047360,
+        "header_bytes": 64,
+        "encode_seconds": 0.032033625000622123,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.90509033203125,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_proj-500.f32",
+          "128",
+          "2048"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_proj-500.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "muon-c_fc-1000",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "muon.blocks.4.mlp.c_fc.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "bca1f7f435873da00a84ab275692890ed48dcfc9ee8e48d0cfc5d7832f7231b6",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524736,
+      "author_re32_payload_ratio": 2.001708984375,
+      "author_stats": {
+        "values": 65519,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33545729
+      },
+      "author_construction_seconds": [
+        0.034789124998496845,
+        0.033198832999914885,
+        0.033412332995794713
+      ],
+      "own_construction_seconds": [
+        0.006926916015800089,
+        0.005891209002584219,
+        0.006599291984457523
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525274,
+        "payload_bytes": 524796,
+        "container_overhead_bytes": 445,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65519,
+        "height": 0,
+        "dictionary_bytes": 262076,
+        "header_bytes": 64,
+        "encode_seconds": 0.006579042004887015,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467818,
+        "payload_bytes": 467340,
+        "container_overhead_bytes": 445,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65519,
+        "height": 0,
+        "dictionary_bytes": 262076,
+        "header_bytes": 64,
+        "encode_seconds": 0.005256125004962087,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.7809906005859375,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-1000.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_fc-1000.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "muon-c_proj-1000",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/optimizer.safetensors",
+        "tensor": "muon.blocks.4.mlp.c_proj.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "input_sha256": "0e483ff5ffc51392aeed11ebb64645062d4fdbb04771eb89017597b72f80d68b",
+      "dense_bytes": 1048576,
+      "author_re32_payload_bytes": 2096632,
+      "author_re32_payload_ratio": 1.9995040893554688,
+      "author_stats": {
+        "values": 261885,
+        "rules": 0,
+        "symbols": 262272,
+        "alpha": 536340481
+      },
+      "author_construction_seconds": [
+        0.11902666700189002,
+        0.08357737501501106,
+        0.12061454201466404
+      ],
+      "own_construction_seconds": [
+        0.026795417012181133,
+        0.026366832986241207,
+        0.033565209014341235
+      ],
+      "own_re32": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 2097138,
+        "payload_bytes": 2096692,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261885,
+        "height": 0,
+        "dictionary_bytes": 1047540,
+        "header_bytes": 64,
+        "encode_seconds": 0.0335346249921713,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998786,
+        "payload_bytes": 1998340,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261885,
+        "height": 0,
+        "dictionary_bytes": 1047540,
+        "header_bytes": 64,
+        "encode_seconds": 0.028615959017770365,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.9052619934082031,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_proj-1000.f32",
+          "128",
+          "2048"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/muon-c_proj-1000.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "weight-c_fc-1000",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/model.safetensors",
+        "tensor": "blocks.4.mlp.c_fc.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "d2bc1403f0e79bc6af92f2ef5e22f0dc0a45ba68d0d65a5d20c47e52c68c2e8d",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524692,
+      "author_re32_payload_ratio": 2.0015411376953125,
+      "author_stats": {
+        "values": 65508,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33540097
+      },
+      "author_construction_seconds": [
+        0.03361091698752716,
+        0.03246283400221728,
+        0.03254004201153293
+      ],
+      "own_construction_seconds": [
+        0.006033624988049269,
+        0.005770167015725747,
+        0.006334249977953732
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525198,
+        "payload_bytes": 524752,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65508,
+        "height": 0,
+        "dictionary_bytes": 262032,
+        "header_bytes": 64,
+        "encode_seconds": 0.006290458986768499,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467742,
+        "payload_bytes": 467296,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65508,
+        "height": 0,
+        "dictionary_bytes": 262032,
+        "header_bytes": 64,
+        "encode_seconds": 0.005069624981842935,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.78082275390625,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/weight-c_fc-1000.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/weight-c_fc-1000.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "weight-c_proj-1000",
+      "origin": {
+        "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000/model.safetensors",
+        "tensor": "blocks.4.mlp.c_proj.weight",
+        "row_slice": [
+          0,
+          128
+        ]
+      },
+      "shape": [
+        128,
+        2048
+      ],
+      "input_sha256": "cbdac97e49401eb11b150c5b3e640cb187098608b3a85b2c6b2162b0eeeeb727",
+      "dense_bytes": 1048576,
+      "author_re32_payload_bytes": 2096180,
+      "author_re32_payload_ratio": 1.9990730285644531,
+      "author_stats": {
+        "values": 261772,
+        "rules": 0,
+        "symbols": 262272,
+        "alpha": 536109057
+      },
+      "author_construction_seconds": [
+        0.08001708300434984,
+        0.12033483301638626,
+        0.11498379198019393
+      ],
+      "own_construction_seconds": [
+        0.030559416976757348,
+        0.030609084002207965,
+        0.03315729199675843
+      ],
+      "own_re32": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 2096686,
+        "payload_bytes": 2096240,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261772,
+        "height": 0,
+        "dictionary_bytes": 1047088,
+        "header_bytes": 64,
+        "encode_seconds": 0.03310095801134594,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 1048576,
+        "resident_bytes": 1998334,
+        "payload_bytes": 1997888,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 262272,
+        "values": 261772,
+        "height": 0,
+        "dictionary_bytes": 1047088,
+        "header_bytes": 64,
+        "encode_seconds": 0.027367792004952207,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.9048309326171875,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/weight-c_proj-1000.f32",
+          "128",
+          "2048"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/weight-c_proj-1000.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "synthetic-repeated",
+      "origin": {
+        "synthetic": true
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "b403d943643e5e9cfe2a94d55fdbb23bca23c07b177b79827fde00d65463ee95",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 4232,
+      "author_re32_payload_ratio": 0.016143798828125,
+      "author_stats": {
+        "values": 3,
+        "rules": 399,
+        "symbols": 256,
+        "alpha": 1532
+      },
+      "author_construction_seconds": [
+        0.024026500002946705,
+        0.022770458017475903,
+        0.02243300000554882
+      ],
+      "own_construction_seconds": [
+        0.03773541600094177,
+        0.03750704202684574,
+        0.03945491698686965
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 4738,
+        "payload_bytes": 4292,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 399,
+        "symbols": 256,
+        "values": 3,
+        "height": 12,
+        "dictionary_bytes": 12,
+        "header_bytes": 64,
+        "encode_seconds": 0.03940479099401273,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 1978,
+        "payload_bytes": 1532,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 399,
+        "symbols": 256,
+        "values": 3,
+        "height": 12,
+        "dictionary_bytes": 12,
+        "header_bytes": 64,
+        "encode_seconds": 0.038639166014036164,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 0.00214385986328125,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/synthetic-repeated.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/synthetic-repeated.f32.vc",
+          "256"
+        ]
+      ]
+    },
+    {
+      "case": "synthetic-random",
+      "origin": {
+        "synthetic": true
+      },
+      "shape": [
+        128,
+        512
+      ],
+      "input_sha256": "ba6a95f4e1dd677dd031a511cdef046706e1d5b1ced150822c23ee1d913c22d8",
+      "dense_bytes": 262144,
+      "author_re32_payload_bytes": 524680,
+      "author_re32_payload_ratio": 2.001495361328125,
+      "author_stats": {
+        "values": 65505,
+        "rules": 0,
+        "symbols": 65664,
+        "alpha": 33538561
+      },
+      "author_construction_seconds": [
+        0.03186145899235271,
+        0.033523332996992394,
+        0.032703874981962144
+      ],
+      "own_construction_seconds": [
+        0.006245417025638744,
+        0.005492249998496845,
+        0.006307665986241773
+      ],
+      "own_re32": {
+        "raw_bytes": 262144,
+        "resident_bytes": 525186,
+        "payload_bytes": 524740,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65505,
+        "height": 0,
+        "dictionary_bytes": 262020,
+        "header_bytes": 64,
+        "encode_seconds": 0.006263791990932077,
+        "mode": "GRAMMAR"
+      },
+      "own_reiv": {
+        "raw_bytes": 262144,
+        "resident_bytes": 467730,
+        "payload_bytes": 467284,
+        "container_overhead_bytes": 413,
+        "blocks": 1,
+        "raw_blocks": 0,
+        "rules": 0,
+        "symbols": 65664,
+        "values": 65505,
+        "height": 0,
+        "dictionary_bytes": 262020,
+        "header_bytes": 64,
+        "encode_seconds": 0.005513500014785677,
+        "mode": "GRAMMAR"
+      },
+      "bit_exact_both": true,
+      "author_fixed_width_payload_lower_bound_ratio": 1.7807769775390625,
+      "commands": [
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/bin2csrvf",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/synthetic-random.f32",
+          "128",
+          "512"
+        ],
+        [
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/sources/mm-repair-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f-edd85fa3193dd1e6e60e1d4886f1ad8ded2a138f/brepair/irepair0",
+          "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/mm-repair-edd85fa3-probe/synthetic-random.f32.vc",
+          "256"
+        ]
+      ]
+    }
+  ]
+}
