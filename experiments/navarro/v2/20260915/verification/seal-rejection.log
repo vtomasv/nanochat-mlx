@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/tomasvera/dev/nanochat-mlx/scripts/navarro_v2.py", line 33, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/tomasvera/dev/nanochat-mlx/scripts/navarro_v2.py", line 30, in main
+    dispatch(args)
+  File "/Users/tomasvera/dev/nanochat-mlx/nanochat_mlx/experiments/v2/campaign.py", line 214, in dispatch
+    dispatch_confirmation(root,m,args)
+  File "/Users/tomasvera/dev/nanochat-mlx/nanochat_mlx/experiments/v2/confirmation.py", line 39, in dispatch_confirmation
+    if selected not in shortlist:raise ValueError('No admissible pilot shortlist; do not open held-out data')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: No admissible pilot shortlist; do not open held-out data

@@ -1,0 +1,148 @@
+{
+  "all_sample_roundtrips_exact": true,
+  "grammar_samples": 98,
+  "limitations": [
+    "Only next two microbatches at each checkpoint, not all training gradients.",
+    "Lower-bound eligibility and selected block samples do not prove full-gradient compression.",
+    "No compressed gradient optimizer integration or full live-buffer lifetime instrumentation."
+  ],
+  "matrix_observations": 870,
+  "phases": [
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.7833342149486696,
+      "phase": "microbatch_0",
+      "positive_zero_fraction": 0.777751555372903,
+      "special_cells": 0,
+      "step": 0
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.7833342149486696,
+      "phase": "microbatch_1",
+      "positive_zero_fraction": 0.7768889286746067,
+      "special_cells": 0,
+      "step": 0
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.7833342149486696,
+      "phase": "accumulated_average",
+      "positive_zero_fraction": 0.7729053916330296,
+      "special_cells": 0,
+      "step": 0
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.736455336688897,
+      "phase": "microbatch_0",
+      "positive_zero_fraction": 0.6436863456773044,
+      "special_cells": 0,
+      "step": 10
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.7369761679029626,
+      "phase": "microbatch_1",
+      "positive_zero_fraction": 0.6445042134431419,
+      "special_cells": 0,
+      "step": 10
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.736455336688897,
+      "phase": "accumulated_average",
+      "positive_zero_fraction": 0.6195653500758868,
+      "special_cells": 0,
+      "step": 10
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6666639540040934,
+      "phase": "microbatch_0",
+      "positive_zero_fraction": 0.6334813090767046,
+      "special_cells": 0,
+      "step": 100
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6666639540040934,
+      "phase": "microbatch_1",
+      "positive_zero_fraction": 0.6365737444102196,
+      "special_cells": 0,
+      "step": 100
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6666639540040934,
+      "phase": "accumulated_average",
+      "positive_zero_fraction": 0.6116511570184041,
+      "special_cells": 0,
+      "step": 100
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6666639540040934,
+      "phase": "microbatch_0",
+      "positive_zero_fraction": 0.6368626429742718,
+      "special_cells": 0,
+      "step": 500
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6666639540040934,
+      "phase": "microbatch_1",
+      "positive_zero_fraction": 0.6364720195637225,
+      "special_cells": 0,
+      "step": 500
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6666639540040934,
+      "phase": "accumulated_average",
+      "positive_zero_fraction": 0.6147557993334988,
+      "special_cells": 0,
+      "step": 500
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6796847343557358,
+      "phase": "microbatch_0",
+      "positive_zero_fraction": 0.6358209805461403,
+      "special_cells": 0,
+      "step": 1000
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6791639031416702,
+      "phase": "microbatch_1",
+      "positive_zero_fraction": 0.6370905066304255,
+      "special_cells": 0,
+      "step": 1000
+    },
+    {
+      "dense_bytes": 503318528,
+      "matrix_count": 58,
+      "maximum_savings_under_raw_policy": 0.6671847852181592,
+      "phase": "accumulated_average",
+      "positive_zero_fraction": 0.6128148972095857,
+      "special_cells": 0,
+      "step": 1000
+    }
+  ],
+  "seconds": 44.593952166993404
+}

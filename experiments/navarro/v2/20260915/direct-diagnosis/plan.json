@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-09-15T22:09:39.809522+00:00",
+  "documents": 4,
+  "input_study_sha256": "49555420e52e07d2a8195148b777d7a4be5b4a3cb5ca9abebee71431a5574ba0",
+  "operator_source_sha256": "dca723eb05a200fd4b33d72b746f7166d810df2bc527389d4fc16993c4703290",
+  "oracle": "NumPy float64 dot of original FP32 operands; coefficients/products representable exactly, accumulation widened.",
+  "positions_cap": 128,
+  "scope": "Diagnosis only; failed original gate remains failed.",
+  "selection": "First 64 mismatching output coordinates per case plus coordinate of largest absolute difference.",
+  "source_sha256": "2883e49dfb8f25e04f3ce6803615e8c75c7da5e88584c329751b83ab3afab428",
+  "tolerances_unchanged": {
+    "atol": 1e-05,
+    "rtol": 0.0001
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cases": 32,
+  "cases_with_mismatch": 28,
+  "decision": "BLOCKED_BY_UNCHANGED_ELEMENTWISE_GATE",
+  "diagnosed_coordinates": 779,
+  "diagnosed_mismatch_coordinates": 747,
+  "interpretation": "Quantifies reduction-order sensitivity and cancellation; cannot prove a race absent. No relaxed tolerances, no GPT integration.",
+  "mismatching_outputs": 759,
+  "on_diagnosed_mismatches": {
+    "both_failed_oracle": 87,
+    "csr_closer_to_oracle": 681,
+    "csr_failed_oracle": 114,
+    "dense_failed_oracle": 579
+  },
+  "seconds": 0.3464659579913132,
+  "total_outputs": 2097152
+}

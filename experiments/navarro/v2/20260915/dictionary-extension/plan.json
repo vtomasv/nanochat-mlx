@@ -1,0 +1,25 @@
+{
+  "campaign_manifest_sha256": "3b3bb19f8d979fce17d82a89f17b350171161eeda78d881ebb37c0aae2c5bada",
+  "created_at": "2026-09-15T21:56:16.685362+00:00",
+  "early_local_checkpoints": [
+    0,
+    10
+  ],
+  "global_checkpoints": [
+    100,
+    1000
+  ],
+  "global_objects": [
+    "model.safetensors",
+    "optimizer.safetensors"
+  ],
+  "interpretation": "Lower bound for exact per-matrix dictionaries and RePair, not every compressor. Unrejected is undecided.",
+  "local_rows": 128,
+  "orientations": [
+    "original",
+    "transposed"
+  ],
+  "scope": "Structural diagnostics, no performance inference, no held-out data.",
+  "source_sha256": "d26e55af80b2f7277a41ae083dbfcc5da75df037a502011dd99213b956cd5614",
+  "threshold_ratio": 0.95
+}

@@ -1,0 +1,18 @@
+{
+  "all_trial_hashes_verified": true,
+  "completed_trials": 11,
+  "protected_sources_verified": true,
+  "reserved_evaluation_opened": false,
+  "seal_command": [
+    "/Users/tomasvera/dev/nanochat-mlx/.venv/bin/python3",
+    "-m",
+    "scripts.navarro_v2",
+    "seal",
+    "--campaign",
+    "experiments/navarro/v2/20260915"
+  ],
+  "seal_log_sha256": "c6456348fb7fe5286c072d34057c5151f14a1f571d818c91304c99505518e748",
+  "seal_rejected_without_shortlist": true,
+  "seal_returncode": 1,
+  "supplementary_artifacts_verified": true
+}

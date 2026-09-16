@@ -1,0 +1,15 @@
+{
+  "audit_sha256": "1ef0aa459aa7a32e512e874087a0268e750988aafe1268d80ef6d00556110c59",
+  "input_sha256": "debdd338e533e8f6164298ec61fa93bcd9e5466f1c2430d33cb5b52487a6f9a9",
+  "interpretation": "Within-extension descriptive measurements. Shaded region is only the time gate, not all selection conditions.",
+  "outputs": {
+    "combined.pdf": "c90bd1fe413fb6f4358c9835517c24807fa2c575def329796032514e613fac16",
+    "combined.png": "28dc1ee4107641883a1a9fa1fe67dc71bbb142de8012297b44fb12ee45227673",
+    "combined.svg": "40504b6dc42e8b614c91a64ff17efd1f3cfe2ff2e1d6e490e524675d59c3889d"
+  },
+  "packages": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3"
+  },
+  "source_sha256": "080cc3a1a635b7838788c397d252aacae057065f1195145b252a31e5c204bb6e"
+}

@@ -1,0 +1,169 @@
+{
+  "candidate_nll": 10.389012336730957,
+  "codec": [],
+  "loss_delta": 0.0,
+  "pass": true,
+  "reference_nll": 10.389012336730957,
+  "tensors": {
+    "blocks.0.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.ve_gate.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.ve_gate.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "lm_head.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "resid_lambdas": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "value_embeds.1.weight": {
+      "max_abs": 5.684341886080802e-14,
+      "pass": true,
+      "relative_l2": 3.05200331333682e-08
+    },
+    "value_embeds.3.weight": {
+      "max_abs": 5.684341886080802e-14,
+      "pass": true,
+      "relative_l2": 2.149046771925642e-08
+    },
+    "wte.weight": {
+      "max_abs": 7.275957614183426e-12,
+      "pass": true,
+      "relative_l2": 2.326062392110173e-08
+    },
+    "x0_lambdas": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    }
+  }
+}

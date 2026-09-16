@@ -1,0 +1,10 @@
+[
+  "/Users/tomasvera/dev/nanochat-mlx/.venv/bin/python3",
+  "-m",
+  "scripts.navarro_v2",
+  "worker",
+  "--campaign",
+  "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/v2/20260915",
+  "--trial",
+  "bitmap-metal-scan"
+]

@@ -1,0 +1,19 @@
+{
+  "input_census_sha256": "c413e2be09233c7dd9e0840f3fead455d85437598a586a2cf20cd0e0e24c1bb0",
+  "input_ledger_sha256": "78396d30cc108672547e9ca322b5e68ac1e16e7ff65d8792d92186b7ae8b4da8",
+  "input_operators_sha256": "c097f07eba37a2820a05d4999229eb5e297a05982afd06293528957ec3817756",
+  "interpretation": "Descriptive figures; no independent-process error bars fabricated.",
+  "outputs": {
+    "mechanisms.pdf": "d53926a583796f150e7505df9f219938664a8f626b0ceb7227a4047968eb9c96",
+    "mechanisms.png": "394f12374552edd640038c90d86d6770d4318934a60c7e01499bb364caee0d57",
+    "mechanisms.svg": "f3c85f4d891e065a7e89c5032f227ebe065e845ea0b30b8f9fa13ea0efde9bc8",
+    "training.pdf": "d3cd976c597edd901911bd37f827a8c1d75145a7d117537abb647940c238903d",
+    "training.png": "3d4c54bd8f4bf4a65d19574b83f53a074572f60f163dbdcf2b4822ec089c3c3a",
+    "training.svg": "0f3243b188e81e090847e451426214bf9208474084a4d2a683068c9a4d290c32"
+  },
+  "packages": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3"
+  },
+  "source_sha256": "98c52e997b13bcc5c468dace732fe8c460b05751050882afa9bcaf235eaaa03c"
+}

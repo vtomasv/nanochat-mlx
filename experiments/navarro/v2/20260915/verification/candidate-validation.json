@@ -1,0 +1,9 @@
+{
+  "candidate_sha256": "b64da0eb6fcf88c4f2adc14587785e456db2e7cf3740a56f3707f2053927c63a",
+  "failed": 0,
+  "junit_sha256": "0522542b84dda558623ffef600c419c84c380e819c55caf80205c256010a468d",
+  "passed": 33,
+  "scope": "Post-pilot validation, not retroactively substituted for the frozen pre-run gate.",
+  "skipped": 0,
+  "test_source_sha256": "f24901f435bee450974ea9e755fab5683e879a95e2bfc4efa51dc16668d46b8b"
+}

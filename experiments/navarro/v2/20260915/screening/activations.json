@@ -1,0 +1,1090 @@
+[
+  {
+    "bitmap_payload_estimate_bytes": 477616,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.01535641701775603,
+    "grammar_bytes": 826874,
+    "kind": "P",
+    "layer": 0,
+    "positive_fraction": 0.4202728271484375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "82d61f9fd1efe5de58693218463e0f3c98095199fafef78aa0848306216a8341",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 477616,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.013726125005632639,
+    "grammar_bytes": 826866,
+    "kind": "H",
+    "layer": 0,
+    "positive_fraction": 0.4202728271484375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "8397a834328bf3ec1f943e1a4a7236844b1c28ccd11443780b84db4fff64914d",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 154136,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.004110666981432587,
+    "grammar_bytes": 213494,
+    "kind": "P",
+    "layer": 1,
+    "positive_fraction": 0.11177825927734375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "479d5659a74108b2d9659f5b9811fa3a7c02c582188185f60c1aa1b3dab1c7d0",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 154136,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.0035787909873761237,
+    "grammar_bytes": 213486,
+    "kind": "H",
+    "layer": 1,
+    "positive_fraction": 0.11177825927734375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "037cb9018a868cb585b0729110e73dd1bfaae19c2594a634295dbb562ee6f5a3",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 147052,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.003440750006120652,
+    "grammar_bytes": 200650,
+    "kind": "P",
+    "layer": 2,
+    "positive_fraction": 0.10502243041992188,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "d5fc57c1b8ba4ddcb0b3fc0b6349fa055aa02c5b6c98ef5409530f7587ec726c",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 147052,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.0032584170112386346,
+    "grammar_bytes": 200642,
+    "kind": "H",
+    "layer": 2,
+    "positive_fraction": 0.10502243041992188,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "03f709cfba5892f487020d157d88d3d058d810acf507b148892549c2ab4e2cf3",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 67932,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.0013777499843854457,
+    "grammar_bytes": 55290,
+    "kind": "P",
+    "layer": 3,
+    "positive_fraction": 0.029567718505859375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "8216bd8d075c61ec20ecc4741895c96fb5f635864c9371da46d9d61c98b6fa5c",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 67932,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.0012830420164391398,
+    "grammar_bytes": 55282,
+    "kind": "H",
+    "layer": 3,
+    "positive_fraction": 0.029567718505859375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "417d681ecb5fc3a8cf0e60faaa4072d5ac4e4fd508b3c1f65b3e84fefbafe3a1",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 118256,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.0026173329970333725,
+    "grammar_bytes": 148438,
+    "kind": "P",
+    "layer": 4,
+    "positive_fraction": 0.0775604248046875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "98844b83789e29c5a8d4b909dcb595192e5143bdd9d128d38ad3022573650c70",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 118256,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.0025707079912535846,
+    "grammar_bytes": 148430,
+    "kind": "H",
+    "layer": 4,
+    "positive_fraction": 0.0775604248046875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "0b35bca02dfdc3a7a60978b446212dc32f1fe8ea04c6c2627f2bc60f7aa207ce",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 176768,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.00436437499593012,
+    "grammar_bytes": 258818,
+    "kind": "P",
+    "layer": 5,
+    "positive_fraction": 0.13336181640625,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "5d7b09cc7f49b4ae61d58a71082e01c66434b2a08db874dbd9d23f68e1bbad25",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 176768,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.004301207984099165,
+    "grammar_bytes": 258810,
+    "kind": "H",
+    "layer": 5,
+    "positive_fraction": 0.13336181640625,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "03a8cbe7b2527293ee9c10230e37765478fde0984658c1c2831f6d19889a90df",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 294452,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.00822537500062026,
+    "grammar_bytes": 475666,
+    "kind": "P",
+    "layer": 6,
+    "positive_fraction": 0.24559402465820312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "429c7346a15a1b6c4d30b03630e78f512e8e2956f24a6bc95751b43d1916140c",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 294452,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.00775212500593625,
+    "grammar_bytes": 475658,
+    "kind": "H",
+    "layer": 6,
+    "positive_fraction": 0.24559402465820312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "d83fd4a38429279ff1bb29e455425555be37b44df58f0870ca6563ca88135758",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 487676,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.013855041994247586,
+    "grammar_bytes": 845622,
+    "kind": "P",
+    "layer": 7,
+    "positive_fraction": 0.4298667907714844,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "79d2e5f15cb3c6fe2a45f292c221a8356bab06f98d4f9395de86b7a87b3d0b39",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 487676,
+    "dense_bytes": 1048576,
+    "document_index": 0,
+    "encode_seconds_diagnostic_only": 0.013081250013783574,
+    "grammar_bytes": 845614,
+    "kind": "H",
+    "layer": 7,
+    "positive_fraction": 0.4298667907714844,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "7b91ac98517ece6ca471c91432996f17ba176cd7a071e3ff194b248c0362bb19",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 488176,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.01477449998492375,
+    "grammar_bytes": 846454,
+    "kind": "P",
+    "layer": 0,
+    "positive_fraction": 0.4303436279296875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "c3441255b4d8571baac10319a0d54166ef9e275a2e71c9d99a2d8b4c77b051c4",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 488176,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.013493375008692965,
+    "grammar_bytes": 846446,
+    "kind": "H",
+    "layer": 0,
+    "positive_fraction": 0.4303436279296875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "21a07f8309acca0e2291deed5c0e84d750f4cfb123d3d9ad2a8cbe782232091c",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 160788,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.003659624984720722,
+    "grammar_bytes": 225418,
+    "kind": "P",
+    "layer": 1,
+    "positive_fraction": 0.11812210083007812,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "b4e9bd09436bfb0f9b1e0ec255e6c8992db2fbb91f50723e7e2989893b1edfcf",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 160788,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.003731208009412512,
+    "grammar_bytes": 225410,
+    "kind": "H",
+    "layer": 1,
+    "positive_fraction": 0.11812210083007812,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "dba57f0dc0936af5a0ffe74eb895715e2a2ff97042dda41088c5e7efb92085aa",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 161220,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.003917208989150822,
+    "grammar_bytes": 226222,
+    "kind": "P",
+    "layer": 2,
+    "positive_fraction": 0.11853408813476562,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "7893f4ac8bd52565674c3b4431683413641ea3b5288dabe06a51ef4e194f11c5",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 161220,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.0036949159984942526,
+    "grammar_bytes": 226214,
+    "kind": "H",
+    "layer": 2,
+    "positive_fraction": 0.11853408813476562,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "58ae2b7a9fe9166719621af9e0618b2d22a2d5374f5344ba9e0ab37cfbba29f4",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 73136,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.0014227080100681633,
+    "grammar_bytes": 65410,
+    "kind": "P",
+    "layer": 3,
+    "positive_fraction": 0.0345306396484375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "e47c49ed902ef49d4b4997f661b339d3342a5cc54ce813f185a812e8bacc38f4",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 73136,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.0014094999933149666,
+    "grammar_bytes": 65402,
+    "kind": "H",
+    "layer": 3,
+    "positive_fraction": 0.0345306396484375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "c529d3e97cc0fbe8da6a77939f7e59ca03e957e25a0c0150639fc02fe163471b",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 127092,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.002526708005461842,
+    "grammar_bytes": 164330,
+    "kind": "P",
+    "layer": 4,
+    "positive_fraction": 0.08598709106445312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "46227af8139dd7b565477ba328324ba6c8b1b6891fbb3ee15f0fee99b83a8eb7",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 127092,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.0025892909907270223,
+    "grammar_bytes": 164330,
+    "kind": "H",
+    "layer": 4,
+    "positive_fraction": 0.08598709106445312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "b1e0b6f46fe7934ac46e67991a01346525ebae167cafff48858e00b2c71e6725",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 191148,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.004286042007151991,
+    "grammar_bytes": 285238,
+    "kind": "P",
+    "layer": 5,
+    "positive_fraction": 0.14707565307617188,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "cc9bc821cd84810208df12d2091abc94f4edd75dccf02026b6af1b92f4c06e21",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 191148,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.004242832976160571,
+    "grammar_bytes": 285238,
+    "kind": "H",
+    "layer": 5,
+    "positive_fraction": 0.14707565307617188,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "cd7a93f4320088cc3d6061d01561f9e13076ac07a565acb18b947c6d2dbb3ac3",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 286516,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.006843750015832484,
+    "grammar_bytes": 460918,
+    "kind": "P",
+    "layer": 6,
+    "positive_fraction": 0.23802566528320312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "612b72cbad6b43cc2c7dcb3163473ef28c9ca8ef0116fde95cfc7396fd5a5f96",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 286516,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.007024333986919373,
+    "grammar_bytes": 460918,
+    "kind": "H",
+    "layer": 6,
+    "positive_fraction": 0.23802566528320312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "58d2f9481a04d0436159dc4bb904dd4039bf5b6c40f383ff93491a8a3768b594",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 469840,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.013127957994583994,
+    "grammar_bytes": 812262,
+    "kind": "P",
+    "layer": 7,
+    "positive_fraction": 0.4128570556640625,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "1a781b56e1c9f363c61eba54535fa8b0283810214bdefe19fffb92028757a7e8",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 469840,
+    "dense_bytes": 1048576,
+    "document_index": 1,
+    "encode_seconds_diagnostic_only": 0.012599292007507756,
+    "grammar_bytes": 812262,
+    "kind": "H",
+    "layer": 7,
+    "positive_fraction": 0.4128570556640625,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "7d3446c45ce39d86e2fe695b66eff6f3b06b90f5452eed4cfafb1ca0d027d952",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 467484,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.013383874989813194,
+    "grammar_bytes": 807734,
+    "kind": "P",
+    "layer": 0,
+    "positive_fraction": 0.4106101989746094,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "f9b4e04dc54d8d199bbd80c4e314ad8fc155c094ff0f76bf1457bb696b197040",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 467484,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.014444917003856972,
+    "grammar_bytes": 807734,
+    "kind": "H",
+    "layer": 0,
+    "positive_fraction": 0.4106101989746094,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "063229ddf65df525561b9c3c3f15a797ede462691e1301e91a0a5660909a3829",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 146484,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.0037601249932777137,
+    "grammar_bytes": 199478,
+    "kind": "P",
+    "layer": 1,
+    "positive_fraction": 0.10448074340820312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "19778c01fb5bb16f14c1745bf2c4fb6d3b5e383647750efc87fde4f329a4aff7",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 146484,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.0035896250046789646,
+    "grammar_bytes": 199478,
+    "kind": "H",
+    "layer": 1,
+    "positive_fraction": 0.10448074340820312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "b62871ab7f674d836429563f9e8d165506f004b7695a91f1cba0fb3a75566855",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 146936,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.0033915420062839985,
+    "grammar_bytes": 200294,
+    "kind": "P",
+    "layer": 2,
+    "positive_fraction": 0.10491180419921875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "3a172819fdaaf6628c8b6ac581751997d06cd61c3acf2c101477acec66beb4e1",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 146936,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.003416958003072068,
+    "grammar_bytes": 200294,
+    "kind": "H",
+    "layer": 2,
+    "positive_fraction": 0.10491180419921875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "458314517eed9ca094a16141a073be4384d6c47be42f5766f3c25302e4cd9838",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 64736,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.001263541984371841,
+    "grammar_bytes": 49558,
+    "kind": "P",
+    "layer": 3,
+    "positive_fraction": 0.026519775390625,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "d893a8d87b9dfe6e3f290917ae7bafa322a0f11abae6637cb52ab40d57cc8a39",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 64736,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.0012122499756515026,
+    "grammar_bytes": 49558,
+    "kind": "H",
+    "layer": 3,
+    "positive_fraction": 0.026519775390625,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "7c3ecf8b0aa6dce95d38f7bf1543c0a65e9a4d5fc354ebb6853d40db9cab8a4c",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 109556,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.0023463329998776317,
+    "grammar_bytes": 132542,
+    "kind": "P",
+    "layer": 4,
+    "positive_fraction": 0.06926345825195312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "f7aae72320107cf7c243e88db527c9fc9a02206752945a0114b409a460ebda03",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 109556,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.002553541009547189,
+    "grammar_bytes": 132542,
+    "kind": "H",
+    "layer": 4,
+    "positive_fraction": 0.06926345825195312,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "a2aada40a411c3974b3bf36dd837b3e3da153e4ef13e434d710f5ec073bd5569",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 162200,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.004011500015622005,
+    "grammar_bytes": 227930,
+    "kind": "P",
+    "layer": 5,
+    "positive_fraction": 0.11946868896484375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "7bdf12fa7c2b138cf8275bd36dd9fe6cb26c5b7a80ec707301d4311ad9ec1e24",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 162200,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.0037265419960021973,
+    "grammar_bytes": 227930,
+    "kind": "H",
+    "layer": 5,
+    "positive_fraction": 0.11946868896484375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "487f516fb88ec48aa4b62be6b29f7ae93eb9646ff38dec0c832f4c4ef165f76a",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 260892,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.006532041006721556,
+    "grammar_bytes": 413718,
+    "kind": "P",
+    "layer": 6,
+    "positive_fraction": 0.21358871459960938,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "cc1235beb53f49719b530123dde23d01334d7fbbdc6d4ef0c1bde74ef5e71b9e",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 260892,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.007166875002440065,
+    "grammar_bytes": 413718,
+    "kind": "H",
+    "layer": 6,
+    "positive_fraction": 0.21358871459960938,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "76f73f88b32efb9542728731bc9b42092882e5ebffb6115f3cfad782a706e66a",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 458580,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.013632666988996789,
+    "grammar_bytes": 791114,
+    "kind": "P",
+    "layer": 7,
+    "positive_fraction": 0.4021186828613281,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "482a8f147adc9dae64149397c7963ca65bfbb0a5c78976cc90ac6c0580847caf",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 458580,
+    "dense_bytes": 1048576,
+    "document_index": 2,
+    "encode_seconds_diagnostic_only": 0.012301707989536226,
+    "grammar_bytes": 791114,
+    "kind": "H",
+    "layer": 7,
+    "positive_fraction": 0.4021186828613281,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "1139ad6d98fef612401786a18ddec1b1fc3ce1ce6071c659231712091edeec40",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 460248,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.01267445899429731,
+    "grammar_bytes": 794146,
+    "kind": "P",
+    "layer": 0,
+    "positive_fraction": 0.40370941162109375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "e93725603c60f219556e98ba8cbf92211e0c618266f521ee5e8d3b46be484353",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 460248,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.013135458022588864,
+    "grammar_bytes": 794146,
+    "kind": "H",
+    "layer": 0,
+    "positive_fraction": 0.40370941162109375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "723b4e83f91e23dce067b4f31134d9e4f86f2eb81c69532528445c7303e420d7",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 146576,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.003448333009146154,
+    "grammar_bytes": 199642,
+    "kind": "P",
+    "layer": 1,
+    "positive_fraction": 0.1045684814453125,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "f5223f411269977cac23451ff554181ca1d460197002b13c2a584909bbf6eb90",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 146576,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.003532000002451241,
+    "grammar_bytes": 199642,
+    "kind": "H",
+    "layer": 1,
+    "positive_fraction": 0.1045684814453125,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "25cc8e979a98e31e0df19afffa04c8d7e2b81d670221605202607b364aac4d3f",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 147416,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.003809499990893528,
+    "grammar_bytes": 201174,
+    "kind": "P",
+    "layer": 2,
+    "positive_fraction": 0.10536956787109375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "3114350ddcd08590ad1ac48bb0a8e06b569fa5cda6832bc45c81fc712f1f5f7b",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 147416,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.003307415987364948,
+    "grammar_bytes": 201174,
+    "kind": "H",
+    "layer": 2,
+    "positive_fraction": 0.10536956787109375,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "584a18cecb92396c84ef5d5fc8ad9457f2dc43148b5d93d2f54eee6ab020f36e",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 68368,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.001361750008072704,
+    "grammar_bytes": 55918,
+    "kind": "P",
+    "layer": 3,
+    "positive_fraction": 0.0299835205078125,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "f7a420324172a4b3cabdff380ea6a4d08c19b86d9633ca721d3225d558b4048d",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 68368,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.001317959016887471,
+    "grammar_bytes": 55918,
+    "kind": "H",
+    "layer": 3,
+    "positive_fraction": 0.0299835205078125,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "7de5f758afc63b595f0dd8b775d7bca859e03aac885d26800279556fbae57626",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 117280,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.0025845839991234243,
+    "grammar_bytes": 146554,
+    "kind": "P",
+    "layer": 4,
+    "positive_fraction": 0.076629638671875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "ed6b99cd23ecb13b74bc80df80b989a96691fccea07a5067409ba580d2b5ab4c",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 117280,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.002473708998877555,
+    "grammar_bytes": 146554,
+    "kind": "H",
+    "layer": 4,
+    "positive_fraction": 0.076629638671875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "93a1f38ff7861bb3b3dd5633eb8590659406946a470e35555a7879aad7844f13",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 179016,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.003998707979917526,
+    "grammar_bytes": 262854,
+    "kind": "P",
+    "layer": 5,
+    "positive_fraction": 0.13550567626953125,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "41d1726aa6b750fc6beb2fd053fcaa04c096b7ade2a4d46f200ef82b192241fb",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 179016,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.003939084010198712,
+    "grammar_bytes": 262854,
+    "kind": "H",
+    "layer": 5,
+    "positive_fraction": 0.13550567626953125,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "5879e6ce589be501377c9a735ed4f56117ab43df5c24d6353a20a581b650c78a",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 274616,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.00675829200190492,
+    "grammar_bytes": 439026,
+    "kind": "P",
+    "layer": 6,
+    "positive_fraction": 0.22667694091796875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "5ffca97aa6692780a4c39f207f38377ee21eadbfd11794c28e785e95fde2c124",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 274616,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.0072083750274032354,
+    "grammar_bytes": 439026,
+    "kind": "H",
+    "layer": 6,
+    "positive_fraction": 0.22667694091796875,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "585ec64a3410321084f389cd4c8bad7792ba690b16da397994e02218e19ec693",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 479740,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.013787415984552354,
+    "grammar_bytes": 830774,
+    "kind": "P",
+    "layer": 7,
+    "positive_fraction": 0.4222984313964844,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "c567edb5a67c29dbff0b550856d31c28034f8d85cf210f8af78027596ae86c35",
+    "shape": [
+      128,
+      2048
+    ]
+  },
+  {
+    "bitmap_payload_estimate_bytes": 479740,
+    "dense_bytes": 1048576,
+    "document_index": 3,
+    "encode_seconds_diagnostic_only": 0.014637000014772639,
+    "grammar_bytes": 830774,
+    "kind": "H",
+    "layer": 7,
+    "positive_fraction": 0.4222984313964844,
+    "roundtrip_exact": true,
+    "rules": 0,
+    "sha256": "deed242953a2e9370d18397ae56d11c9dcd7dd9f5fadc695a0541b0d3d635480",
+    "shape": [
+      128,
+      2048
+    ]
+  }
+]

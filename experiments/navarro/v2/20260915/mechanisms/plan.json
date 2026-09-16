@@ -1,0 +1,20 @@
+{
+  "campaign_manifest_sha256": "3b3bb19f8d979fce17d82a89f17b350171161eeda78d881ebb37c0aae2c5bada",
+  "checkpoint_hashes_sha256": "7a2b1e5c5a5ebcb907e260bf7d50bc9824bdf07b5a6f173f8dba5d7cde6a479f",
+  "created_at": "2026-09-15T21:54:14.739540+00:00",
+  "direct_product_documents": 4,
+  "documents": 32,
+  "grammar_objects": [
+    "P",
+    "H"
+  ],
+  "layers": "all",
+  "micro_repeats": 5,
+  "positions_per_document": 128,
+  "scope": "Mechanisms only. No full-training speedup or quality claim. No threshold amendments.",
+  "seed": 7129,
+  "selection": "first 32 calibration documents, all layers, first 128 positions; no reserved reads",
+  "source_sha256": "dca723eb05a200fd4b33d72b746f7166d810df2bc527389d4fc16993c4703290",
+  "study": "V2-H direct CSR diagnostic and expanded V2-S activation sample",
+  "timeout_seconds": 900
+}

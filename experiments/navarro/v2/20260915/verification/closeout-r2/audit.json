@@ -1,0 +1,70 @@
+{
+  "at": "2026-09-15T23:41:57.111132+00:00",
+  "campaign_manifest_sha256": "3b3bb19f8d979fce17d82a89f17b350171161eeda78d881ebb37c0aae2c5bada",
+  "combined_shortlist_empty": true,
+  "combined_trials": {
+    "bitmap": {
+      "manifest_sha256": "6ec36ba19b8596852ae28396c30e377dcd5cfcfb9de7f0909bed47a2317dd25d",
+      "verified_files": 9
+    },
+    "native": {
+      "manifest_sha256": "bde8f9b6531b35d4ce8b42528d13c5aa3e27e63b724a17bac9e9ce3a4fd486c4",
+      "verified_files": 9
+    },
+    "rows-bitmap": {
+      "manifest_sha256": "bf99ca08057ed7323582131f03dad8008053a3533536db8dd36f762867783c34",
+      "verified_files": 9
+    },
+    "rows-dense": {
+      "manifest_sha256": "5c55813532cbb60eb54e5c9f0013384e1e8fdcf34dc515c22e9bd30c0afec8ac",
+      "verified_files": 9
+    },
+    "tape-dense": {
+      "manifest_sha256": "f9d09db89d4131d228e068b6920dfe84c34d37ed67c6b85756bf0cdcbb8f18cb",
+      "verified_files": 9
+    },
+    "tape-recompute": {
+      "manifest_sha256": "4253c8e4b9e02e645725014ca8beca2697913a35c8820bbd2b5bcee6b4664659",
+      "verified_files": 9
+    }
+  },
+  "derived_outputs": {
+    "combined.tsv": "bc01600cd567f3f3e044ef59e94a408cffa2ebf986b30fa99d3a358e5e167184",
+    "derived.json": "debdd338e533e8f6164298ec61fa93bcd9e5466f1c2430d33cb5b52487a6f9a9",
+    "report.md": "c6f56c9ca7791d850dc66d3a0d3640aadeb74b10f14a2cc2443cab76c8dcb56d"
+  },
+  "ledger_records": 33,
+  "ledger_sha256": "81a3a09c6745d9ddb1b6b31f2f1dd5904d9dc6405a19e8dfafdd233ba14aeb55",
+  "primary_shortlist_empty": true,
+  "primary_trials_verified": 11,
+  "protected_sources_verified": true,
+  "reserved_evaluation_artifacts_present": false,
+  "scope": "File/hash, source, request and arithmetic verification; not a runtime proof that no code ever accessed reserved data.",
+  "source_sha256": "e0be69c8cd19990263ae5d5f3192956ee6374b8ae2f6c8b2c358f23b8d488bec",
+  "studies": {
+    "combined-gradients": {
+      "manifest_sha256": "f2104ed15ace40780cde249984c0c8d25715970c41e4a8cb1cff273131c70a20",
+      "verified_files": 4
+    },
+    "combined-gradients-r2": {
+      "manifest_sha256": "25760db4a11cdb723e0682bda93072d770469a50c6076be16af21ab868ba3cbf",
+      "verified_files": 7
+    },
+    "dictionary-extension": {
+      "manifest_sha256": "af4dba5df4293a0fe497e9bc9611545afa221dd8a841de7ea391d6fba946bae1",
+      "verified_files": 6
+    },
+    "direct-diagnosis": {
+      "manifest_sha256": "83510a785feca47cb0a81fc7f40910c4431d74150a56562e4369a5bce21766ab",
+      "verified_files": 5
+    },
+    "gradient-census": {
+      "manifest_sha256": "12c8301bbc5235ef512186d2fe0676a2c7e19d10d86ff4ac54a30afd96991ba6",
+      "verified_files": 7
+    },
+    "mechanisms": {
+      "manifest_sha256": "49555420e52e07d2a8195148b777d7a4be5b4a3cb5ca9abebee71431a5574ba0",
+      "verified_files": 6
+    }
+  }
+}

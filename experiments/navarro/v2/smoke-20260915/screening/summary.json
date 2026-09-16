@@ -1,0 +1,14 @@
+{
+  "activation_roundtrip_pass": null,
+  "activation_rules": 0,
+  "activation_samples": 0,
+  "activation_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "checkpoint_census": [],
+  "kind": "structural_screening_not_confirmatory",
+  "limitations": [
+    "Local dictionaries only, three preregistered row block sizes.",
+    "Activation probe covers first 128 tokens of four calibration documents, all MLPs; not an exhaustive activation census.",
+    "No time/speedup conclusion from this structural probe.",
+    "Direct sparse activation products and global dictionaries need separate implementations."
+  ]
+}

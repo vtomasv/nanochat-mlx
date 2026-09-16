@@ -1,0 +1,49 @@
+{
+  "checkpoints": [],
+  "completed_at": "2026-09-15T19:11:45.096492+00:00",
+  "correctness_pass": true,
+  "evaluation_seconds": 0.025848374993074685,
+  "limitations": [
+    "One engineering process; no confirmatory inference.",
+    "Calibration only; reserved evaluation was not opened.",
+    "RSS and MLX overlap and must not be summed.",
+    "Activation accounting records last microbatch, not a whole-step live-buffer census."
+  ],
+  "metrics": {
+    "mean_step_seconds": 0.045580021003843285,
+    "median_step_seconds": 0.045580021003843285,
+    "mlx_active_bytes": 102368376,
+    "mlx_active_peak_bytes": 302393412,
+    "mlx_cache_bytes": 318106620,
+    "p95_step_seconds": 0.048164764292596376,
+    "payload_ratio": 0.0,
+    "process_tree_rss_peak_bytes": 485752832,
+    "rss_error": null,
+    "rss_peak_bytes": 484048896
+  },
+  "parameters": 8585352,
+  "quality": {
+    "documents": 4,
+    "nll": 10.387175559997559,
+    "split": "calibration",
+    "valid_tokens": 512
+  },
+  "scenario": {
+    "arm": "tape_recompute",
+    "id": "tape-recompute"
+  },
+  "start_step": 10,
+  "started_at": "2026-09-15T19:11:43.945810+00:00",
+  "status": "MEASURED_EXPLORATORY",
+  "steps": 2,
+  "swap_samples": [
+    {
+      "monotonic_seconds": 234254.669880041,
+      "used_bytes": 0
+    }
+  ],
+  "tokens": 256,
+  "total_seconds": 1.052473249990726,
+  "training_wall_including_checkpoints_seconds": 0.11126104200957343,
+  "warmup_discarded_seconds": 0.0436548340076115
+}

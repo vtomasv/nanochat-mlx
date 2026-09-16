@@ -1,0 +1,9 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+rows-dense 120 0.9125
+rows-dense 140 0.9134
+rows-dense 160 0.8895
+rows-dense 180 0.906
+rows-dense 200 0.9064

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Users/tomasvera/dev/nanochat-mlx/.venv/bin/python3",
+    "-m",
+    "pytest",
+    "tests/test_navarro_v2_metal.py",
+    "tests/test_navarro_v2_protocol.py",
+    "tests/test_navarro_mlx.py",
+    "tests/test_navarro_grammar.py",
+    "tests/test_navarro_bitmap.py",
+    "-q",
+    "--junitxml=/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/v2/20260915/gate/junit.xml"
+  ],
+  "counts": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 128
+  },
+  "junit_sha256": "1bc153a475ee397884f2907651a29dd769587675f51610315667c7374a6a1b05",
+  "pass": true,
+  "sources_hash": "b70ecb36774fbf8c8b2640dbc8f8f39c364e1db7899b3bf8372afea668a74a4e"
+}

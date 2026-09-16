@@ -1,0 +1,10 @@
+{
+  "archive_bytes": 10539047,
+  "archive_sha256": "de6e2d697987684782c85ee6a781a346d6ae3ea024435038b3e2d11ad2ffc95c",
+  "at": "2026-09-15T23:47:00.417527+00:00",
+  "extracted_copy_cpu_audit_pass": true,
+  "scope": "Fresh directory, stdlib-only audit; no datasets or MLX execution required. This verifies evidence portability, not training reproducibility.",
+  "verified_extension_trials": 6,
+  "verified_primary_trials": 11,
+  "verified_supplementary_records": 6
+}

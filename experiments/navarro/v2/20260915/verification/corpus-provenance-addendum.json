@@ -1,0 +1,37 @@
+{
+  "limitations": [
+    "Post-experiment identification of a public revision containing identical bytes; does not establish original download date or revision.",
+    "Tokenizer training provenance incomplete.",
+    "Near-duplicate contamination not audited."
+  ],
+  "method": "HTTP HEAD resolve response x-repo-commit and x-linked-etag matched to original local manifest and rehashed local bytes. Redirect CDN etag is a different XET identity and was not used as the file SHA256.",
+  "original_manifest_modified": false,
+  "original_manifest_sha256": "ebc5351d071edc9eae8e350b1fd1b1bc1fa157d479569570dfcc0f6551567e19",
+  "recorded_at": "2026-09-15T23:41:56.872811+00:00",
+  "shards": [
+    {
+      "bytes": 94511680,
+      "filename": "shard_00000.parquet",
+      "pinned_url": "https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/4c8f30d6756da75362432a4d5569e1b229263b71/shard_00000.parquet",
+      "selected_head_headers": {
+        "x-linked-etag": "6a3450ea745ee6b6830c09819c0f2c72682eba443022de595bcb50ceb3092c22",
+        "x-linked-size": "94511680",
+        "x-repo-commit": "4c8f30d6756da75362432a4d5569e1b229263b71"
+      },
+      "sha256": "6a3450ea745ee6b6830c09819c0f2c72682eba443022de595bcb50ceb3092c22",
+      "upstream_revision": "4c8f30d6756da75362432a4d5569e1b229263b71"
+    },
+    {
+      "bytes": 94233382,
+      "filename": "shard_00001.parquet",
+      "pinned_url": "https://huggingface.co/datasets/karpathy/fineweb-edu-100b-shuffle/resolve/4c8f30d6756da75362432a4d5569e1b229263b71/shard_00001.parquet",
+      "selected_head_headers": {
+        "x-linked-etag": "30a72934cb85581f88c701fc4b6f389a7215d2af99ee1d3f65e1a99d16c06adf",
+        "x-linked-size": "94233382",
+        "x-repo-commit": "4c8f30d6756da75362432a4d5569e1b229263b71"
+      },
+      "sha256": "30a72934cb85581f88c701fc4b6f389a7215d2af99ee1d3f65e1a99d16c06adf",
+      "upstream_revision": "4c8f30d6756da75362432a4d5569e1b229263b71"
+    }
+  ]
+}

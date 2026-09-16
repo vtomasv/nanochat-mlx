@@ -1,0 +1,111 @@
+{
+  "accumulator_stored_ratio_mean": {
+    "rows-bitmap": {
+      "0": 0.36488168670709464,
+      "1": 0.38769583858328843
+    },
+    "rows-dense": {
+      "0": 0.36488168670709464,
+      "1": 0.38769583858328843
+    }
+  },
+  "fingerprint_comparison": {
+    "rows-bitmap": {
+      "control": "bitmap",
+      "groups": {
+        "adam": {
+          "equal_hashes": 8,
+          "tensors": 24
+        },
+        "model": {
+          "equal_hashes": 0,
+          "tensors": 60
+        },
+        "muon": {
+          "equal_hashes": 0,
+          "tensors": 52
+        }
+      }
+    },
+    "rows-dense": {
+      "control": "tape-dense",
+      "groups": {
+        "adam": {
+          "equal_hashes": 8,
+          "tensors": 24
+        },
+        "model": {
+          "equal_hashes": 0,
+          "tensors": 60
+        },
+        "muon": {
+          "equal_hashes": 0,
+          "tensors": 52
+        }
+      }
+    }
+  },
+  "fingerprint_limit": "Hashes differ after 100 updates; no bit-identical trajectory or full-size final-state tolerance assertion. Small ten-update tolerance test and full-model initial gradient gate passed.",
+  "rows": [
+    {
+      "calibration_nll": 6.220080661703289,
+      "decision": "CONTROL",
+      "mean_step_seconds": 0.8448575833806535,
+      "memory_savings_vs_dense": 0.0,
+      "memory_savings_vs_native": 0.23623025186335922,
+      "mlx_peak_gib": 5.187677696347237,
+      "time_ratio_vs_native": 1.03448450891177,
+      "trial": "tape-dense"
+    },
+    {
+      "calibration_nll": 6.220080595355058,
+      "decision": "NOT_SHORTLISTED",
+      "mean_step_seconds": 0.9269701791519764,
+      "memory_savings_vs_dense": 0.08232802221095747,
+      "memory_savings_vs_native": 0.29910990465200993,
+      "mlx_peak_gib": 4.760586451739073,
+      "time_ratio_vs_native": 1.1350271447156268,
+      "trial": "rows-bitmap"
+    },
+    {
+      "calibration_nll": 6.220080585096152,
+      "decision": "CONTROL",
+      "mean_step_seconds": 0.9702270587498788,
+      "memory_savings_vs_dense": 0.025022086211347938,
+      "memory_savings_vs_native": 0.2553413643468537,
+      "mlx_peak_gib": 5.057871177792549,
+      "time_ratio_vs_native": 1.187992961355199,
+      "trial": "bitmap"
+    },
+    {
+      "calibration_nll": 6.220080642737584,
+      "decision": "NOT_SHORTLISTED",
+      "mean_step_seconds": 0.9174027688111528,
+      "memory_savings_vs_dense": 0.05704702372792847,
+      "memory_savings_vs_native": 0.2798010428079841,
+      "mlx_peak_gib": 4.891736123710871,
+      "time_ratio_vs_native": 1.1233123445141768,
+      "trial": "rows-dense"
+    },
+    {
+      "calibration_nll": 6.220080622260163,
+      "decision": "CONTROL",
+      "mean_step_seconds": 0.9052945246302988,
+      "memory_savings_vs_dense": 0.04819112031112316,
+      "memory_savings_vs_native": 0.2730371716858083,
+      "mlx_peak_gib": 4.937677696347237,
+      "time_ratio_vs_native": 1.1084864244045494,
+      "trial": "tape-recompute"
+    },
+    {
+      "calibration_nll": 6.220080635236697,
+      "decision": "CONTROL",
+      "mean_step_seconds": 0.8166942821303382,
+      "memory_savings_vs_dense": -0.309295114711845,
+      "memory_savings_vs_native": 0.0,
+      "mlx_peak_gib": 6.792201064527035,
+      "time_ratio_vs_native": 1.0,
+      "trial": "native"
+    }
+  ]
+}

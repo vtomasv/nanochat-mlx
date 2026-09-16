@@ -15,3 +15,6 @@ build/
 experiments/navarro/artifacts/
 experiments/navarro/sources/
 *.dylib
+
+# Runtime controller locks are local coordination, not scientific evidence.
+experiments/navarro/v2/**/.controller.lock

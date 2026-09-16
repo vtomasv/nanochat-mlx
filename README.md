@@ -4,12 +4,66 @@
 
 Este proyecto parte del port a MLX de [nanochat, de Andrej Karpathy](https://github.com/karpathy/nanochat). Incluye descarga de datos, tokenización, preentrenamiento, ajuste supervisado y chat local. En este fork estudiamos si las técnicas de representación compacta pueden reducir el costo de entrenar y ejecutar ese modelo en un Mac.
 
-La primera campaña implementó y midió tres adaptaciones de trabajos con Gonzalo Navarro como coautor. **Ninguna alcanzó una mejora global bajo los criterios del protocolo.** E1 logró comprimir activaciones y reducir el pico de memoria de MLX, pero aumentó el tiempo y el RSS. E2 y E3 no encontraron suficiente repetición en los tensores entrenados. Estos resultados delimitan lo que funciona en esta configuración y dejan una base medible para futuras investigaciones.
+La **campaña v2 del 15 de septiembre de 2026** incorpora un controlador inspirado en autoresearch, codecs Metal, controles de recomputación y experimentos con gradientes compactos. La combinación de filas de gradientes y bitmap reduce el pico MLX **29,91 % frente a su nativo**, pero aumenta el tiempo **13,50 %** y supera el límite registrado de 10 %. **No hay una mejora confirmada bajo el criterio conjunto de memoria, tiempo y calidad.**
 
-**Lectura rápida:** [resultados](#resultados) · [mejora híbrida posterior](#hibrido) · [metodología](#metodologia) · [E1: activaciones](#e1) · [E2: optimizador](#e2) · [E3: inferencia](#e3) · [alcance y límites](#alcance) · [reproducción](#reproduccion) · [uso del chatbot](#uso)
+La primera campaña implementó y midió tres adaptaciones de trabajos con Gonzalo Navarro como coautor. E1 comprimió activaciones con mayores costos de tiempo y RSS; E2 y E3 no encontraron suficiente repetición en los tensores entrenados. Su evidencia y la mejora posterior del constructor RePair se conservan como antecedentes con sus propios controles.
+
+**Lectura rápida:** [campaña v2 y autoresearch](#campana-v2) · [resultados históricos](#resultados) · [mezcla RePair](#hibrido) · [metodología histórica](#metodologia) · [E1](#e1) · [E2](#e2) · [E3](#e3) · [alcance](#alcance) · [reproducción](#reproduccion) · [uso del chatbot](#uso)
+
+<a id="campana-v2"></a>
+## Campaña v2: autoresearch, entrenamiento y evidencia
+
+El controlador MLX sigue el ciclo **proponer → probar → conservar o descartar → documentar**, inspirado en [karpathy/autoresearch](https://github.com/karpathy/autoresearch). Ejecuta una cuadrícula acotada y recibe propuestas de un agente externo mediante `submit`; no llama por sí mismo a una API de modelos. Cada ensayo conserva hipótesis, fuentes, configuración, controles, medidas y fallos. El evaluador está congelado y la búsqueda utiliza solo calibración.
+
+Se completaron **1000 actualizaciones de referencia y 16 pilotos de 100 actualizaciones**: diez en la campaña principal y seis en una extensión registrada de gradientes. Hardware: Apple M3 Max, 128 GiB; modelo FP32 de 125,8 millones de parámetros, ocho bloques, T=1024 y 8192 tokens por actualización. Los pilotos parten del checkpoint 100. Son ventanas exploratorias, con un proceso por brazo, sin intervalos confirmatorios ni comparación de convergencia desde cero.
+
+### Qué se observó
+
+- **Activaciones P con bitmap Metal:** aproximadamente 55 % menos payload; el ahorro incremental del pico MLX frente al mismo tape denso es solo **2,50 %**, inferior al 5 % exigido. El tape es la implementación explícita que conserva activaciones para calcular gradientes; su control denso separa el ahorro por representación del ahorro por reorganizar el cálculo.
+- **Gradientes por filas visitadas:** la extensión conjunta con bitmap supera el criterio de memoria incremental, pero falla el presupuesto de tiempo. Se comprueban los ceros de todas las filas omitidas y se reconstruyen los gradientes antes del optimizador, conservando momentos y decay.
+- **Gramáticas y operadores directos:** 512 muestras de activaciones tienen compresión por ceros y cero reglas RePair. El producto CSR Metal directo tarda 11,01× el denso local incluyendo construcción y falla tolerancia en 28/32 casos. Las cotas descartan los formatos de pesos y estados examinados; no demuestran imposibilidad para toda estructura compacta.
+
+La siguiente tabla corresponde **solo a la extensión de gradientes**, con controles nuevos. Sus tiempos no se mezclan con los de la campaña principal o la histórica.
+
+| Brazo de la extensión | s/actualización | Pico MLX (GiB) | Tiempo / nativo | Ahorro MLX frente al tape denso |
+|---|---:|---:|---:|---:|
+| Nativo | 0,816694 | 6,792201 | 1,000000 | −30,930 % |
+| Tape denso | 0,844858 | 5,187678 | 1,034485 | 0 % |
+| Filas + tape denso | 0,917403 | 4,891736 | 1,123312 | 5,705 % |
+| Filas + bitmap | 0,926970 | 4,760586 | 1,135027 | 8,233 % |
+
+![Extensión v2: las filas compactas reducen memoria, pero ambos candidatos exceden el máximo temporal de 1,10 veces el nativo.](experiments/navarro/v2/20260915/paper/combined-figures-r2/combined.png)
+
+**Decisión:** ningún candidato preseleccionado; no se ejecutó confirmación ni se abrió la evaluación reservada. Pasaron las **128 pruebas previas** y las **33 pruebas adicionales del candidato SIMD**, sin omisiones. La extensión pasó su prueba pequeña de diez actualizaciones y la puerta inicial de gradientes del modelo completo. Las huellas finales de pesos tras cien actualizaciones difieren de sus controles: queda pendiente cuantificar su distancia a tamaño completo y validar trayectorias largas. Una NLL cercana no sustituye esa comprobación.
+
+### Inspeccionar o continuar
+
+```bash
+# Consultar la campaña conservada y sus escenarios, sin entrenar
+uv run --frozen python -m scripts.navarro_v2 status
+uv run --frozen python -m scripts.navarro_v2 campaign --dry-run
+
+# Recalcular la auditoría en un directorio nuevo; no requiere Metal
+python3 -m experiments.navarro.v2.studies.closeout \
+  --output /tmp/navarro-v2-audit-new
+```
+
+El [runbook v2](docs/navarro/autoresearch-v2.md) explica preparación, campañas nuevas, propuestas, presupuestos y condiciones de confirmación. El [programa del agente](research/navarro/program.md) define la superficie editable. Las fuentes protegidas y los resultados existentes no se sobrescriben; una modificación del arnés exige otra campaña.
+
+| Recurso v2 | Contenido |
+|---|---|
+| [Especificación v2](ESPECIFICACIONES_NAVARRO_NANOCHAT_MLX.md) | Hipótesis, experimentos condicionales, controles y salvaguardas |
+| [Índice y cobertura](experiments/navarro/v2/20260915/README.md) | Qué se ejecutó y qué permanece pendiente |
+| [Manuscrito de trabajo](experiments/navarro/v2/20260915/paper/manuscript.md) | Resultados, atribución al antecedente de Navarro y amenazas a la validez |
+| [Informe principal](experiments/navarro/v2/20260915/report.md) | Diez pilotos y referencia con sus controles |
+| [Informe de gradientes](experiments/navarro/v2/20260915/verification/closeout-r2/report.md) | Seis pilotos adicionales, contabilidad y decisiones |
+| [Auditoría ampliada](experiments/navarro/v2/20260915/verification/closeout-r2/audit.json) | Hashes, fuentes, peticiones y aritmética de las decisiones |
+| [Paquete de evidencia](experiments/navarro/navarro-v2-evidence-20260915.zip) | 481 archivos verificados; [SHA256](experiments/navarro/navarro-v2-evidence-20260915.sha256) y [auditoría de la copia extraída](experiments/navarro/navarro-v2-evidence-20260915.verification.json) |
+
+El paquete conserva la versión documental previa a esta actualización editorial del README. Sus [límites de reproducibilidad](experiments/navarro/v2/EVIDENCE.md) son explícitos: no incluye corpus, tokenizer ni checkpoints grandes. Dos shards coinciden por SHA256 con una revisión pública fijada; siguen pendientes la procedencia completa del tokenizer y el análisis de duplicados cercanos. Las ramas de cuantización, LoRA congelado, KV y confirmación estadística no se presentan como ejecutadas.
 
 <a id="resultados"></a>
-## Resultados de la campaña
+## Resultados de la primera campaña
 
 Mediciones del **14 de septiembre de 2026**, en **Apple M3 Max, 128 GiB de memoria unificada, MLX 0.32.2 y FP32**. El modelo principal tiene **125.829.648 parámetros**, 8 bloques y vocabulario de 32.768 tokens. La referencia matemática es el commit [`b54b9fc`](https://github.com/vtomasv/nanochat-mlx/tree/b54b9fc139f455a9a5e60dc9a688ca9dbdb22944).
 
@@ -51,7 +105,7 @@ Estas son mediciones nuevas: **diez actualizaciones desde el checkpoint 100, sem
 **Evidencia:** [comparación final](experiments/navarro/verification/hybrid-repair-v2/comparison.json) · [codec](experiments/navarro/verification/hybrid-repair-v2/codec.json) · [inferencia](experiments/navarro/verification/hybrid-repair-v2/inference.json) · [repetición nativa](experiments/navarro/verification/hybrid-repair-v2/training-reproducibility.json) · [JUnit](experiments/navarro/verification/hybrid-repair-v2/correctness-junit.xml). La mezcla está integrada en el codec experimental; los resultados y veredictos originales de E1/E2/E3 conservan sus fuentes archivadas.
 
 <a id="metodologia"></a>
-## Cómo se llevó adelante el estudio
+## Metodología de la primera campaña
 
 ### La pregunta común
 
@@ -71,7 +125,7 @@ flowchart LR
     E -. E3: representar pesos .-> F
 ```
 
-El diseño completo está en [ESPECIFICACIONES_NAVARRO_NANOCHAT_MLX.md](ESPECIFICACIONES_NAVARRO_NANOCHAT_MLX.md). Los umbrales de selección, tolerancias y controles se fijaron antes de la confirmación. Se mantuvieron arquitectura, parámetros aprendibles, corpus, tokenizer, precisión y ecuaciones originales de Muon y AdamW. No se introdujeron cuantización, poda ni cambios de rango. E1 y E2 se ensayaron por separado.
+La [especificación actual](ESPECIFICACIONES_NAVARRO_NANOCHAT_MLX.md) desarrolla la campaña v2; esta sección describe el protocolo histórico E1/E2/E3, cuyos parámetros y fuentes se conservan en sus registros. Los umbrales de selección, tolerancias y controles se fijaron antes de la confirmación. Se mantuvieron arquitectura, parámetros aprendibles, corpus, tokenizer, precisión y ecuaciones originales de Muon y AdamW. No se introdujeron cuantización, poda ni cambios de rango. E1 y E2 se ensayaron por separado.
 
 ### Configuración y datos comunes
 
@@ -361,7 +415,7 @@ La compresión útil de un objeto es un resultado parcial. Para demostrar una me
 - **Implementación concreta:** RePair usa un constructor propio de recuentos repetidos; E1 y el producto directo E3 tienen componentes CPU. No se midió un operador directo Metal ni se reprodujeron los benchmarks de los autores.
 - **Trazabilidad histórica:** cuatro índices smoke de E1 se reconciliaron porque aún describían el marcador inicial de corrección. Se preservaron los índices previos y los CSV; el XML de aquella puerta temprana no se conservó. La [reconciliación](experiments/navarro/results/audit-metadata-reconciliation.json) y la suite final son evidencias diferenciadas. La primera referencia tiene lecturas de swap antes/después, no el muestreo continuo incorporado después.
 
-**El objetivo de investigación sigue abierto.** Un siguiente estudio podría evaluar una integración bitmap en GPU o un constructor gramatical más eficiente, con su propio protocolo y controles. Son hipótesis futuras: esta campaña no las implementó ni demostró su beneficio. También habría que volver a comprobar tamaño, RSS, tiempo completo y tolerancias, incluido el fallo externo observado.
+**El objetivo de investigación sigue abierto.** La integración bitmap en GPU ya se examinó en la [campaña v2](#campana-v2), y el constructor gramatical se mejoró en la [mezcla RePair](#hibrido). Sus fuentes, controles y conclusiones se registran por separado. Ninguno convierte retroactivamente los pilotos históricos en una mejora confirmada; el fallo externo y los límites de cada estudio permanecen documentados.
 
 <a id="reproduccion"></a>
 ## Reproducir, inspeccionar y extender los experimentos
@@ -372,7 +426,7 @@ El repositorio contiene CSV, JSON, logs, gráficos, manifiestos y hashes. Los co
 
 | Recurso | Contenido |
 |---|---|
-| [Especificación v1.0](ESPECIFICACIONES_NAVARRO_NANOCHAT_MLX.md) | Hipótesis, perfiles, tolerancias, controles y criterios |
+| [Especificación actual v2](ESPECIFICACIONES_NAVARRO_NANOCHAT_MLX.md) | Hipótesis, perfiles, tolerancias, controles y criterios de la nueva campaña |
 | [Informe completo](experiments/navarro/results/informe_final.md) | Tablas, decisiones y enlaces a todas las corridas |
 | [Mapa de fuentes](docs/navarro/source_map.md) | PDF/versiones/hashes, secciones aplicadas y diferencias propias |
 | [Notas de implementación](docs/navarro/implementation.md) | Cinta, codec, estados, memoria e incidencias |
@@ -388,7 +442,9 @@ uv run --frozen --with matplotlib python docs/navarro/generate_readme_figures.py
 
 Los gráficos nuevos se guardan en PNG y SVG. Las dos figuras de curvas de aprendizaje provienen de los CSV y del [generador de curvas de la campaña](nanochat_mlx/experiments/plots.py). Ninguna imagen contiene resultados sintéticos presentados como mediciones.
 
-### Ejecutar una nueva campaña
+### Ejecutar una nueva campaña con el arnés histórico
+
+Para usar autoresearch y las intervenciones Metal de v2, seguir el [runbook v2](docs/navarro/autoresearch-v2.md). Los comandos siguientes corresponden al arnés E1/E2/E3 original.
 
 Se requiere un Mac Apple Silicon con Metal disponible, `uv`, compilador C++ y los datos/tokenizer especificados. Usar [configuración principal](configs/navarro/primary.json), [smoke](configs/navarro/smoke.json) y [runbook](docs/navarro/runbook.md) como punto de partida. Las corridas nuevas deben tener directorios propios; los IDs guardados son exclusivos y los manifiestos no se sobrescriben.
 
@@ -451,10 +507,14 @@ La conversión puede requerir PyTorch como dependencia opcional; el pipeline MLX
 ```text
 nanochat_mlx/                 Modelo, entrenamiento, optimizador, KV cache y datos
 nanochat_mlx/experiments/     Implementaciones aisladas E1/E2/E3 y medición
-scripts/                     Entrypoints ordinarios y navarro_experiments.py
+nanochat_mlx/experiments/v2/  Controlador autoresearch, codec Metal y evaluador fijo
+scripts/                     Entrypoints ordinarios, navarro_experiments.py y navarro_v2.py
 configs/navarro/             Perfiles cerrados smoke, primary y confirm
+configs/navarro/v2/          Perfiles v2 principal y smoke
+research/navarro/            Programa del agente y candidato editable
 tests/test_navarro_*.py       Codec, gradientes, optimizador, replay e inferencia
 experiments/navarro/results/ Evidencia versionada de la campaña
+experiments/navarro/v2/      Pilotos v2, estudios, manuscrito y auditorías
 docs/navarro/                Fuentes, implementación, reproducción e imágenes
 ```
 

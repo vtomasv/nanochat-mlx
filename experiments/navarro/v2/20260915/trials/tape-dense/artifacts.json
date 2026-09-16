@@ -1,0 +1,14 @@
+{
+  "candidate.py": "09b50e6717b2fc16128df52ddf302b2b9490d6346f5d0cea229f36ffecf6d050",
+  "command.json": "92cee523d999832bab4bf74f840f43f4e1c21d1e9f014118c81f414983ec1ba1",
+  "console.log": "319c55cb4ea147364025e2d6f50c0aad31c944e148fae1d651ae8368df6d7229",
+  "correctness.json": "2e0ed78cb5f73253ea139065dea4464c4670a5deb22c8a900b9d457d502e33ed",
+  "environment.json": "a0b7d5c85da2d5343075872ba1ad715d0201786fc1d14092d30fd55b195c0dde",
+  "final-state-fingerprints.json": "e3283070c9e7de9e690edf0848ebc8f1a64521d473a707b92e9b7099c82fddb2",
+  "quality.json": "d15772d82d2b5ea86b17e199c4511356a9d7268df9deb55488aabf659e658b43",
+  "request.json": "5fe7bfc0b815182f8d6dabbf1399dc6c291eb599267201c15a0c1cd32441fe42",
+  "sources.zip": "330379e1d6ed4936c09763bcf58c00b4628c6ecbd078ae3de21f6ed16d992cb9",
+  "steps.csv": "c202ad328c5c32cd214668ed66fb3347e735e82b61a42e1c445190f2711e247d",
+  "summary.json": "263aab55447a2e08b07939e77c10031e183220324be56596c0cbdbb6ca9dfc1f",
+  "tensors.jsonl": "ddb4433bec4384b83cc4f2ddd5c21e4345c6dfee5d6cbfb77bb350a23e776120"
+}

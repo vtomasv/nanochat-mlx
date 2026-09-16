@@ -1,0 +1,216 @@
+[
+  {
+    "correctness_pass": true,
+    "limitations": [
+      "One exploratory process, no confirmatory CI.",
+      "No final checkpoint, reproducible from parent checkpoint and sources.",
+      "RSS and MLX overlap."
+    ],
+    "metrics": {
+      "mean_step_seconds": 0.9052945246302988,
+      "mlx_active_bytes": 1417679064,
+      "mlx_active_peak_bytes": 5301791056,
+      "mlx_cache_bytes": 1074805012,
+      "p95_step_seconds": 0.9529294899039087,
+      "process_tree_rss_peak_bytes": 2132525056,
+      "rss_error": null,
+      "rss_peak_bytes": 3119710208
+    },
+    "quality": {
+      "documents": 128,
+      "nll": 6.220080622260163,
+      "split": "calibration",
+      "valid_tokens": 82642
+    },
+    "scenario": {
+      "arm": "tape_recompute",
+      "compact_gradients": false,
+      "id": "tape-recompute"
+    },
+    "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+    "start_step": 100,
+    "status": "MEASURED_EXPLORATORY",
+    "steps": 100,
+    "training_seconds": 90.56016720898333,
+    "trial": "tape-recompute"
+  },
+  {
+    "correctness_pass": true,
+    "limitations": [
+      "One exploratory process, no confirmatory CI.",
+      "No final checkpoint, reproducible from parent checkpoint and sources.",
+      "RSS and MLX overlap."
+    ],
+    "metrics": {
+      "mean_step_seconds": 0.9174027688111528,
+      "mlx_active_bytes": 1417679064,
+      "mlx_active_peak_bytes": 5252461668,
+      "mlx_cache_bytes": 1073756232,
+      "p95_step_seconds": 0.9768486881337594,
+      "process_tree_rss_peak_bytes": 2131083264,
+      "rss_error": null,
+      "rss_peak_bytes": 3117416448
+    },
+    "quality": {
+      "documents": 128,
+      "nll": 6.220080642737584,
+      "split": "calibration",
+      "valid_tokens": 82642
+    },
+    "scenario": {
+      "arm": "tape_dense",
+      "compact_gradients": true,
+      "id": "rows-dense"
+    },
+    "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+    "start_step": 100,
+    "status": "MEASURED_EXPLORATORY",
+    "steps": 100,
+    "training_seconds": 91.77117345802253,
+    "trial": "rows-dense"
+  },
+  {
+    "correctness_pass": true,
+    "limitations": [
+      "One exploratory process, no confirmatory CI.",
+      "No final checkpoint, reproducible from parent checkpoint and sources.",
+      "RSS and MLX overlap."
+    ],
+    "metrics": {
+      "mean_step_seconds": 0.8166942821303382,
+      "mlx_active_bytes": 1417679064,
+      "mlx_active_peak_bytes": 7293070360,
+      "mlx_cache_bytes": 1073741824,
+      "p95_step_seconds": 0.8610595627877047,
+      "process_tree_rss_peak_bytes": 2132525056,
+      "rss_error": null,
+      "rss_peak_bytes": 3119546368
+    },
+    "quality": {
+      "documents": 128,
+      "nll": 6.220080635236697,
+      "split": "calibration",
+      "valid_tokens": 82642
+    },
+    "scenario": {
+      "arm": "native",
+      "compact_gradients": false,
+      "id": "native"
+    },
+    "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+    "start_step": 100,
+    "status": "MEASURED_EXPLORATORY",
+    "steps": 100,
+    "training_seconds": 81.69683954198263,
+    "trial": "native"
+  },
+  {
+    "correctness_pass": true,
+    "limitations": [
+      "One exploratory process, no confirmatory CI.",
+      "No final checkpoint, reproducible from parent checkpoint and sources.",
+      "RSS and MLX overlap."
+    ],
+    "metrics": {
+      "mean_step_seconds": 0.9702270587498788,
+      "mlx_active_bytes": 1417679064,
+      "mlx_active_peak_bytes": 5430847824,
+      "mlx_cache_bytes": 1073755648,
+      "p95_step_seconds": 1.059140183326963,
+      "process_tree_rss_peak_bytes": 2133671936,
+      "rss_error": null,
+      "rss_peak_bytes": 3120824320
+    },
+    "quality": {
+      "documents": 128,
+      "nll": 6.220080585096152,
+      "split": "calibration",
+      "valid_tokens": 82642
+    },
+    "scenario": {
+      "arm": "bitmap_gpu",
+      "compact_gradients": false,
+      "id": "bitmap",
+      "sample_bits": 256,
+      "strategy": "rank"
+    },
+    "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+    "start_step": 100,
+    "status": "MEASURED_EXPLORATORY",
+    "steps": 100,
+    "training_seconds": 97.05869604100008,
+    "trial": "bitmap"
+  },
+  {
+    "correctness_pass": true,
+    "limitations": [
+      "One exploratory process, no confirmatory CI.",
+      "No final checkpoint, reproducible from parent checkpoint and sources.",
+      "RSS and MLX overlap."
+    ],
+    "metrics": {
+      "mean_step_seconds": 0.9269701791519764,
+      "mlx_active_bytes": 1417679064,
+      "mlx_active_peak_bytes": 5111640780,
+      "mlx_cache_bytes": 1074814788,
+      "p95_step_seconds": 1.007266189318034,
+      "process_tree_rss_peak_bytes": 2132738048,
+      "rss_error": null,
+      "rss_peak_bytes": 3119611904
+    },
+    "quality": {
+      "documents": 128,
+      "nll": 6.220080595355058,
+      "split": "calibration",
+      "valid_tokens": 82642
+    },
+    "scenario": {
+      "arm": "bitmap_gpu",
+      "compact_gradients": true,
+      "id": "rows-bitmap",
+      "sample_bits": 256,
+      "strategy": "rank"
+    },
+    "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+    "start_step": 100,
+    "status": "MEASURED_EXPLORATORY",
+    "steps": 100,
+    "training_seconds": 92.75278895901283,
+    "trial": "rows-bitmap"
+  },
+  {
+    "correctness_pass": true,
+    "limitations": [
+      "One exploratory process, no confirmatory CI.",
+      "No final checkpoint, reproducible from parent checkpoint and sources.",
+      "RSS and MLX overlap."
+    ],
+    "metrics": {
+      "mean_step_seconds": 0.8448575833806535,
+      "mlx_active_bytes": 1417679064,
+      "mlx_active_peak_bytes": 5570226512,
+      "mlx_cache_bytes": 1073755156,
+      "p95_step_seconds": 0.8950504580629058,
+      "process_tree_rss_peak_bytes": 2133622784,
+      "rss_error": null,
+      "rss_peak_bytes": 3120611328
+    },
+    "quality": {
+      "documents": 128,
+      "nll": 6.220080661703289,
+      "split": "calibration",
+      "valid_tokens": 82642
+    },
+    "scenario": {
+      "arm": "tape_dense",
+      "compact_gradients": false,
+      "id": "tape-dense"
+    },
+    "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+    "start_step": 100,
+    "status": "MEASURED_EXPLORATORY",
+    "steps": 100,
+    "training_seconds": 84.54516504201456,
+    "trial": "tape-dense"
+  }
+]

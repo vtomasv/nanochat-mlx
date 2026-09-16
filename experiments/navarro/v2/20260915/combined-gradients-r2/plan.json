@@ -1,0 +1,55 @@
+{
+  "candidate_sha256": "b64da0eb6fcf88c4f2adc14587785e456db2e7cf3740a56f3707f2053927c63a",
+  "checkpoint_step": 100,
+  "created_at": "2026-09-15T23:17:40.601155+00:00",
+  "evaluation": "calibration only",
+  "fixed_controls": 4,
+  "hypothesis": "Exact storage of visited embedding-gradient rows reduces accumulator residence; combining it with P bitmaps may cross the unchanged marginal-memory threshold.",
+  "maximum_experimental_variants": 2,
+  "parent_campaign": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/v2/20260915",
+  "parent_manifest_sha256": "3b3bb19f8d979fce17d82a89f17b350171161eeda78d881ebb37c0aae2c5bada",
+  "rationale_source_sha256": "072f74de555ae2b7a3c677895cb8471b9343c4cd96d0ee47e12f8aa26af349ea",
+  "scenarios": [
+    {
+      "arm": "tape_dense",
+      "compact_gradients": false,
+      "id": "tape-dense"
+    },
+    {
+      "arm": "bitmap_gpu",
+      "compact_gradients": true,
+      "id": "rows-bitmap",
+      "sample_bits": 256,
+      "strategy": "rank"
+    },
+    {
+      "arm": "bitmap_gpu",
+      "compact_gradients": false,
+      "id": "bitmap",
+      "sample_bits": 256,
+      "strategy": "rank"
+    },
+    {
+      "arm": "tape_dense",
+      "compact_gradients": true,
+      "id": "rows-dense"
+    },
+    {
+      "arm": "tape_recompute",
+      "compact_gradients": false,
+      "id": "tape-recompute"
+    },
+    {
+      "arm": "native",
+      "compact_gradients": false,
+      "id": "native"
+    }
+  ],
+  "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+  "status": "new exploratory amendment, not part of the original 12-proposal P-only surface",
+  "steps": 100,
+  "stop_rule": "Run all registered controls and two candidates. Failed gates are failures. No threshold changes, no reserved reads.",
+  "study_budget_seconds": 3600,
+  "success_rule": "Same point-estimate screening criteria as parent; no statistical success from this pilot.",
+  "worker_timeout_seconds": 900
+}

@@ -5,3 +5,11 @@ experiments/navarro/results/**/*.csv whitespace=cr-at-eol
 # Follow-up evidence includes verbatim compiler/compressor output.
 experiments/navarro/verification/** -text
 experiments/navarro/verification/**/*.log whitespace=-blank-at-eol
+# V2 manifests and per-trial hashes also require byte-preserving checkouts.
+experiments/navarro/v2/** -text
+experiments/navarro/v2/**/*.csv whitespace=cr-at-eol
+experiments/navarro/v2/**/*.tsv whitespace=cr-at-eol
+experiments/navarro/v2/**/*.log whitespace=-blank-at-eol
+# Matplotlib emits spaces in SVG paths; preserve the hashed generated figures.
+experiments/navarro/v2/**/*.svg whitespace=-blank-at-eol
+experiments/navarro/verification/spec-v2-census/*.csv whitespace=cr-at-eol

@@ -1,0 +1,14 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+tape-dense step 110 loss 6.461155 seconds 0.9658
+tape-dense step 120 loss 6.526832 seconds 0.9787
+tape-dense step 130 loss 6.337023 seconds 0.9152
+tape-dense step 140 loss 6.401879 seconds 0.9648
+tape-dense step 150 loss 6.456382 seconds 0.9718
+tape-dense step 160 loss 6.358882 seconds 0.9627
+tape-dense step 170 loss 6.247618 seconds 0.9996
+tape-dense step 180 loss 6.405656 seconds 0.9501
+tape-dense step 190 loss 6.215963 seconds 1.0153
+tape-dense step 200 loss 6.330069 seconds 0.9554

@@ -1,0 +1,51 @@
+{
+  "checkpoints": [],
+  "completed_at": "2026-09-15T19:11:46.441013+00:00",
+  "correctness_pass": true,
+  "evaluation_seconds": 0.03051658399635926,
+  "limitations": [
+    "One engineering process; no confirmatory inference.",
+    "Calibration only; reserved evaluation was not opened.",
+    "RSS and MLX overlap and must not be summed.",
+    "Activation accounting records last microbatch, not a whole-step live-buffer census."
+  ],
+  "metrics": {
+    "mean_step_seconds": 0.05627870849275496,
+    "median_step_seconds": 0.05627870849275496,
+    "mlx_active_bytes": 102368376,
+    "mlx_active_peak_bytes": 302393412,
+    "mlx_cache_bytes": 318030601,
+    "p95_step_seconds": 0.05844024613761576,
+    "payload_ratio": 0.5364761352539062,
+    "process_tree_rss_peak_bytes": 488128512,
+    "rss_error": null,
+    "rss_peak_bytes": 486293504
+  },
+  "parameters": 8585352,
+  "quality": {
+    "documents": 4,
+    "nll": 10.387175559997559,
+    "split": "calibration",
+    "valid_tokens": 512
+  },
+  "scenario": {
+    "arm": "bitmap_gpu",
+    "id": "bitmap-metal-r256",
+    "sample_bits": 256,
+    "strategy": "rank"
+  },
+  "start_step": 10,
+  "started_at": "2026-09-15T19:11:45.259676+00:00",
+  "status": "MEASURED_EXPLORATORY",
+  "steps": 2,
+  "swap_samples": [
+    {
+      "monotonic_seconds": 234256.002050541,
+      "used_bytes": 0
+    }
+  ],
+  "tokens": 256,
+  "total_seconds": 1.0820169590006117,
+  "training_wall_including_checkpoints_seconds": 0.1181939170055557,
+  "warmup_discarded_seconds": 0.043283292005071416
+}

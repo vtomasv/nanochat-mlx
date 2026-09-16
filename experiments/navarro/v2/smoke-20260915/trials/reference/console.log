@@ -1,0 +1,5 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 3.464102
+Muon params: 26, AdamW groups: {'embed': 1, 've': 2, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 3.464102
+Muon params: 26, AdamW groups: {'embed': 1, 've': 2, 'lm_head': 1, 'resid': 1, 'x0': 1}
+reference step 10 loss 10.387524 seconds 0.0299

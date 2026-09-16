@@ -1,0 +1,14 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+checkpoint-native step 110 loss 6.461155 seconds 1.0946
+checkpoint-native step 120 loss 6.526832 seconds 1.0556
+checkpoint-native step 130 loss 6.337023 seconds 1.0182
+checkpoint-native step 140 loss 6.401879 seconds 1.0206
+checkpoint-native step 150 loss 6.456382 seconds 1.0703
+checkpoint-native step 160 loss 6.358882 seconds 1.0248
+checkpoint-native step 170 loss 6.247618 seconds 1.0242
+checkpoint-native step 180 loss 6.405656 seconds 0.9775
+checkpoint-native step 190 loss 6.215963 seconds 1.0266
+checkpoint-native step 200 loss 6.330069 seconds 1.0264

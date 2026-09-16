@@ -1,0 +1,399 @@
+{
+  "checkpoints": [],
+  "completed_at": "2026-09-15T21:46:53.940160+00:00",
+  "correctness_pass": true,
+  "evaluation_seconds": 2.7153080409916583,
+  "limitations": [
+    "One engineering process; no confirmatory inference.",
+    "Calibration only; reserved evaluation was not opened.",
+    "RSS and MLX overlap and must not be summed.",
+    "Activation accounting records last microbatch, not a whole-step live-buffer census."
+  ],
+  "metrics": {
+    "mean_step_seconds": 0.9223601057712222,
+    "median_step_seconds": 0.921814354005619,
+    "mlx_active_bytes": 1417679064,
+    "mlx_active_peak_bytes": 5430815056,
+    "mlx_cache_bytes": 1073756844,
+    "p95_step_seconds": 0.9717753580087446,
+    "payload_ratio": 0.44832836851477625,
+    "process_tree_rss_peak_bytes": 2134605824,
+    "rss_error": null,
+    "rss_peak_bytes": 3120971776
+  },
+  "parameters": 125829648,
+  "quality": {
+    "documents": 128,
+    "nll": 6.220080592822066,
+    "split": "calibration",
+    "valid_tokens": 82642
+  },
+  "scenario": {
+    "arm": "bitmap_gpu",
+    "id": "bitmap-metal-simd",
+    "sample_bits": 256,
+    "strategy": "rank"
+  },
+  "start_step": 100,
+  "started_at": "2026-09-15T21:45:13.456446+00:00",
+  "status": "MEASURED_EXPLORATORY",
+  "steps": 100,
+  "swap_samples": [
+    {
+      "monotonic_seconds": 243468.068544791,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243469.146671666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243470.220117166,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243471.296994708,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243472.321626833,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243473.341778166,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243474.361480791,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243475.368812458,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243476.442562916,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243477.532666166,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243478.622355041,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243479.647566041,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243480.659082666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243481.729025583,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243482.818459291,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243483.901276625,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243484.985030083,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243486.012437,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243487.019356125,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243488.091969208,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243489.166480708,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243490.177493416,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243491.187904708,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243492.198662666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243493.228524458,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243494.294840666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243495.369357916,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243496.45072325,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243497.528215166,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243498.604632916,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243499.64001575,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243500.648219125,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243501.726816166,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243502.815628708,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243503.889924791,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243504.973236833,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243505.988447041,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243507.003758041,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243508.071420375,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243509.142193,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243510.228637541,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243511.248157416,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243512.318181458,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243513.361335333,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243514.390589583,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243515.474984916,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243516.48945075,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243517.51367175,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243518.597304416,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243519.69009925,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243520.724478958,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243521.736898041,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243522.814432083,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243523.839583083,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243524.850552958,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243525.872501583,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243526.963142958,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243527.993129333,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243529.009925583,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243530.10289775,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243531.11398475,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243532.19914475,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243533.218169541,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243534.239695583,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243535.260718333,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243536.277438208,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243537.382082208,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243538.445768666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243539.456444375,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243540.534978083,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243541.570102791,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243542.593939166,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243543.607078,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243544.692326666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243545.775681625,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243546.792202375,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243547.878744,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243548.920266375,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243550.00212075,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243551.019698,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243552.091398041,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243553.161407416,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243554.244693,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243555.261345666,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243556.289409875,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243557.383965416,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243558.478344958,
+      "used_bytes": 0
+    },
+    {
+      "monotonic_seconds": 243559.548055958,
+      "used_bytes": 0
+    }
+  ],
+  "tokens": 819200,
+  "total_seconds": 100.32366008302779,
+  "training_wall_including_checkpoints_seconds": 92.29270737501793,
+  "warmup_discarded_seconds": 1.0246774159895722
+}

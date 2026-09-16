@@ -1,0 +1,55 @@
+{
+  "checkpoints": [
+    {
+      "path": "/Users/tomasvera/dev/nanochat-mlx/experiments/navarro/artifacts/v2-smoke-20260915/reference/step-0010",
+      "seconds": 0.10045295802410692,
+      "step": 10
+    }
+  ],
+  "completed_at": "2026-09-15T19:11:41.205485+00:00",
+  "correctness_pass": true,
+  "evaluation_seconds": 0.026869374996749684,
+  "limitations": [
+    "One engineering process; no confirmatory inference.",
+    "Calibration only; reserved evaluation was not opened.",
+    "RSS and MLX overlap and must not be summed.",
+    "Activation accounting records last microbatch, not a whole-step live-buffer census."
+  ],
+  "metrics": {
+    "mean_step_seconds": 0.03343925820081495,
+    "median_step_seconds": 0.03271245799260214,
+    "mlx_active_bytes": 102368376,
+    "mlx_active_peak_bytes": 302393436,
+    "mlx_cache_bytes": 318771156,
+    "p95_step_seconds": 0.04183834971190663,
+    "payload_ratio": null,
+    "process_tree_rss_peak_bytes": 452411392,
+    "rss_error": null,
+    "rss_peak_bytes": 450347008
+  },
+  "parameters": 8585352,
+  "quality": {
+    "documents": 4,
+    "nll": 10.390796899795532,
+    "split": "calibration",
+    "valid_tokens": 512
+  },
+  "scenario": {
+    "arm": "native",
+    "id": "native-reference"
+  },
+  "start_step": 0,
+  "started_at": "2026-09-15T19:11:39.655744+00:00",
+  "status": "MEASURED_EXPLORATORY",
+  "steps": 10,
+  "swap_samples": [
+    {
+      "monotonic_seconds": 234250.457069833,
+      "used_bytes": 0
+    }
+  ],
+  "tokens": 1280,
+  "total_seconds": 1.445180334005272,
+  "training_wall_including_checkpoints_seconds": 0.4372801249846816,
+  "warmup_discarded_seconds": 0.03931645900593139
+}

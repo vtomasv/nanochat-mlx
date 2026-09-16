@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_BEFORE_PILOTS",
+  "stage": "selftest",
+  "error": "AssertionError: optimizer:0, 2144/4096 mismatches",
+  "diagnosis": "The selftest compared optimizer.state positional lists. Native and segmented VJP populate state dictionaries in different parameter insertion order; list index 0 can refer to different parameters. Weight comparison passed. Correction must compare Adam/Muon state by parameter path.",
+  "console_evidence": "Original traceback displayed by execution tool; complete raw console not persisted.",
+  "promoted": false
+}

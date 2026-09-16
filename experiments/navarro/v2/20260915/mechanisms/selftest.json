@@ -1,0 +1,74 @@
+[
+  {
+    "codec_exact": true,
+    "operator_vjp": [
+      {
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      }
+    ],
+    "shape": [
+      1,
+      1
+    ]
+  },
+  {
+    "codec_exact": true,
+    "operator_vjp": [
+      {
+        "max_abs": 1.1920928955078125e-07,
+        "pass": true,
+        "relative_l2": 9.796235778137991e-08
+      },
+      {
+        "max_abs": 1.4901161193847656e-08,
+        "pass": true,
+        "relative_l2": 1.799186655769368e-08
+      },
+      {
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      }
+    ],
+    "shape": [
+      3,
+      33
+    ]
+  },
+  {
+    "codec_exact": true,
+    "operator_vjp": [
+      {
+        "max_abs": 1.1920928955078125e-07,
+        "pass": true,
+        "relative_l2": 1.0012610996218585e-07
+      },
+      {
+        "max_abs": 5.960464477539063e-08,
+        "pass": true,
+        "relative_l2": 5.472175501795006e-08
+      },
+      {
+        "max_abs": 0.0,
+        "pass": true,
+        "relative_l2": 0.0
+      }
+    ],
+    "shape": [
+      7,
+      64
+    ]
+  }
+]

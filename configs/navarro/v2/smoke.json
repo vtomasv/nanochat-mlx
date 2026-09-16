@@ -1,0 +1,53 @@
+{
+  "protocol_version": "2.0",
+  "campaign_schema": 1,
+  "phase": "engineering_screening",
+  "data_dir": "~/.cache/nanochat",
+  "depth": 4,
+  "aspect_ratio": 16,
+  "head_dim": 32,
+  "sequence_len": 128,
+  "window_pattern": "SSSL",
+  "device_batch_size": 1,
+  "total_batch_size": 128,
+  "accumulation": 1,
+  "dtype": "float32",
+  "num_iterations": 1000,
+  "seed": 101,
+  "rank_sample_bits": 256,
+  "rows_per_block": 128,
+  "reference_steps": 10,
+  "pilot_steps": 2,
+  "trial_timeout_seconds": 900,
+  "campaign_budget_seconds": 14400,
+  "max_trials": 4,
+  "calibration_sequences": 4,
+  "reserved_sequences": 8,
+  "split_salt": "navarro-v2-20260915-discovery",
+  "candidate_file": "research/navarro/candidate.py",
+  "scenarios": [
+    {
+      "id": "native",
+      "arm": "native"
+    },
+    {
+      "id": "tape-dense",
+      "arm": "tape_dense"
+    },
+    {
+      "id": "tape-recompute",
+      "arm": "tape_recompute"
+    },
+    {
+      "id": "bitmap-metal-r256",
+      "arm": "bitmap_gpu",
+      "sample_bits": 256,
+      "strategy": "rank"
+    }
+  ],
+  "pilot_checkpoint_policy": "fingerprints_only",
+  "disk_reserve_gib": 3,
+  "reference_checkpoint_steps": [
+    10
+  ]
+}

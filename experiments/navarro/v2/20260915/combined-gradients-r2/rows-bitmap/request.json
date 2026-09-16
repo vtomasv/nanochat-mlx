@@ -1,0 +1,10 @@
+{
+  "plan_sha256": "585056ea4b200a2e4419b40a1301310cf907ab65ea8d2c796f4122654072f831",
+  "scenario": {
+    "arm": "bitmap_gpu",
+    "compact_gradients": true,
+    "id": "rows-bitmap",
+    "sample_bits": 256,
+    "strategy": "rank"
+  }
+}

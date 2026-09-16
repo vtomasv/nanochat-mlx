@@ -1,0 +1,309 @@
+{
+  "candidate_nll": 6.59293270111084,
+  "codec": [],
+  "loss_delta": 0.0,
+  "pass": true,
+  "reference_nll": 6.59293270111084,
+  "tensors": {
+    "blocks.0.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.0.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.attn.ve_gate.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.1.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.2.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.attn.ve_gate.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.3.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.4.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.4.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.4.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.4.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.4.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.4.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.attn.ve_gate.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.5.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.6.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.6.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.6.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.6.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.6.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.6.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.attn.c_k.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.attn.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.attn.c_q.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.attn.c_v.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.attn.ve_gate.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.mlp.c_fc.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "blocks.7.mlp.c_proj.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "lm_head.weight": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "resid_lambdas": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    },
+    "value_embeds.1.weight": {
+      "max_abs": 2.7284841053187847e-12,
+      "pass": true,
+      "relative_l2": 1.225820615322226e-07
+    },
+    "value_embeds.3.weight": {
+      "max_abs": 3.183231456205249e-12,
+      "pass": true,
+      "relative_l2": 1.236205428350833e-07
+    },
+    "value_embeds.5.weight": {
+      "max_abs": 1.8189894035458565e-12,
+      "pass": true,
+      "relative_l2": 1.2580708195811688e-07
+    },
+    "value_embeds.7.weight": {
+      "max_abs": 9.094947017729282e-13,
+      "pass": true,
+      "relative_l2": 9.643789606683287e-08
+    },
+    "wte.weight": {
+      "max_abs": 2.9103830456733704e-11,
+      "pass": true,
+      "relative_l2": 8.018342766282751e-08
+    },
+    "x0_lambdas": {
+      "max_abs": 0.0,
+      "pass": true,
+      "relative_l2": 0.0
+    }
+  }
+}

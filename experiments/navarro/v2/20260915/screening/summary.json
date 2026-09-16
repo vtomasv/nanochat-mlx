@@ -1,0 +1,1023 @@
+{
+  "activation_roundtrip_pass": true,
+  "activation_rules": 0,
+  "activation_samples": 64,
+  "activation_sha256": "4b4c2ecdbe0e81670b1180393e0a6334116fc85ef26804c2a3791ac021f4be80",
+  "checkpoint_census": [
+    {
+      "blocks": 7300,
+      "csv": "step-100-model.safetensors-rows-32.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 7300,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 32,
+      "sha256": "85e3c42e7092efc67182a2151a6c7ab8ae6d6e4aebefb838a56eea72ae152acd",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 100
+    },
+    {
+      "blocks": 1828,
+      "csv": "step-100-model.safetensors-rows-128.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 1828,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 128,
+      "sha256": "6f519443fe70d201aafa4e2f38b6ac9d6b9b44494ec172a13bc8113974212cee",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 100
+    },
+    {
+      "blocks": 460,
+      "csv": "step-100-model.safetensors-rows-512.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 460,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 512,
+      "sha256": "6f6f23c7e4407cd3385b9911db51276ce17ec679451a41e4311c72d58e77c258",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 100
+    },
+    {
+      "blocks": 13444,
+      "csv": "step-100-optimizer.safetensors-rows-32.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.5691538059855008,
+      "rejected_blocks": 5576,
+      "rejected_dense_bytes": 390334464,
+      "rows_per_block": 32,
+      "sha256": "69d5c869533f07784613106ef7f99bc5b00f639fc12517a507a68a6dbe32a42b",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 100
+    },
+    {
+      "blocks": 3364,
+      "csv": "step-100-optimizer.safetensors-rows-128.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.6140032416376373,
+      "rejected_blocks": 1242,
+      "rejected_dense_bytes": 349702144,
+      "rows_per_block": 128,
+      "sha256": "c67271cfcb7600c574ad40472944ed581579a7b936bee72497a6af532691bb46",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 100
+    },
+    {
+      "blocks": 844,
+      "csv": "step-100-optimizer.safetensors-rows-512.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.6689799692112242,
+      "rejected_blocks": 266,
+      "rejected_dense_bytes": 299894784,
+      "rows_per_block": 512,
+      "sha256": "ea8b0ad9b441f1a9ac507017930b55cbb37f5c22f2273dbb0dff84f8b555e361",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 100
+    },
+    {
+      "blocks": 7300,
+      "csv": "step-500-model.safetensors-rows-32.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 7300,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 32,
+      "sha256": "5639455b171f2e38b2e0da67506937c11befaa4308525b4867a628b66231ac1c",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 500
+    },
+    {
+      "blocks": 1828,
+      "csv": "step-500-model.safetensors-rows-128.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 1828,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 128,
+      "sha256": "04904b3984ebac4422d01edaa4d089d3c55680f441fad6df0a6a2fd375d3cff3",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 500
+    },
+    {
+      "blocks": 460,
+      "csv": "step-500-model.safetensors-rows-512.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 460,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 512,
+      "sha256": "2d52982dcc945bdbc3f89cecf3837712efdb89b3783f2419c0cc80bc1b45fada",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 500
+    },
+    {
+      "blocks": 13444,
+      "csv": "step-500-optimizer.safetensors-rows-32.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.10771098336456664,
+      "rejected_blocks": 11955,
+      "rejected_dense_bytes": 808388608,
+      "rows_per_block": 32,
+      "sha256": "6d4863909807d8fb1f1fbda1e9360e1c35f7002875950a82c993516dfab77501",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 500
+    },
+    {
+      "blocks": 3364,
+      "csv": "step-500-optimizer.safetensors-rows-128.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.028067066182304812,
+      "rejected_blocks": 3267,
+      "rejected_dense_bytes": 880543744,
+      "rows_per_block": 128,
+      "sha256": "b9676b225afa623fb92dc988e6dab500a2d3184911949f9d6d30a59f0b1d8883",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 500
+    },
+    {
+      "blocks": 844,
+      "csv": "step-500-optimizer.safetensors-rows-512.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.01736107186534319,
+      "rejected_blocks": 829,
+      "rejected_dense_bytes": 890243072,
+      "rows_per_block": 512,
+      "sha256": "c2052297938fee803f797d947c77e391612cfb297db13e9d9287bdc7da37911a",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 500
+    },
+    {
+      "blocks": 7300,
+      "csv": "step-1000-model.safetensors-rows-32.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 7300,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 32,
+      "sha256": "9708f8820cd988d64f9da1e387cba530a20beea1f7bf5a6f281c628515600d5e",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 1000
+    },
+    {
+      "blocks": 1828,
+      "csv": "step-1000-model.safetensors-rows-128.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 1828,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 128,
+      "sha256": "f5d7992d87ce10081e0faf05d6f7165887d71a6b6fde2cdde705eff61dc6df8c",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 1000
+    },
+    {
+      "blocks": 460,
+      "csv": "step-1000-model.safetensors-rows-512.csv",
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_policy": 0.0,
+      "rejected_blocks": 460,
+      "rejected_dense_bytes": 503318528,
+      "rows_per_block": 512,
+      "sha256": "dd4b6859d1ab0dadd7d5a35f774c4f7d3edb1957fc70f2fe015bafc62ef9f0f8",
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 1000
+    },
+    {
+      "blocks": 13444,
+      "csv": "step-1000-optimizer.safetensors-rows-32.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.08723938612334947,
+      "rejected_blocks": 12238,
+      "rejected_dense_bytes": 826935296,
+      "rows_per_block": 32,
+      "sha256": "ea33bc1cebaf0f4b7bc324e3e1da1a822cfdd8a3e9ee5c7128607db1d5e6643c",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 1000
+    },
+    {
+      "blocks": 3364,
+      "csv": "step-1000-optimizer.safetensors-rows-128.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.027488363786793424,
+      "rejected_blocks": 3269,
+      "rejected_dense_bytes": 881068032,
+      "rows_per_block": 128,
+      "sha256": "7ad78f187f903cc4671dec56764584d56e7fc3720db5fd00c383d28b66a46800",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 1000
+    },
+    {
+      "blocks": 844,
+      "csv": "step-1000-optimizer.safetensors-rows-512.csv",
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_policy": 0.011574047910228757,
+      "rejected_blocks": 834,
+      "rejected_dense_bytes": 895485952,
+      "rows_per_block": 512,
+      "sha256": "fde0450731686f4ce94867896b1485bf4d1661ef99b9d397af0eb6e3fe05aff1",
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 1000
+    }
+  ],
+  "kind": "structural_screening_not_confirmatory",
+  "limitations": [
+    "Local dictionaries only, three preregistered row block sizes.",
+    "Activation probe covers first 128 tokens of four calibration documents, all MLPs; not an exhaustive activation census.",
+    "No time/speedup conclusion from this structural probe.",
+    "Direct sparse activation products and global dictionaries need separate implementations."
+  ]
+}

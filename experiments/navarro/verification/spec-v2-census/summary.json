@@ -1,0 +1,128 @@
+{
+  "kind": "exploratory_exact_dictionary_bound_census",
+  "checkpoint": "experiments/navarro/artifacts/primary/checkpoints/primary-native-reference-s17/step-1000",
+  "checkpoint_hashes": {
+    "model.safetensors": "08a25289c182397285d141ee416eb8c6fa40b3f9c6a6dabef1471f04bd5e2fa8",
+    "optimizer.safetensors": "18cf3d2a6b8820ff1ddd20efcae1da97bc681dde5700844f470e63b93a46b79a"
+  },
+  "repo_sha": "1f80132dbda17fd787234361bd2cfcbdd77326f7",
+  "script_sha256": "7854388d48a26af9e45d3910df2e81c0abb422889ef0407ee8f5475fb0935678",
+  "python": "3.12.11",
+  "numpy": "2.5.3",
+  "rows_per_block": 128,
+  "threshold_ratio": 0.95,
+  "files": {
+    "model.safetensors": {
+      "matrices": 58,
+      "blocks": 1828,
+      "rejected_blocks": 1828,
+      "dense_bytes": 503318528,
+      "dense_bytes_in_rejected_blocks": 503318528,
+      "special_cells": 0,
+      "skipped": [
+        {
+          "tensor": "resid_lambdas",
+          "dtype": "F32",
+          "shape": [
+            8
+          ]
+        },
+        {
+          "tensor": "x0_lambdas",
+          "dtype": "F32",
+          "shape": [
+            8
+          ]
+        }
+      ]
+    },
+    "optimizer.safetensors": {
+      "matrices": 64,
+      "blocks": 3364,
+      "rejected_blocks": 3264,
+      "dense_bytes": 905971712,
+      "dense_bytes_in_rejected_blocks": 879757312,
+      "special_cells": 0,
+      "skipped": [
+        {
+          "tensor": "adam.lm_head.weight.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.resid_lambdas.m",
+          "dtype": "F32",
+          "shape": [
+            8
+          ]
+        },
+        {
+          "tensor": "adam.resid_lambdas.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.resid_lambdas.v",
+          "dtype": "F32",
+          "shape": [
+            8
+          ]
+        },
+        {
+          "tensor": "adam.value_embeds.1.weight.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.value_embeds.3.weight.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.value_embeds.5.weight.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.value_embeds.7.weight.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.wte.weight.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.x0_lambdas.m",
+          "dtype": "F32",
+          "shape": [
+            8
+          ]
+        },
+        {
+          "tensor": "adam.x0_lambdas.t",
+          "dtype": "I32",
+          "shape": []
+        },
+        {
+          "tensor": "adam.x0_lambdas.v",
+          "dtype": "F32",
+          "shape": [
+            8
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Only FP32 matrices and local dictionaries of the stated block size.",
+    "No grammar construction, latency measurement, or global impossibility claim.",
+    "An unrejected block remains undecided; special IEEE values require RAW.",
+    "One existing checkpoint, no independent training replicas."
+  ],
+  "csv_sha256": {
+    "model.safetensors.csv": "ca6a41a865eb6ec6a9fdefaa556d059dde43dfae4a925502177d154836b167e7",
+    "optimizer.safetensors.csv": "829a15b75777bf11ddf8d7b34bd4aead4cee46bfe2135f866f493cdf05839cb9"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "candidates": [
+    {
+      "conditions": {
+        "calibration_delta": true,
+        "memory_vs_native": true,
+        "memory_vs_tape_dense": true,
+        "not_dominated_by_recompute": true,
+        "rss_vs_native": true,
+        "time_vs_native": false
+      },
+      "decision": "NOT_SHORTLISTED",
+      "trial": "rows-dense"
+    },
+    {
+      "conditions": {
+        "calibration_delta": true,
+        "memory_vs_native": true,
+        "memory_vs_tape_dense": true,
+        "not_dominated_by_recompute": true,
+        "rss_vs_native": true,
+        "time_vs_native": false
+      },
+      "decision": "NOT_SHORTLISTED",
+      "trial": "rows-bitmap"
+    }
+  ],
+  "evidence": "engineering_only"
+}

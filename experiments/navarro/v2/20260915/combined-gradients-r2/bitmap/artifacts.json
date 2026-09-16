@@ -1,0 +1,11 @@
+{
+  "console.log": "cbeff617431d738b972f96ef79ca27177740873bfe068c930a9c1924146caf00",
+  "correctness.json": "52228f86d10f78a08354655f8ba0716b9cab77f55dc9ba9e4b662e5b9a375e54",
+  "environment.json": "a0b7d5c85da2d5343075872ba1ad715d0201786fc1d14092d30fd55b195c0dde",
+  "final-state-fingerprints.json": "78d6afa3c1b4b57ebf20eff3602d80042879ec728472b13a63de7eaad5ecb546",
+  "gradient-storage.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "quality.json": "06a7d18229affba435c166a2a053d87afd04994336797d737bb6da9b12d0f249",
+  "request.json": "6cb1f3654bf06b42ce1edae6e45a187754d415538078b79e72c4b0d21e955271",
+  "steps.csv": "1f0f860bf8bafced95135e6f36fd1320f48b5418c580ff36fcd63875142f6a64",
+  "summary.json": "2dbb3686d98df826661eaecfebd90232e775210cd2ba8205e9fe4db21fb7abf4"
+}

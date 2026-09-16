@@ -1,0 +1,215 @@
+{
+  "early_local": [
+    {
+      "blocks": 1828,
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "maximum_savings_under_raw_policy": 0.08333706324437151,
+      "rejected_blocks": 1760,
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 0
+    },
+    {
+      "blocks": 0,
+      "dense_bytes": 0,
+      "file": "optimizer.safetensors",
+      "maximum_savings_under_raw_policy": null,
+      "rejected_blocks": 0,
+      "skipped": [],
+      "step": 0
+    },
+    {
+      "blocks": 1828,
+      "dense_bytes": 503318528,
+      "file": "model.safetensors",
+      "maximum_savings_under_raw_policy": 0.0,
+      "rejected_blocks": 1828,
+      "skipped": [
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "resid_lambdas"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "x0_lambdas"
+        }
+      ],
+      "step": 10
+    },
+    {
+      "blocks": 3364,
+      "dense_bytes": 905971712,
+      "file": "optimizer.safetensors",
+      "maximum_savings_under_raw_policy": 0.7378455542770854,
+      "rejected_blocks": 814,
+      "skipped": [
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.lm_head.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.resid_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.resid_lambdas.v"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.1.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.3.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.5.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.value_embeds.7.weight.t"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.wte.weight.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.m"
+        },
+        {
+          "dtype": "I32",
+          "shape": [],
+          "tensor": "adam.x0_lambdas.t"
+        },
+        {
+          "dtype": "F32",
+          "shape": [
+            8
+          ],
+          "tensor": "adam.x0_lambdas.v"
+        }
+      ],
+      "step": 10
+    }
+  ],
+  "global": [
+    {
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "original",
+      "rejected_matrices": 58,
+      "step": 100,
+      "uint32_overflow_matrices": 6
+    },
+    {
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "transposed",
+      "rejected_matrices": 58,
+      "step": 100,
+      "uint32_overflow_matrices": 6
+    },
+    {
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "original",
+      "rejected_matrices": 64,
+      "step": 100,
+      "uint32_overflow_matrices": 12
+    },
+    {
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "transposed",
+      "rejected_matrices": 64,
+      "step": 100,
+      "uint32_overflow_matrices": 12
+    },
+    {
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "original",
+      "rejected_matrices": 58,
+      "step": 1000,
+      "uint32_overflow_matrices": 6
+    },
+    {
+      "file": "model.safetensors",
+      "matrices": 58,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "transposed",
+      "rejected_matrices": 58,
+      "step": 1000,
+      "uint32_overflow_matrices": 6
+    },
+    {
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "original",
+      "rejected_matrices": 64,
+      "step": 1000,
+      "uint32_overflow_matrices": 12
+    },
+    {
+      "file": "optimizer.safetensors",
+      "matrices": 64,
+      "maximum_savings_under_raw_policy": 0.0,
+      "orientation": "transposed",
+      "rejected_matrices": 64,
+      "step": 1000,
+      "uint32_overflow_matrices": 12
+    }
+  ],
+  "proof_scope": "Singleton bound assumes RePair only replaces repeated pairs and fixed-width integer codes of the declared terminal alphabet.",
+  "seconds": 410.1033482500061
+}

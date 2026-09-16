@@ -1,0 +1,9 @@
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+Scaling AdamW LRs by (n_embd/768)^(-0.5) = 1.224745
+Muon params: 52, AdamW groups: {'embed': 1, 've': 4, 'lm_head': 1, 'resid': 1, 'x0': 1}
+tape-recompute 120 0.897
+tape-recompute 140 0.8922
+tape-recompute 160 0.9029
+tape-recompute 180 0.8999
+tape-recompute 200 0.9337

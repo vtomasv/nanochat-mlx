@@ -24,7 +24,7 @@ def mlp_backward(a,p,w1,w2,g):
     mx.eval(dw1,dw2,da)
     return da,dw1,dw2
 
-def loss_and_grad(model,ids,targets,arm='tape_bitmap',sample_bits=256,profile=False):
+def loss_and_grad(model,ids,targets,arm='tape_bitmap',sample_bits=256,profile=False,packer=None):
     if arm not in ('tape_dense','tape_bitmap','tape_recompute'): raise ValueError(arm)
     started=time.perf_counter() if profile else 0.;unpack_seconds=0.
     masks=model._get_masks(ids.shape[1]); tape=[]; accounting=[]
@@ -37,7 +37,7 @@ def loss_and_grad(model,ids,targets,arm='tape_bitmap',sample_bits=256,profile=Fa
         p=detached(mx.maximum(block.mlp.c_fc(norm(a)),0))
         x=detached(a+block.mlp.c_proj(p*p))
         if arm=='tape_bitmap':
-            saved=PackedPositive.pack(p,sample_bits)
+            saved=(packer or PackedPositive.pack)(p,sample_bits)
             accounting.append(dict(path=f'blocks.{i}.P',raw_bytes=p.nbytes,resident_bytes=saved.resident_bytes(),mode=saved.mode,encode_seconds=saved.pack_seconds))
         elif arm=='tape_dense':
             saved=p; accounting.append(dict(path=f'blocks.{i}.P',raw_bytes=p.nbytes,resident_bytes=p.nbytes,mode='DENSE',encode_seconds=0.))

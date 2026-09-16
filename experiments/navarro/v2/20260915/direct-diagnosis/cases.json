@@ -1,0 +1,226 @@
+[
+  {
+    "document": 0,
+    "layer": 0,
+    "mismatching_outputs": 64,
+    "oracle_coordinates": 65,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 1,
+    "mismatching_outputs": 13,
+    "oracle_coordinates": 14,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 2,
+    "mismatching_outputs": 11,
+    "oracle_coordinates": 12,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 3,
+    "mismatching_outputs": 0,
+    "oracle_coordinates": 1,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 4,
+    "mismatching_outputs": 0,
+    "oracle_coordinates": 1,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 5,
+    "mismatching_outputs": 6,
+    "oracle_coordinates": 7,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 6,
+    "mismatching_outputs": 28,
+    "oracle_coordinates": 29,
+    "total_outputs": 65536
+  },
+  {
+    "document": 0,
+    "layer": 7,
+    "mismatching_outputs": 68,
+    "oracle_coordinates": 65,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 0,
+    "mismatching_outputs": 44,
+    "oracle_coordinates": 45,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 1,
+    "mismatching_outputs": 11,
+    "oracle_coordinates": 12,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 2,
+    "mismatching_outputs": 10,
+    "oracle_coordinates": 11,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 3,
+    "mismatching_outputs": 2,
+    "oracle_coordinates": 3,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 4,
+    "mismatching_outputs": 5,
+    "oracle_coordinates": 6,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 5,
+    "mismatching_outputs": 21,
+    "oracle_coordinates": 22,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 6,
+    "mismatching_outputs": 35,
+    "oracle_coordinates": 36,
+    "total_outputs": 65536
+  },
+  {
+    "document": 1,
+    "layer": 7,
+    "mismatching_outputs": 68,
+    "oracle_coordinates": 65,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 0,
+    "mismatching_outputs": 60,
+    "oracle_coordinates": 61,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 1,
+    "mismatching_outputs": 12,
+    "oracle_coordinates": 13,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 2,
+    "mismatching_outputs": 12,
+    "oracle_coordinates": 13,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 3,
+    "mismatching_outputs": 0,
+    "oracle_coordinates": 1,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 4,
+    "mismatching_outputs": 2,
+    "oracle_coordinates": 3,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 5,
+    "mismatching_outputs": 9,
+    "oracle_coordinates": 10,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 6,
+    "mismatching_outputs": 33,
+    "oracle_coordinates": 34,
+    "total_outputs": 65536
+  },
+  {
+    "document": 2,
+    "layer": 7,
+    "mismatching_outputs": 67,
+    "oracle_coordinates": 65,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 0,
+    "mismatching_outputs": 36,
+    "oracle_coordinates": 37,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 1,
+    "mismatching_outputs": 6,
+    "oracle_coordinates": 7,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 2,
+    "mismatching_outputs": 10,
+    "oracle_coordinates": 11,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 3,
+    "mismatching_outputs": 0,
+    "oracle_coordinates": 1,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 4,
+    "mismatching_outputs": 3,
+    "oracle_coordinates": 4,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 5,
+    "mismatching_outputs": 16,
+    "oracle_coordinates": 17,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 6,
+    "mismatching_outputs": 42,
+    "oracle_coordinates": 43,
+    "total_outputs": 65536
+  },
+  {
+    "document": 3,
+    "layer": 7,
+    "mismatching_outputs": 65,
+    "oracle_coordinates": 65,
+    "total_outputs": 65536
+  }
+]

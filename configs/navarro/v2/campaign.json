@@ -1,0 +1,84 @@
+{
+  "protocol_version": "2.0",
+  "campaign_schema": 1,
+  "phase": "engineering_screening",
+  "data_dir": "~/.cache/nanochat",
+  "depth": 8,
+  "aspect_ratio": 64,
+  "head_dim": 128,
+  "sequence_len": 1024,
+  "window_pattern": "SSSL",
+  "device_batch_size": 4,
+  "total_batch_size": 8192,
+  "accumulation": 2,
+  "dtype": "float32",
+  "num_iterations": 1000,
+  "seed": 101,
+  "rank_sample_bits": 256,
+  "rows_per_block": 128,
+  "reference_steps": 1000,
+  "pilot_steps": 100,
+  "trial_timeout_seconds": 900,
+  "campaign_budget_seconds": 14400,
+  "max_trials": 12,
+  "calibration_sequences": 128,
+  "reserved_sequences": 1024,
+  "split_salt": "navarro-v2-20260915-discovery",
+  "candidate_file": "research/navarro/candidate.py",
+  "scenarios": [
+    {
+      "id": "native",
+      "arm": "native"
+    },
+    {
+      "id": "checkpoint-native",
+      "arm": "checkpoint_native"
+    },
+    {
+      "id": "tape-dense",
+      "arm": "tape_dense"
+    },
+    {
+      "id": "tape-recompute",
+      "arm": "tape_recompute"
+    },
+    {
+      "id": "bitmap-cpu",
+      "arm": "tape_bitmap"
+    },
+    {
+      "id": "bitmap-metal-r128",
+      "arm": "bitmap_gpu",
+      "sample_bits": 128,
+      "strategy": "rank"
+    },
+    {
+      "id": "bitmap-metal-r256",
+      "arm": "bitmap_gpu",
+      "sample_bits": 256,
+      "strategy": "rank"
+    },
+    {
+      "id": "bitmap-metal-r512",
+      "arm": "bitmap_gpu",
+      "sample_bits": 512,
+      "strategy": "rank"
+    },
+    {
+      "id": "bitmap-metal-scan",
+      "arm": "bitmap_gpu",
+      "sample_bits": 256,
+      "strategy": "scan"
+    }
+  ],
+  "pilot_checkpoint_policy": "fingerprints_only",
+  "disk_reserve_gib": 3,
+  "reference_checkpoint_steps": [
+    10,
+    100,
+    400,
+    500,
+    900,
+    1000
+  ]
+}

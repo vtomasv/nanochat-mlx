@@ -1,0 +1,57 @@
+{
+  "accumulation_bits_match": true,
+  "nonzero_unvisited_rejected": true,
+  "row_bit_roundtrip": true,
+  "ten_updates": [
+    {
+      "loss_delta": 0.0,
+      "step": 0,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 1,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 2,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 3,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 4,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 5,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 6,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 7,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 8,
+      "weights_and_optimizer_pass": true
+    },
+    {
+      "loss_delta": 0.0,
+      "step": 9,
+      "weights_and_optimizer_pass": true
+    }
+  ]
+}

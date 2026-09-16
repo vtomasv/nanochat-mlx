@@ -1,0 +1,36 @@
+{
+  "correctness_pass": true,
+  "limitations": [
+    "One exploratory process, no confirmatory CI.",
+    "No final checkpoint, reproducible from parent checkpoint and sources.",
+    "RSS and MLX overlap."
+  ],
+  "metrics": {
+    "mean_step_seconds": 0.9702270587498788,
+    "mlx_active_bytes": 1417679064,
+    "mlx_active_peak_bytes": 5430847824,
+    "mlx_cache_bytes": 1073755648,
+    "p95_step_seconds": 1.059140183326963,
+    "process_tree_rss_peak_bytes": 2133671936,
+    "rss_error": null,
+    "rss_peak_bytes": 3120824320
+  },
+  "quality": {
+    "documents": 128,
+    "nll": 6.220080585096152,
+    "split": "calibration",
+    "valid_tokens": 82642
+  },
+  "scenario": {
+    "arm": "bitmap_gpu",
+    "compact_gradients": false,
+    "id": "bitmap",
+    "sample_bits": 256,
+    "strategy": "rank"
+  },
+  "source_sha256": "254367dce1138a59a70e53d5ce42859c09de26eee6ddaacdd24056d0b0e61df3",
+  "start_step": 100,
+  "status": "MEASURED_EXPLORATORY",
+  "steps": 100,
+  "training_seconds": 97.05869604100008
+}

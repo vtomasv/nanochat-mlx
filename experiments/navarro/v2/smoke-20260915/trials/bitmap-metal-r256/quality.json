@@ -1,0 +1,28 @@
+{
+  "documents": 4,
+  "nll": 10.387175559997559,
+  "rows": [
+    {
+      "document_id": "60dc12fe8fcaca05a4c31b0706af96af560740812c35ca837c2d1a4f089e1fe3",
+      "nll_sum": 1329.3746337890625,
+      "valid_tokens": 128
+    },
+    {
+      "document_id": "8e90f19c568b4d312f85371296f4a06be088933316e84d2ba499fe67c3ad8c7f",
+      "nll_sum": 1330.09033203125,
+      "valid_tokens": 128
+    },
+    {
+      "document_id": "e70ceb686c4bd1863b13d119a1f2c40208f5ec32c8b3d63b6ca098c557549947",
+      "nll_sum": 1329.3433837890625,
+      "valid_tokens": 128
+    },
+    {
+      "document_id": "bf5611073a9747e6c077720205b894a140f34eee59ccbb41ef9e0486c99303a9",
+      "nll_sum": 1329.425537109375,
+      "valid_tokens": 128
+    }
+  ],
+  "split": "calibration",
+  "valid_tokens": 512
+}
